@@ -217,7 +217,7 @@ Der Text gilt als einer der ersten philosophischen Essays zur Situation jüdisch
 
 Lest den Text aufmerksam auf folgende Fragen hin:
 
-1. Warum meint Arendt, dass niemand "Flüchtling" werden will? 
+1. Warum meint Arendt, dass niemand "Flüchtling" genannt werden will? 
 2. Welche Elemente [intersektionaler](https://de.wikipedia.org/wiki/Intersektionalit%C3%A4t) Diskriminierung der jüdischen Flüchtlinge lassen sich in Arendts Beschreibungen finden?
 3. Gibt es Hinweise darauf, ob die Situation intellektueller Geflüchteter besonders ist? Sucht nach spezifischen Herausforderungen, Verlusten, Gefahren. Achtet dabei auch auf die Perspektive, aus der Arendt den Text schreibt.
 4. Was hat es mit den Begriffen Parvenü, Paria und Avantgarde auf sich? 
