@@ -100,7 +100,7 @@ Das Poster wird in der letzten (Doppel-)Sitzung **am 09. Juli 2024** vorgestellt
 
 **Aufgabenstellung:** Sprecht mit Gregor eine Sitzung ab, für die ihr ein "Sitzungsprotokoll" anfertigt. Das Protokoll soll die wichtigsten Ergebnisse und Erkenntnisse der Sitzung festhalten (nicht den Verlauf) und dient als Ergänzung bzw. Erweiterung des Kursmaterials, sprich: Die "Protokolle" werden direkt in das Material übernommen und dienen als gemeinsame Ressource für alle zur Nachbereitung des Seminars. Entsprechend sollte das Protokoll so aufbereitet sein, dass ein Nicht-Anwesender Studierender sich anhand der Notizen im Nachhinein ein klares Bild davon machen kann, welche Inhalte in der entsprechenden Woche besprochen wurden. 
 
-Das Protokoll muss bis **spätestens zwei Wochen** nach der Sitzung per E-Mail (ggb@informatik.uni-kiel.de) bei mir als PDF eingereicht werden.
+Das Protokoll muss bis **spätestens zwei Wochen** nach der Sitzung per E-Mail (ggb@informatik.uni-kiel.de) oder [pull request](https://github.com/ggb/Seminar-Philosophinnen-im-Exil) bei mir eingereicht werden.
 
 Weitere Formalia:
 
@@ -113,13 +113,14 @@ Für eine ausreichende (oder bessere) Arbeit
 
 * Besitzt der eingereichte Text eine klare Struktur, die durch Markdown kenntlich gemacht wird
 * Wurde eine Rechtschreib- und Grammatikprüfung durchgeführt
-* werden die wichtigsten Themen, Begriffe, etc. der Woche aufgeführt
+* Werden die wichtigsten Themen, Begriffe, etc. der Woche aufgeführt
 
 Eine gute (oder bessere) Arbeit
 
 * Ist verständlich geschrieben und besitzt einen deutlichen, roten Faden
 * Bezieht die fachliche Expertise Mitstudierender aus der Philosophie mit ein 
 * Nennt und verarbeitet Quellen, die über die Seminarliteratur hinausgehen
+* Integriert sich nahtlos in das existierende LiaScript-Material für die Sitzung
 
 #### Hinweise zur Peer Review (für Informatiker_innen)
 
@@ -231,3 +232,46 @@ Lest die beiden folgenden Texte:
 
 
 ## Sitzung am 23.04.
+
+### Geschichtlicher Kontext
+
+1. Wie war die politische Situation in Europa in den 20er/30er Jahren des 20. Jahrhunderts?
+2. Warum mussten Personen (aus Nazi-Deutschland) fliehen? Welche Personengruppen waren besonders von Ausgrenzung, Verfolgung und Vernichtung betroffen?
+3. Wie "floh" man, d. h. was hieß Flucht ganz praktisch? Welche Länder boten sich für die Flucht an? Welche Hindernisse gab es?
+
+#### Hannah Arendts und Heinrich Blüchers (Flucht-)Route aus Deutschland
+
+<iframe width="100%" height="600px" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.fr/en/map/hannah-arendts-fluchtroute-von-berlin-nach-new-yor_977287?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe><p><a href="https://umap.openstreetmap.fr/en/map/hannah-arendts-fluchtroute-von-berlin-nach-new-yor_977287?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">See full screen</a></p>
+
+### Hannah Arendts "Wir Flüchtlinge"
+
+Fragen an den Text: 
+
+1. Warum meint Arendt, dass niemand "Flüchtling" genannt werden will? 
+2. Welche Elemente [intersektionaler](https://de.wikipedia.org/wiki/Intersektionalit%C3%A4t) Diskriminierung der jüdischen Flüchtlinge lassen sich in Arendts Beschreibungen finden?
+3. Gibt es Hinweise darauf, ob die Situation intellektueller Geflüchteter besonders ist? Sucht nach spezifischen Herausforderungen, Verlusten, Gefahren. Achtet dabei auch auf die Perspektive, aus der Arendt den Text schreibt.
+4. Was hat es mit den Begriffen Parvenü, Paria und Avantgarde auf sich? 
+
+### Zur nächsten Sitzung
+
+Lest den folgenden Text:
+
+* Benhabib, S. (2018). Intertwined Lives and Themes among Jewish Exiles. In: Benhabib, S. Exile, Statelessness, and Migration. Princeton University Press, 1-8.
+
+Informiert euch (Wikipedia, Stanford Encyclopedia of Philosophy) über eine der folgenden philosophischen Schulen, die in den 20er bzw. 30er Jahren in Deutschland existierten:
+
+* Warburg Schule (Aby Warburg, Ernst Cassirer)
+* Marburger Schule bzw. Neukantianismus (Cohen, Hartmann)
+* Freiburger Phänomenologie (Husserl, Heidegger)
+* Wiener Kreis/Logischer Positivismus (Carnap, Schlick, Popper, Wittgenstein)
+* Frankfurter Schule/Kritische Theorie (Adorno, Horkheimer, Tillich)
+* Philosophische Anthropologie (Gehlen, Plessner)
+* Jüdische Religionsphilosophie (Martin Buber, Franz Rosenzweig, Gershom Sholem)
+* Neomarxismus (Ernst Bloch, Georg Lukács, Walter Benjamin)
+
+Nehmt dabei vor allem die folgenden Fragestellungen in den Blick:
+
+* Welche (weiteren) wichtigen Person gehören zu der jeweiligen Schule? Findet min. eine Frau!
+* Was sind die wichtigsten Positionen?
+
+## Sitzung am 30.04.
