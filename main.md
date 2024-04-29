@@ -294,13 +294,13 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
     * Der Adel verlor in weiten Teilen Europas an Macht und Einfluss.
     * Deutschland hatte nach der Kapitulation die im Versailler Vertrag festgehaltene Verantwortung und die 1921 von den Alliierten bestimmten Reparationszahlungen für den 1. Weltkrieg zu tragen.
 
-        > Die alliierten und assoziierten Regierungen erklären, und Deutschland erkennt an, daß [sinc!] Deutschland und seine Verbündeten als Urheber für alle Verluste und Schäden verantwortlich sind, die die alliierten und assoziierten Regierungen und ihre Staatsangehörigen infolge des ihnen durch den Angriff Deutschlands und seiner Verbündeten aufgezwungenen Krieges erlitten haben(Vertrag von Versailles, 1919, Artikel 231).
+        > Die alliierten und assoziierten Regierungen erklären, und Deutschland erkennt an, daß [sinc!] Deutschland und seine Verbündeten als Urheber für alle Verluste und Schäden verantwortlich sind, die die alliierten und assoziierten Regierungen und ihre Staatsangehörigen infolge des ihnen durch den Angriff Deutschlands und seiner Verbündeten aufgezwungenen Krieges erlitten haben (Vertrag von Versailles, 1919, Artikel 231).
 
     * Der vorherige Punkt sowie die Weltwirtschaftskrise führten zu einer gesellschaftlich angespannten Situation in der jungen Weimarer Republik.
     * Auf den Straßenterror und die Propaganda der Nationalsozialisten folgte dann mit der Ernennung von Adolf Hitlers zum Reichskanzler am 30. Januar 1933 die Machtübernahme der NSDAP (Deutscher Bundestag, o.D.).
     * Italien stand unter der Herrschaft des faschistischen Diktators Mussolini.
     * In Russland wurde nach dem Ende der Zarenherrschaft 1922 die Sowjetunion gegründet.
-    * In Frankreich soll es, laut eines Beitrags aus dem Plenum, in den 30er Jahren nur noch eine *Marionettenregierung* gegeben haben, welche in weiten Teilen, auch bei der Auslieferung von Geflüchteten Jüdinnen und Juden, mit Deutschland kooperiert haben soll. \
+    * In Frankreich soll es, laut eines Beitrags aus dem Plenum, in den 30er Jahren nur noch eine *Marionettenregierung* gegeben haben, welche in weiten Teilen, auch bei der Auslieferung von Geflüchteten Jüdinnen und Juden, mit Deutschland kooperiert haben soll.  
     Die zeitliche Einordnung war hier jedoch fehlerhaft. Bei der angesprochenen Regierung handelt es sich vermutlich um das **Vichy-Regime**, welches am 10. Juli 1940 nach der weiträumigen Besatzung Frankreichs durch Deutschland begründet wurde. Damit wurde die vorherige französische Verfassung faktisch außer Kraft gesetzt (Prauser, 2013).
 
 2. Warum mussten Personen (aus Nazi-Deutschland) fliehen? Welche Personengruppen waren besonders von Ausgrenzung, Verfolgung und Vernichtung betroffen?
@@ -308,6 +308,7 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
     * Personen mussten fliehen, um der Verfolgung und der möglichen anschließenden Deportation in Konzentrations- und Vernichtungslager der Nationalsozialisten zu entkommen.
     * Dies betraf besonders Bevölkerungsgruppen, welche aufgrund der ideologischen nationalsozialistischen Rassenlehre vom Großteil der deutschen Bevölkerung als minderwertig angesehen und behandelt wurden sowie Menschen mit politischen Ansichten, die vom Nazi-Regime als Bedrohung angesehen wurden.
     * Folgende Personengruppen wurden im Plenum gesondert erwähnt:
+
         * Sinti und Roma
         * Jüdinnen und Juden
         * Arbeitsunfähige
@@ -332,7 +333,7 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
 
 ### Hannah Arendts und Heinrich Blüchers (Flucht-)Route aus Deutschland
 
-Die unten stehende Karte zeigt die Fluchtroute von Hannah Arendt (blau) und Heinrich Blücher(rot).\
+Die unten stehende Karte zeigt die Fluchtroute von Hannah Arendt (blau) und Heinrich Blücher(rot).  
 Thematisiert wurde hier hauptsächlich die Zeit von Hannah Arendt im Internierungslager Camp de Gurs.
 
 Zur Zeit des deutschen Angriffs auf Frankreich wurden hier nach französischer Bezeichnung *feindliche Ausländer* festgehalten, bei denen es sich zu dieser Zeit ausschließlich um Frauen und Kinder handelte, welche aus Deutschland und Österreich geflohen waren. Zu Höchstzeiten waren dort 9.771 Menschen inhaftiert. Nach der Unterzeichnung des Waffenstillstandes zwischen Deutschland und Frankreich im Juni 1940 wurde das Lager zeitweise aufgrund ungeklärter Zuständigkeiten geöffnet (Gerlach & Weber, 2005). Dadurch konnten viele Menschen entkommen, darunter auch Hannah Arendt.
@@ -342,7 +343,8 @@ Zur Zeit des deutschen Angriffs auf Frankreich wurden hier nach französischer B
 
 ### Hannah Arendts "Wir Flüchtlinge"
 
-Vorbereitend war Hannah Arendts Text *Wir Flüchtlinge* zu lesen und es wurden zunächst in kleinen Gruppen und dann im Plenum folgende Fragen diskutiert.\
+Vorbereitend war Hannah Arendts Text *Wir Flüchtlinge* zu lesen und es wurden zunächst in kleinen Gruppen und dann im Plenum folgende Fragen diskutiert.
+
 Zur Einordnung: Beim Erscheinen dieses Textes waren die, durch die Deutschen begangenen Taten in Auschwitz bereits öffentlich geworden, und Arendts Text gilt als erstes philosophisches Schriftstück, welches sich damit auseinandersetzt.
 
 1. Warum meint Arendt, dass niemand "Flüchtling" genannt werden will?
@@ -363,18 +365,23 @@ Zur Einordnung: Beim Erscheinen dieses Textes waren die, durch die Deutschen beg
     * Diskriminierung auf den Ebenen der Rassifizierung, Religion und Nationalität.
 
 3. Gibt es Hinweise darauf, ob die Situation intellektueller Geflüchteter besonders ist? Sucht nach spezifischen Herausforderungen, Verlusten, Gefahren. Achtet dabei auch auf die Perspektive, aus der Arendt den Text schreibt.
+
     * Die Sprachbarriere stellt eine größere Herausforderung dar, da die Sprache als Werkzeug schwieriger zu nutzen und teilweise neu zu erlernen ist.
     * Intellektuelle sind schneller in den Fokus der Nationalsozialisten geraten, da die Fähigkeit des Ausdrucks als eine potentielle Gefahr gegen das Regime betrachtet wurde.
 
 
 4. Was hat es mit den Begriffen Parvenü, Paria und Avantgarde auf sich?
 
-    * **Parvenü**:\
+    * **Parvenü**:
+
     Hier beschreibt Arendt geflüchtete Jüdinnen und Juden, die sich bei der Ankunft in einem neuen Land ihre eigene Identität verleugnen und versuchen zu assimilieren, jedoch trotzdem nicht anerkannt werden.
-    * **Paria**:\
+    
+    * **Paria**:
+
     Hiermit drückt Arendt den Widerstand der Assimilation und das Treu-bleiben des eigenen Selbst aus, welches verhindert in die Gesellschaft integriert zu werden und nur einen Blick von außen gewährt.
     
-    * **Avantgarde**:\
+    * **Avantgarde**:
+
     Nach Arendt repräsentieren die von einem Land ins andere vertriebenen Flüchtlinge die Avantgarde ihrer Völker. So gibt der Zustand alles verloren zu haben die Möglichkeit, sich noch als jüdisch zu identifizieren.
 
 
