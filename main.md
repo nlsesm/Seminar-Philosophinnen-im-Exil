@@ -294,8 +294,7 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
     * Der Adel verlor in weiten Teilen Europas an Macht und Einfluss.
     * Deutschland hatte nach der Kapitulation die im Versailler Vertrag festgehaltene Verantwortung und die 1921 von den Alliierten bestimmten Reparationszahlungen für den 1. Weltkrieg zu tragen.
 
-        > Die alliierten und assoziierten Regierungen erklären, und Deutschland erkennt an, daß [sinc!] Deutschland und seine Verbündeten als Urheber für alle Verluste und Schäden verantwortlich sind, die die alliierten und assoziierten Regierungen und ihre Staatsangehörigen infolge des ihnen durch den Angriff Deutschlands und seiner Verbündeten aufgezwungenen Krieges erlitten haben
-        (Vertrag von Versailles, 1919, Artikel 231).
+        > Die alliierten und assoziierten Regierungen erklären, und Deutschland erkennt an, daß [sinc!] Deutschland und seine Verbündeten als Urheber für alle Verluste und Schäden verantwortlich sind, die die alliierten und assoziierten Regierungen und ihre Staatsangehörigen infolge des ihnen durch den Angriff Deutschlands und seiner Verbündeten aufgezwungenen Krieges erlitten haben(Vertrag von Versailles, 1919, Artikel 231).
 
     * Der vorherige Punkt sowie die Weltwirtschaftskrise führten zu einer gesellschaftlich angespannten Situation in der jungen Weimarer Republik.
     * Auf den Straßenterror und die Propaganda der Nationalsozialisten folgte dann mit der Ernennung von Adolf Hitlers zum Reichskanzler am 30. Januar 1933 die Machtübernahme der NSDAP (Deutscher Bundestag, o.D.).
@@ -325,7 +324,7 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
     * Allgemein versuchten Flüchtende, sofern möglich, in Nachbarländer zu gelangen, in denen sie Verwandte hatten.
     * Zuerst wurde versucht, nahegelegene Länder aufzusuchen, jedoch flüchteten nach Kriegsausbruch immer mehr Menschen in weiter entfernte Länder wie die USA.
 
-        > Zwischen der Machtübernahme der Nationalsozialisten im Jahr 1933 und der Kapitulation Deutschlands 1945 wanderten mehr als 340.000 Juden aus Deutschland und Österreich aus. Tragischerweise fanden fast 100.000 von ihnen Zuflucht in Ländern, die später von Deutschland besetzt wurden <cite>(United States Holocaust Memorial Museum, 2021)</cite>.
+        > Zwischen der Machtübernahme der Nationalsozialisten im Jahr 1933 und der Kapitulation Deutschlands 1945 wanderten mehr als 340.000 Juden aus Deutschland und Österreich aus. Tragischerweise fanden fast 100.000 von ihnen Zuflucht in Ländern, die später von Deutschland besetzt wurden (United States Holocaust Memorial Museum, 2021).
 
     * Die Flucht war teuer und wurde zudem durch einen hohen bürokratischen Aufwand bei der Aus- und Einreise mittels Visa erschwert.
     * Reisepässe deutscher Jüdinnen und Juden wurden 1938 als ungültig erklärt und erlangten erst wieder ihre Gültigkeit, sobald sie mit einem roten **J** gekennzeichnet wurden.
