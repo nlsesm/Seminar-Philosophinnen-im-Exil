@@ -307,7 +307,7 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
 
     * Personen mussten fliehen, um der Verfolgung und der möglichen anschließenden Deportation in Konzentrations- und Vernichtungslager der Nationalsozialisten zu entkommen.
     * Dies betraf besonders Bevölkerungsgruppen, welche aufgrund der ideologischen nationalsozialistischen Rassenlehre vom Großteil der deutschen Bevölkerung als minderwertig angesehen und behandelt wurden sowie Menschen mit politischen Ansichten, die vom Nazi-Regime als Bedrohung angesehen wurden.
-    * Folgende Personengruppen wurden im Plenum gesondert erwähnt:
+    * Folgende Personengruppen wurden im Plenum gesondert erwähnt
 
         * Sinti und Roma
 
@@ -380,14 +380,11 @@ Zur Einordnung: Beim Erscheinen dieses Textes waren die, durch die Deutschen beg
 
 4. Was hat es mit den Begriffen Parvenü, Paria und Avantgarde auf sich?
 
-    * **Parvenü**:  
-    Hier beschreibt Arendt geflüchtete Jüdinnen und Juden, die sich bei der Ankunft in einem neuen Land ihre eigene Identität verleugnen und versuchen zu assimilieren, jedoch trotzdem nicht anerkannt werden.
+    * **Parvenü**: Hier beschreibt Arendt geflüchtete Jüdinnen und Juden, die sich bei der Ankunft in einem neuen Land ihre eigene Identität verleugnen und versuchen zu assimilieren, jedoch trotzdem nicht anerkannt werden.
     
-    * **Paria**:  
-    Hiermit drückt Arendt den Widerstand der Assimilation und das Treu-bleiben des eigenen Selbst aus, welches verhindert in die Gesellschaft integriert zu werden und nur einen Blick von außen gewährt.
+    * **Paria**: Hiermit drückt Arendt den Widerstand der Assimilation und das Treu-bleiben des eigenen Selbst aus, welches verhindert in die Gesellschaft integriert zu werden und nur einen Blick von außen gewährt.
     
-    * **Avantgarde**:  
-    Nach Arendt repräsentieren die von einem Land ins andere vertriebenen Flüchtlinge die Avantgarde ihrer Völker. So gibt der Zustand alles verloren zu haben die Möglichkeit, sich noch als jüdisch zu identifizieren.
+    * **Avantgarde**: Nach Arendt repräsentieren die von einem Land ins andere vertriebenen Flüchtlinge die Avantgarde ihrer Völker. So gibt der Zustand alles verloren zu haben die Möglichkeit, sich noch als jüdisch zu identifizieren.
 
 
 
