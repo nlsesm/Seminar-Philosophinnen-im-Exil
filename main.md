@@ -310,13 +310,21 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
     * Folgende Personengruppen wurden im Plenum gesondert erwähnt:
 
         * Sinti und Roma
+
         * Jüdinnen und Juden
+
         * Arbeitsunfähige
+
         * Menschen mit Behinderung
+
         * Oppositionelle
+
         * Lehrpersonal, welches nicht nach den Vorgaben der NS-Ideologie lehrte
+        
         * Homosexuelle Menschen
+        
         * Künstler*innen, welche laut NS-Ideologie *entartete Kunst* praktizierten
+        
         * Anhänger*innen von Glaubensgemeinschaften, welche nach NS-Ideologie nicht geduldet waren.
 
 3. Wie "floh" man, d. h. was hieß Flucht ganz praktisch? Welche Länder boten sich für die Flucht an? Welche Hindernisse gab es?
@@ -372,16 +380,13 @@ Zur Einordnung: Beim Erscheinen dieses Textes waren die, durch die Deutschen beg
 
 4. Was hat es mit den Begriffen Parvenü, Paria und Avantgarde auf sich?
 
-    * **Parvenü**:
-
+    * **Parvenü**:  
     Hier beschreibt Arendt geflüchtete Jüdinnen und Juden, die sich bei der Ankunft in einem neuen Land ihre eigene Identität verleugnen und versuchen zu assimilieren, jedoch trotzdem nicht anerkannt werden.
     
-    * **Paria**:
-
+    * **Paria**:  
     Hiermit drückt Arendt den Widerstand der Assimilation und das Treu-bleiben des eigenen Selbst aus, welches verhindert in die Gesellschaft integriert zu werden und nur einen Blick von außen gewährt.
     
-    * **Avantgarde**:
-
+    * **Avantgarde**:  
     Nach Arendt repräsentieren die von einem Land ins andere vertriebenen Flüchtlinge die Avantgarde ihrer Völker. So gibt der Zustand alles verloren zu haben die Möglichkeit, sich noch als jüdisch zu identifizieren.
 
 
