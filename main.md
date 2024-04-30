@@ -275,3 +275,13 @@ Nehmt dabei vor allem die folgenden Fragestellungen in den Blick:
 * Was sind die wichtigsten Positionen?
 
 ## Sitzung am 30.04.
+
+### Philosophische Schulen im Deutschland der 20er und 30er Jahre
+
+Sammelt auf dem folgenden Conceptboard die Ergebnisse eurer Recherchen!
+
+[https://app.conceptboard.com/board/tozr-ipt1-4ybh-tnrf-919a](https://app.conceptboard.com/board/tozr-ipt1-4ybh-tnrf-919a)
+
+![Conceptboard QR-Code](img/qr_code_schulen.png)
+
+## Sitzung am 07.05.
