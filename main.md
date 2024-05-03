@@ -374,7 +374,6 @@ Nehmt dabei vor allem die folgenden Fragestellungen in den Blick:
 * Welche (weiteren) wichtigen Person gehören zu der jeweiligen Schule? Findet min. eine Frau!
 * Was sind die wichtigsten Positionen?
 
-
 ## Sitzung am 30.04.
 
 ### Philosophische Schulen im Deutschland der 20er und 30er Jahre
@@ -384,5 +383,120 @@ Sammelt auf dem folgenden Conceptboard die Ergebnisse eurer Recherchen!
 [https://app.conceptboard.com/board/tozr-ipt1-4ybh-tnrf-919a](https://app.conceptboard.com/board/tozr-ipt1-4ybh-tnrf-919a)
 
 ![Conceptboard QR-Code](img/qr_code_schulen.png)
+
+#### Ergebnis
+
+![Die philosophischen Strömungen der Weimarer Republik](img/ergebnis_philosophische-strömungen.png)
+
+### Referat "Der Warbug Kreis"
+
+(Referenten: Frederike Kahler, Philipp Fürst)
+
+Aby M. Warburg
+
+* Überlassung d. Erstgeborenenrechts; lebenslange Bücherzufuhr
+* Kunsthistoriker Studium
+* Großes Interesse an anderen Disziplinen
+
+Kulturwissenschaftliche Bibliothek (KBW)
+
+* Ziel: Gelehrte in Hamburg zusammenbringen
+* Wissenschaft fördern
+* Öffnung 1905
+* Umfang: 60.000 Werke
+* 1933 Umsiedelung nach London
+* Vier Abteilungen
+
+Universität Hamburg
+
+* Gründung 1919
+* Ziel: Merkantilismus, nicht öffentlicher Dienst und Weltoffen, nicht nur national konservativ
+
+Der Warburg Kreis
+
+* Bibliothek und Universität lockt Intellektuelle
+* Interdisziplinärer Kreis mit Willen zur Zusammenarbeit
+* Manchmal auch Hamburger Schule
+
+Die erste Kulturwissenschaft
+
+* Mitglieder überschneiden sich mit Warburg Kreis
+* Erweiterung des Suchtfeldes Deutschland und Europas
+* Arbeiten an Übergängen zwischen den Disziplinen
+
+Nachleben
+
+* Flucht aus Deutschland (Mitglieder sowie Bibliothek)
+* Arbeiten gingen verloren; Autor:innen wurden vergessen
+
+Gertrud Bing
+
+* Philosophie, Literaturgeschichte und Psychologie Studium in München/Hamburg
+* Promotion unter Ernst Cassirer
+* Bibliothekarin der KBW
+* 1924 pers. Assistentin Aby M. Warburgs
+* Lebensprojekte
+
+    * Bibliographie Warburgs (Projekt blieb unvollendet)
+
+    * Fragment sur Aby Warburg
+
+Ernst Cassirer
+
+* Literatur und Philosophie Studium
+* Ab 1896 in Marburg
+
+    * Neukantianer
+
+* 1919 – 1933 Professor für Philosophie in Hamburg
+* Dreibändiges Hauptwerk Philosophie der symbolischen Formen
+* Erster jüdischer Rektor an einer deutschen Uni
+* Flucht nach England; später Schweden und dann in die USA
+
+Symbolic Forms
+
+* Erst ab 1919 durch Berufung 
+* Intensive Beschäftigung eines Kulturbegriffs
+* 1922 erste Publikation; „fundamentale geistige Aktivität
+* Gemeinsam mit Warburg
+* 1923 erster Teil „Sprache“
+* Symbolbegriff auch nach Pierce und de Saussure
+* Mensch als Wesen in vielfältigen Netzen von Symbolen
+* Symbolsystem
+* Mensch als „animal symbolicum“
+* Drei Funktionen
+
+    * Ausdrucksfunktion
+
+    * Darstellungsfunktion
+    
+    * Bedeutungsfunktion
+
+Lotte Labowsky
+
+* Deutsch-jüdische-Philosophin und Altphilologin
+* Klassische Philologie in München/Heidelberg
+* 1932 Promotion
+* Ab 1933 in Projekte der KBW einbezogen
+* Zweitstudium: Griechisch und Paläografie
+* 1936 begrenzte Arbeitserlaubnis
+
+Raymond Klibansky
+
+* 1914 nach Deutschland
+* Student in Heidelberg
+* Arbeitsbeziehung mit Warburg und Cassirer
+* Schneller Akademischer Ruhm
+* Gründung des internationalen Instituts für Philosophie
+* Berufung nach Montreal
+* Ehrensenator
+
+Labowsky & Klibansky
+
+* Freundschaft bereits während Studiums
+* Gleiche Forschung: Plato-Rezeption in Mittelalter und Renaissance
+* Gemeinsam ins Exil mit Bibliothek
+* Editionsprojekt Corpus Platonicum Medii Aevi
+* Briefwechsel nach Berufung Klibanskys
 
 ## Sitzung am 07.05.
