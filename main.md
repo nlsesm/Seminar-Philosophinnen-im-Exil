@@ -386,7 +386,7 @@ Sammelt auf dem folgenden Conceptboard die Ergebnisse eurer Recherchen!
 
 #### Ergebnis
 
-![Die philosophischen Strömungen der Weimarer Republik](img/ergebnis_philosophische-strömungen.png)
+![Die philosophischen Strömungen der Weimarer Republik](img/ergebnis_philosophische-stroemungen.png)
 
 ### Referat "Der Warbug Kreis"
 
