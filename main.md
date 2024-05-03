@@ -230,27 +230,127 @@ Lest die beiden folgenden Texte:
 * Schäfer, H. (2023). Hannah Arendt in New York. Philosophie Magazin, 4, 32–39.
 * Arendt, H. (1989). Wir Flüchtlinge. In: Arendt, H. Zur Zeit. Politische Essays. dtv, 7-23.
 
+## Protokoll und Aufbereitung der Sitzung vom 23.04.
 
-## Sitzung am 23.04.
+(von **Nils Nicklaus**)
+
+Dieses Protokoll bereitet die Inhalte der Sitzung vom 23.04.2024 nach. Es werden die im Plenum vorgestellten Erkenntnisse geordnet zusammengefasst und an passenden Stellen mit zusätzlichen Quellen, welche als solche gekennzeichnet sind, ergänzt.
+
+**Zweck und Überblick der Sitzung**
+
+An diesem Seminar-Termin haben wir versucht, die Lebensrealität verfolgter Denkerinnen und Denker zu Zeiten kurz vor und während des Nationalsozialismus in einen philosophiehistorischen Kontext zu setzen. Hierfür wurde exemplarisch die Fluchtgeschichte von Hannah Arendt betrachtet und der, 1943 von ihr verfasste, Text **Wir Flüchtlinge** als Zeitdokument unter bestimmten Gesichtspunkten diskutiert.
 
 ### Geschichtlicher Kontext
+Hierfür wurden 3 Fragen im Plenum diskutiert:
 
 1. Wie war die politische Situation in Europa in den 20er/30er Jahren des 20. Jahrhunderts?
-2. Warum mussten Personen (aus Nazi-Deutschland) fliehen? Welche Personengruppen waren besonders von Ausgrenzung, Verfolgung und Vernichtung betroffen?
-3. Wie "floh" man, d. h. was hieß Flucht ganz praktisch? Welche Länder boten sich für die Flucht an? Welche Hindernisse gab es?
 
-#### Hannah Arendts und Heinrich Blüchers (Flucht-)Route aus Deutschland
+    * In den 20er Jahren herrscht in Europa nach dem 1. Weltkrieg Kriegsmüdigkeit.
+    * Es beginnt die Dekolonialisierung.
+    * Allgemein gibt es Konfliktpotenzial aufgrund unterschiedlicher Ideologien.
+    * Der Adel verliert in weiten Teilen Europas an Macht und Einfluss.
+    * Deutschland hat nach der Kapitulation die im Versailler Vertrag festgehaltene Verantwortung und die 1921 von den Alliierten bestimmten Reparationszahlungen für den 1. Weltkrieg zu tragen.
+
+        > Die alliierten und assoziierten Regierungen erklären, und Deutschland erkennt an, daß [sic!] Deutschland und seine Verbündeten als Urheber für alle Verluste und Schäden verantwortlich sind, die die alliierten und assoziierten Regierungen und ihre Staatsangehörigen infolge des ihnen durch den Angriff Deutschlands und seiner Verbündeten aufgezwungenen Krieges erlitten haben (Vertrag von Versailles, 1919, Artikel 231).
+
+    * Der vorherige Punkt sowie die Weltwirtschaftskrise führen zu einer gesellschaftlich angespannten Situation in der jungen Weimarer Republik.
+    * Auf den Straßenterror und die Propaganda der Nationalsozialisten folgt dann mit der Ernennung von Adolf Hitler zum Reichskanzler am 30. Januar 1933 die Machtübernahme der NSDAP (Deutscher Bundestag, o.D.).
+    * Italien steht unter der Herrschaft des faschistischen Diktators Mussolini.
+    * In Russland wird nach dem Ende der Zarenherrschaft 1922 die Sowjetunion gegründet.
+    * In Frankreich soll es, laut eines Beitrags aus dem Plenum, in den 30er Jahren nur noch eine *Marionettenregierung* gegeben haben, welche in weiten Teilen, auch bei der Auslieferung von Geflüchteten Jüdinnen und Juden, mit Deutschland kooperiert haben soll.  
+    Die zeitliche Einordnung war hier jedoch fehlerhaft. Bei der angesprochenen Regierung handelt es sich um das **Vichy-Regime**, welches am 10. Juli 1940 nach der weiträumigen Besatzung Frankreichs durch Deutschland begründet wurde. Damit wurde die vorherige französische Verfassung faktisch außer Kraft gesetzt (Prauser, 2013).
+
+2. Warum mussten Personen (aus Nazi-Deutschland) fliehen? Welche Personengruppen waren besonders von Ausgrenzung, Verfolgung und Vernichtung betroffen?
+
+    * Personen fliehen, um der Verfolgung und der möglichen anschließenden Deportation in Konzentrations- und Vernichtungslager der Nationalsozialisten zu entkommen.
+    * Dies betrifft besonders Bevölkerungsgruppen, welche aufgrund der ideologischen nationalsozialistischen Rassenlehre vom Großteil der deutschen Bevölkerung als minderwertig angesehen und behandelt, sowie Menschen mit politischen Ansichten, die vom Nazi-Regime als Bedrohung angesehen werden.
+    * Folgende Personengruppen wurden im Plenum gesondert erwähnt:
+
+        * Sinti und Roma
+
+        * Jüdinnen und Juden
+
+        * Arbeitsunfähige
+
+        * Menschen mit Behinderung
+
+        * Oppositionelle
+
+        * Lehrpersonal, welches nicht nach den Vorgaben der NS-Ideologie lehrt
+        
+        * Homosexuelle Menschen
+        
+        * Künstler:innen, welche laut NS-Ideologie *entartete Kunst* praktizieren
+        
+        * Anhänger:innen von Glaubensgemeinschaften, welche durch die NS-Ideologie nicht geduldet sind.
+
+3. Wie "floh" man, d. h. was hieß Flucht ganz praktisch? Welche Länder boten sich für die Flucht an? Welche Hindernisse gab es?
+    
+    * Mögliche Fluchtziele sind beispielsweise: die USA, Großbritannien, Frankreich oder die Niederlande.
+    * Allgemein versuchen Flüchtende, sofern möglich, in Nachbarländer zu gelangen, in denen sie Verwandte haben.
+    * Zuerst wird versucht, nahegelegene Länder aufzusuchen, jedoch flüchten nach Kriegsausbruch immer mehr Menschen in weiter entfernte Länder wie die USA.
+
+        > Zwischen der Machtübernahme der Nationalsozialisten im Jahr 1933 und der Kapitulation Deutschlands 1945 wanderten mehr als 340.000 Juden aus Deutschland und Österreich aus. Tragischerweise fanden fast 100.000 von ihnen Zuflucht in Ländern, die später von Deutschland besetzt wurden (United States Holocaust Memorial Museum, 2021).
+
+    * Die Flucht ist teuer und wird zudem durch einen hohen bürokratischen Aufwand bei der Aus- und Einreise mittels Visa erschwert.
+    * Reisepässe deutscher Jüdinnen und Juden werden 1938 als ungültig erklärt und erlangten erst wieder ihre Gültigkeit, sobald sie mit einem roten **J** gekennzeichnet werden.
+    * Es gibt zu der Zeit keine allgemein anerkannten bzw. durchgesetzten Abkommen über die Rechtsstellung von Geflüchteten.
+
+### Hannah Arendts und Heinrich Blüchers (Flucht-)Route aus Deutschland
+
+Die unten stehende Karte zeigt die Fluchtroute von Hannah Arendt (blau) und Heinrich Blücher(rot).  
+Thematisiert wurde hauptsächlich die Zeit von Hannah Arendt im Internierungslager *Camp de Gurs*.
+
+Zur Zeit des deutschen Angriffs auf Frankreich werden dort nach französischer Bezeichnung *feindliche Ausländer* festgehalten, bei denen es sich zu dieser Zeit ausschließlich um Frauen und Kinder handelt, welche aus Deutschland und Österreich geflohen sind. Zu Höchstzeiten waren dort 9.771 Menschen inhaftiert. Nach der Unterzeichnung des Waffenstillstandes zwischen Deutschland und Frankreich im Juni 1940 wurde das Lager zeitweise aufgrund ungeklärter Zuständigkeiten geöffnet (Gerlach & Weber, 2005). Dadurch konnten viele Menschen entkommen, darunter auch Hannah Arendt.
 
 <iframe width="100%" height="600px" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.fr/en/map/hannah-arendts-fluchtroute-von-berlin-nach-new-yor_977287?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe><p><a href="https://umap.openstreetmap.fr/en/map/hannah-arendts-fluchtroute-von-berlin-nach-new-yor_977287?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true">See full screen</a></p>
 
+
 ### Hannah Arendts "Wir Flüchtlinge"
 
-Fragen an den Text: 
+Vorbereitend war Hannah Arendts Text *Wir Flüchtlinge* zu lesen und es wurden zunächst in kleinen Gruppen und dann im Plenum folgende Fragen diskutiert.
 
-1. Warum meint Arendt, dass niemand "Flüchtling" genannt werden will? 
+Zur Einordnung: Beim Erscheinen dieses Textes waren die, durch die Deutschen begangenen Taten in Auschwitz bereits öffentlich geworden, und Arendts Text gilt als erstes philosophisches Schriftstück, welches sich damit auseinandersetzt.
+
+1. Warum meint Arendt, dass niemand "Flüchtling" genannt werden will?
+
+    * Begriff Flüchtling beschreibt Menschen, die einen Grund haben, zu flüchten und ist damit negativ konnotiert.
+    * Damit versucht sie abzugrenzen zwischen Menschen, die aufgrund der eigenen Handlungen fliehen mussten und den Jüdinnen und Juden, denn die Jüdinnen und Juden wurden wegen ihrer bloßen Existenz verfolgt.
+    * In dem historischen Kontext wird Flüchtling schnell mit der Zugehörigkeit zum Judentum verknüpft.
+    * Nach Arendt wären Bezeichnungen wie Neuankömmlinge und Einwanderer besser geeignete Begriffe.
+
 2. Welche Elemente [intersektionaler](https://de.wikipedia.org/wiki/Intersektionalit%C3%A4t) Diskriminierung der jüdischen Flüchtlinge lassen sich in Arendts Beschreibungen finden?
+
+    * Gewisse Stigmata, wie die als Schnorrer.
+    * Die Jüdische Bevölkerung aus Polen wird negativer betrachtet als die aus Frankreich.
+    * Betrachtung der Geflüchteten als *feindliche Ausländer* anstelle von künftigen Staatsbürgerinnen und Staatsbürgern.
+    * Diskriminierung auf den Ebenen der Rassifizierung, Religion und Nationalität.
+
 3. Gibt es Hinweise darauf, ob die Situation intellektueller Geflüchteter besonders ist? Sucht nach spezifischen Herausforderungen, Verlusten, Gefahren. Achtet dabei auch auf die Perspektive, aus der Arendt den Text schreibt.
-4. Was hat es mit den Begriffen Parvenü, Paria und Avantgarde auf sich? 
+
+    * Die Sprachbarriere stellt eine größere Herausforderung dar, da die Sprache als Werkzeug schwieriger zu nutzen und teilweise neu zu erlernen ist.
+    * Intellektuelle sind schneller in den Fokus der Nationalsozialisten geraten, da die Fähigkeit des Ausdrucks als eine potentielle Gefahr gegen das Regime betrachtet wurde.
+
+4. Was hat es mit den Begriffen Parvenü, Paria und Avantgarde auf sich?
+
+    * **Parvenü**: Hier beschreibt Arendt geflüchtete Jüdinnen und Juden, die sich bei der Ankunft in einem neuen Land ihre eigene Identität verleugnen und versuchen zu assimilieren, jedoch trotzdem nicht anerkannt werden.
+    
+    * **Paria**: Hiermit drückt Arendt den Widerstand der Assimilation und das Treu-bleiben des eigenen Selbst aus, welches verhindert in die Gesellschaft integriert zu werden und nur einen Blick von außen gewährt.
+    
+    * **Avantgarde**: Nach Arendt repräsentieren die von einem Land ins andere vertriebenen Flüchtlinge die Avantgarde ihrer Völker. So gibt der Zustand alles verloren zu haben die Möglichkeit, sich noch als jüdisch zu identifizieren.
+
+
+### Quellenverzeichnis
+
+Deutscher Bundestag. (o.D.). *Machtübernahme der Nationalsozialisten*. Abgerufen am 27.04.2024, von https://www.bundestag.de/besuche/ausstellungen/verfassung/tafel22/tafel22-199844
+
+Gerlach, S. & Weber, F. (2005). *"...es geschah am helllichten Tag!" Die Deportation der badischen,pfälzer und saarländischen Juden in das Lager Gurs/Pyrenäen* (4. Rev. ed.). Landeszentrale für politische Bildung Baden-Württemberg. https://www.lpb-bw.de/publikationen/helllichten/helllichten_05.pdf
+
+Prauser, S. (2013, Januar 21). *Erinnerungen an eine dunkle Zeit: Kollaboration und Widerstand in Frankreich*. Bundeszentrale für politische Bildung. https://www.bpb.de/themen/europa/frankreich/152983/erinnerungen-an-eine-dunkle-zeit-kollaboration-und-widerstand-in-frankreich/#node-content-title-0
+
+United States Holocaust Memorial Museum. (2013, März 22). *Flüchtlinge*. https://encyclopedia.ushmm.org/content/de/article/refugees
+
+Versailler Vertrag. (1919, Juni 28). *Versailler Vertrag*. https://www.versailler-vertrag.de/vv-i.htm
 
 ### Zur nächsten Sitzung
 
@@ -273,6 +373,7 @@ Nehmt dabei vor allem die folgenden Fragestellungen in den Blick:
 
 * Welche (weiteren) wichtigen Person gehören zu der jeweiligen Schule? Findet min. eine Frau!
 * Was sind die wichtigsten Positionen?
+
 
 ## Sitzung am 30.04.
 
