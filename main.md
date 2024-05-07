@@ -277,15 +277,15 @@ Hierfür wurden 3 Fragen im Plenum diskutiert:
         * Oppositionelle
 
         * Lehrpersonal, welches nicht nach den Vorgaben der NS-Ideologie lehrt
-        
+
         * Homosexuelle Menschen
-        
+
         * Künstler:innen, welche laut NS-Ideologie *entartete Kunst* praktizieren
-        
+
         * Anhänger:innen von Glaubensgemeinschaften, welche durch die NS-Ideologie nicht geduldet sind.
 
 3. Wie "floh" man, d. h. was hieß Flucht ganz praktisch? Welche Länder boten sich für die Flucht an? Welche Hindernisse gab es?
-    
+
     * Mögliche Fluchtziele sind beispielsweise: die USA, Großbritannien, Frankreich oder die Niederlande.
     * Allgemein versuchen Flüchtende, sofern möglich, in Nachbarländer zu gelangen, in denen sie Verwandte haben.
     * Zuerst wird versucht, nahegelegene Länder aufzusuchen, jedoch flüchten nach Kriegsausbruch immer mehr Menschen in weiter entfernte Länder wie die USA.
@@ -499,4 +499,45 @@ Labowsky & Klibansky
 * Editionsprojekt Corpus Platonicum Medii Aevi
 * Briefwechsel nach Berufung Klibanskys
 
+### Referat "Frankfurter Schule"
+
+Weitere Informationen folgen...
+
 ## Sitzung am 07.05.
+
+### Organisation von Wissen
+
+>Wie organisiert Ihr Euer Wissen, bspw. Bücher, Artikel, Dateien, Notizen, etc.?
+>
+>Welchen Einfluss hat die Organisation von Wissen auf die Generierung von neuen Einsichten und Erkenntnissen?
+
+### Referat "Gretel Adorno"
+
+Weitere Informationen folgen...
+
+### Was macht eine:n Philosoph:in aus?
+
+>Ist Gretel Adorno eine Philosophin?
+>
+>Was macht eine Person zu einem:einer Philosoph:in?
+
+### Referat "Edith Stein"
+
+Weitere Informationen folgen...
+
+### Zur nächsten Sitzung
+
+Lest den folgenden Artikel:
+
+* Jonathan Blaney, "Introduction to the Principles of Linked Open Data," Programming Historian 6 (2017), https://doi.org/10.46430/phen0068.
+
+Betrachtet anschließend die Informationen Hannah Arendts in der Wikipedia, der DBpedia, bei Wikidata und in der GND:
+
+* https://en.wikipedia.org/wiki/Hannah_Arendt
+* https://dbpedia.org/page/Hannah_Arendt
+* https://www.wikidata.org/wiki/Q60025
+* https://explore.gnd.network/gnd/11850391X?term=Hannah%20Arendt
+
+Versucht die Darstellungsform der Daten über Arendt in Verbindung mit dem Artikel zu bringen. Welche Möglichkeiten könnten sich eröffnen?
+
+## Sitzung am 14.05.
