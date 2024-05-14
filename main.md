@@ -515,6 +515,19 @@ Weitere Informationen folgen...
 >
 >Welchen Einfluss hat die Organisation von Wissen auf die Generierung von neuen Einsichten und Erkenntnissen?
 
+#### Tools, die in der Diskussion erwähnt wurden
+
+Literaturverwaltungssoftware:
+
+* [Citavi](https://www.citavi.com/de) (kommerzielles Programm, die Uni Kiel stellt Studierenden eine [kostenfreie Lizenz zur Verfügung](https://www.rz.uni-kiel.de/de/angebote/software/citavi/citavi))
+* [Zotero](https://www.zotero.org/) (gute freie Alternative)
+* [Jabref](https://www.jabref.org/) (besonders gut für die Arbeit in den Naturwissenschaften und der Informatik geeignet)
+
+Software für das Anlegen von digitalen Zettelkästen bzw. die Organisation von Notizen:
+
+* [Obisidian](https://obsidian.md/)
+* [Zettlr](https://www.zettlr.com/)
+
 ### Referat "Gretel Adorno"
 
 Weitere Informationen folgen...
@@ -545,3 +558,69 @@ Betrachtet anschließend die Informationen Hannah Arendts in der Wikipedia, der 
 Versucht die Darstellungsform der Daten über Arendt in Verbindung mit dem Artikel zu bringen. Welche Möglichkeiten könnten sich eröffnen?
 
 ## Sitzung am 14.05.
+
+### Bildet Kleingruppen!
+
+> Bildet Kleingruppen mit 2 bis 4 Teilnehmer:innen. Jede Kleingruppe *muss* mindestens eine:n Philosophie- und Informatikstudierenden beinhalten.
+>
+> Stellt euch einander vor.
+> 
+> Jede Kleingruppe bearbeitet eine der nachfolgenden Fragengruppen und beantwortet die darin enthaltenen Fragen in Bezug auf die Datenbankeinträge über Hannah Arendt (s. letzte Sitzung). Alle Kleingruppen sollten eine kurze Präsentation vorbereiten, um die Antworten auf ihre Fragen dem Plenum zu präsentieren. Die Form ist dabei den Gruppen überlassen.
+>
+> Ihr habt dafür insgesamt 25 Minuten Zeit.
+
+![Bildet Olsenbanden!](img/Bildet_olsenbanden.jpg)
+
+### Was ist 'Linked Data'?
+
+Gruppe 1: Allgemeines
+
+* Was bedeutet "offen" im Zusammenhang mit *linked open data*? Warum ist Offenheit erstrebenswert?
+* Was hat es mit der Eindeutigkeit von Einträgen in *linked data* auf sich? Was soll eindeutig sein?
+* Was ist ein Tripel? Welche Rolle kommt Tripeln zu?
+
+Gruppe 2: Uniform Resource Identifier (URI)
+
+* Was ist eine URI? Wie unterscheiden sich URIs von URLs?
+* Welche Rolle spielt bzgl. der Eindeutigkeit von URIs das *domain name system* (DNS)?
+* Wozu werden URIs in *linked data* verwendet/benötigt?
+* Was bedeutet Dereferenzierung (*dereferenciation*)?
+
+Gruppe 3: Ontologien
+
+* Was ist (im Zusammenhang mit *linked data*) eine Ontologie?
+* Wie werden Ontologien im *linked data*-Kontext eingesetzt?
+* Wie unterscheiden sich Ontologien von Taxonomien?
+* Was ist ein Vokabular, was ist ein Schema?
+
+Gruppe 4: RDF und Datenformate
+
+* Was heißt "Serialisierung" (*serialisation*)?
+* Was ist Turtle? Wie ist Turtle aufgebaut?
+* Was sind *prefixes* und wozu werden sie benötigt?
+* In welchem Verhältnis steht RDF zu RDF/XML und RDF zu Turtle?
+
+(optional) Gruppe 5: SPARQL
+
+* Was kann SPARQL? Wozu wird es benötigt?
+* Wie ist eine SPARQL-Anfrage aufgebaut? Was bedeuten Wörter mit einem "?" am Anfang?
+* Was für SPARQL-Anfragen könnten im Zusammenhang mit Exilphilosophinnen interessant sein?
+
+### Warum 'Linked Data'?
+
+[Exiled Philosophers](https://exiled-philosophers.streamlit.app/)
+
+![Ein Netzwerk von Philosoph:innen, die fliehen mussten: Automatisch generiert mit DBpedia-Daten](img/netzwerk.png)
+
+### Zur nächsten Sitzung
+
+Lest den folgenden Artikel:
+
+* Matthew Lincoln, "Using SPARQL to access Linked Open Data," Programming Historian 4 (2015), <https://doi.org/10.46430/phen0047>.
+
+und/oder schaut das folgende Video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJph4q0Im98?si=pW6w69zukq7jQEAO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Sitzung am 21.05.
+
