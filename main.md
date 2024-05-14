@@ -98,7 +98,7 @@ Das Poster wird in der letzten (Doppel-)Sitzung **am 09. Juli 2024** vorgestellt
 
 #### Hinweise zu Podcasts (für Philosoph_innen)
 
-Umfangreiche Hinweise zur Erstellung von Podcasts als Prüfungsleistung findet ihr im [folgenden Leitfaden](https://liascript.github.io/course/?https://raw.githubusercontent.com/mauriemann/Podcast/main/Podcast_main.md#24).
+Umfangreiche Hinweise zur Erstellung von Podcasts als Prüfungsleistung findet ihr im [folgenden Leitfaden](https://liascript.github.io/course/?https://raw.githubusercontent.com/mauriemann/Podcast/main/Podcast_main.md).
 
 #### Hinweise zum "Sitzungsprotokoll" (für Informatiker_innen)
 
