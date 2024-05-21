@@ -624,3 +624,146 @@ und/oder schaut das folgende Video:
 
 ## Sitzung am 21.05.
 
+Wiederholung bzw. Vertiefung aus der letzten Sitzung:
+
+* Was kann SPARQL? Wozu wird es benötigt?
+* Wie ist eine SPARQL-Anfrage aufgebaut? Was bedeuten Wörter mit einem "?" am Anfang?
+* Was für SPARQL-Anfragen könnten im Zusammenhang mit Exilphilosophinnen interessant sein?
+
+### Bildet (erneut) Kleingruppen!
+
+> Bildet Kleingruppen mit 2 bis 4 Teilnehmer:innen. Jede Kleingruppe *muss* mindestens eine:n Philosophie- und Informatikstudierenden beinhalten.
+>
+> Stellt euch einander – falls nötig – vor.
+
+![Bildet Olsenbanden!](img/Bildet_olsenbanden.jpg)
+
+
+### Netzwerk: Beispiel
+
+Für das nachfolgende Beispiel wird auf *namespaces* bzw. Präfixe verzichtet
+
+![Ein Geflecht von Beziehungen](img/5944ff.png)
+
+| subject  | predicate    | object   |
+|----------|---------------|----------|
+| Paul     | istKindVon    | Simone   |
+| Paul     | istKindVon    | Eva      |
+| Paul     | istKindVon    | Tim      |
+| Paul     | befreundetMit | Heiner   |
+| Paul     | befreundetMit | Lisa     |
+| Heiner   | istKindVon    | Eva      |
+| Heiner   | istKindVon    | Tim      |
+| Heiner   | befreundetMit | Paul     |
+| Lisa     | istKindVon    | Tim      |
+| Lisa     | istKindVon    | Marie    |
+| Lisa     | istKindVon    | Heinrich |
+| Lisa     | befreundetMit | Simone   |
+| Simone   | istKindVon    | Bob      |
+| Simone   | istKindVon    | Judith   |
+| Simone   | befreundetMit | Lisa     |
+| Eva      | istKindVon    | Bob      |
+| Eva      | istKindVon    | Pia      |
+| Eva      | befreundetMit | Tim      |
+| Eva      | befreundetMit | Judith   |
+| Tim      | istKindVon    | Judith   |
+| Tim      | istKindVon    | Pia      |
+| Tim      | befreundetMit | Marie    |
+| Marie    | istKindVon    | Judith   |
+| Marie    | istKindVon    | Pia      |
+| Marie    | istKindVon    | Carsten  |
+| Marie    | befreundetMit | Eva      |
+| Heinrich | istKindVon    | Bob      |
+| Heinrich | istKindVon    | Carsten  |
+| Judith   | befreundetMit | Eva      |
+| Judith   | befreundetMit | Pia      |
+| Judith   | befreundetMit | Bob      |
+| Pia      | befreundetMit | Judith   |
+
+#### Aufbau einer (einfachen) Anfrage
+
+```
+# Zeilen, die mit einem '#' sind Kommentare und werden 
+# ignoriert; sie dienen nur dem Verständnis
+
+# benötigte Präfixe werden zu Beginn der Query angeführt 
+# und können dann im Weiteren verwendet werden
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?attr
+WHERE {
+  dbr:My_Subject dbo:my_predicate ?attr .
+}
+```
+
+Um für die folgenden Beispiele zu fragen, welche Freunde Lisa hat, wäre eine einfache Query entsprechend:
+
+```
+SELECT DISTINCT ?freunde
+WHERE {
+  Lisa befreundetMit ?freunde . 
+}
+```
+
+#### Aufgaben
+
+Formuliert jeweils Anfragen zur Beantwortung der folgenden Fragen:
+
+1. Wer sind die Eltern von Tim?
+2. Wer sind die Freunde der Eltern von Heiner?
+3. Wer sind die Eltern der Eltern von Heiner?
+4. Wer sind die Freunde der Eltern der Eltern von Heiner?
+5. Wer sind die Kinder von Judith?
+6. Wer sind die Kinder der Kinder von Judith?
+
+### Anfragen an Wikidata
+
+Ausgehend von der Wikidata-Seite von [Hannah Arendt](https://www.wikidata.org/wiki/Q60025) betrachten wir die folgenden Fragen und ihre Beantwortung mit SPARQL.
+
+**Frage:** Welche anderen Philosoph:innen gehören zur gleichen philosophischen Schule (*movement* in Wikidata) wie Hannah Arendt und an welchen Universitäten wurden sie ausgebildet?
+
+**Antwort:** https://w.wiki/9bkw
+
+---
+
+**Frage:** Welche anderen Schüler der gleichen Lehrer (*student of* in Wikidata) sind auffindbar, wann wurden sie geboren und welcher philosophischen Schule gehören sie an? Falls vorhanden, sollte ein Bild des:der Philosoph:in angezeigt werden.
+
+**Antwort:** *zum selber knobeln...*
+
+### Anfragen an die DBpedia
+
+Versucht Einträge in der DBpedia zu finden, auf die die folgenden Merkmale (in diesem Fall: Wikipedia-Kategorien) zutreffen:
+
+* Es handelt sich um eine Frau.
+* Es handelt sich um eine Philosophin des 20. Jahrhunderts.
+* Es handelt sich um ein NS-Opfer.
+
+### Anfragen mit ChatGPT
+
+ChatGPT kann eine große Unterstützung bei der Formulierung von SPARQL-Queries sein. 
+
+Im folgenden Beispiel wurde die obige Tabelle (im Ganzen) als Ausgangspunkt für die Beantwortung der Fragen als Hintergrundinformation verwendet. Sobald es an komplexere SPARQL-Queries geht, muss man sehr darauf achten, dass die *namespaces* korrekt generiert und verwendet werden. 
+
+![ChatGPT kann auch SPARQL](img/chatgpt-sparql.png)
+
+### Aufgabe bis zum 04.06.
+
+Überlegt euch eine (oder zwei) im Seminarkontext (d.h. Exilphilosophinnen betreffende) SPARQL-Queries. Visualisiert die Ergebnisse oder verwendet die Wikidata-Möglichkeiten zur Visualisierung der Anfrageantworten. Bereitet eine kurze (3 bis 5 Minuten) Präsentation des Ergebnisses vor, in der ihr vorstellt:
+
+* was ihr gesucht habt
+* warum das interessant ist
+* was das Ergebnis ist
+* wie sich damit vielleicht weiter arbeiten lässt
+* welche Schwierigkeiten ihr hattet
+
+### Aufgabe zur nächsten Woche
+
+Bereitet den folgenden Artikel vor:
+
+* Drucker, Johanna: Mapping and GIS (2021). In: The Digital Humanities Coursebook. An Introduction to Digital Methods for Research and Scholarship (im OLAT-Materialordner)
+
+## Sitzung am 28.05.
+
