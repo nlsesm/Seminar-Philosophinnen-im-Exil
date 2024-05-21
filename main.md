@@ -616,7 +616,7 @@ Gruppe 4: RDF und Datenformate
 
 Lest den folgenden Artikel:
 
-* Matthew Lincoln, "Using SPARQL to access Linked Open Data," Programming Historian 4 (2015), <https://doi.org/10.46430/phen0047>.
+* Matthew Lincoln, "Using SPARQL to access Linked Open Data," Programming Historian 4 (2015), [https://doi.org/10.46430/phen0047](https://doi.org/10.46430/phen0047).
 
 und/oder schaut das folgende Video:
 
