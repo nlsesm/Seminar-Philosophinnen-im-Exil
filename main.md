@@ -126,6 +126,10 @@ Eine gute (oder bessere) Arbeit
 * Nennt und verarbeitet Quellen, die über die Seminarliteratur hinausgehen
 * Integriert sich nahtlos in das existierende LiaScript-Material für die Sitzung
 
+Das LiaScript-Material findet ihr in diesem GitHub-Repository: https://github.com/ggb/Seminar-Philosophinnen-im-Exil
+
+Um das Material zu erweitern, könnt ihr das Repo forken und entsprechend [dieses Workflows](https://github.com/ggb/Seminar-Philosophinnen-im-Exil) eine Pull Request stellen.
+
 #### Hinweise zur Peer Review (für Informatiker_innen)
 
 **Aufgabenstellung:** Euch wird am Tag der Posterpräsentation eine andere Gruppe zugewiesen. Schreibt eine kurze "Kritik" des vorgestellten Posters. Diese Kritik sollte in der Tendenz positiv, wertschätzend und konstruktiv sein, d.h. Möglichkeiten der Verbesserung aufzeigen. Versucht dafür nachvollziehbare Kriterien der Bewertung zu finden. Berücksichtigt sowohl den Vortrag, wie auch das erstellte "Poster". Die Peer Review sollte die Möglichkeit bieten die kritisierten Punkte in der Ausarbeitung zu berücksichtigen.
@@ -682,7 +686,7 @@ Für das nachfolgende Beispiel wird auf *namespaces* bzw. Präfixe verzichtet
 
 #### Aufbau einer (einfachen) Anfrage
 
-```
+```sparql
 # Zeilen, die mit einem '#' sind Kommentare und werden 
 # ignoriert; sie dienen nur dem Verständnis
 
@@ -701,7 +705,7 @@ WHERE {
 
 Um für die folgenden Beispiele zu fragen, welche Freunde Lisa hat, wäre eine einfache Query entsprechend:
 
-```
+```sparql
 SELECT DISTINCT ?freunde
 WHERE {
   Lisa befreundetMit ?freunde . 
@@ -731,7 +735,7 @@ Ausgehend von der Wikidata-Seite von [Hannah Arendt](https://www.wikidata.org/wi
 
 **Frage:** Welche anderen Schüler der gleichen Lehrer (*student of* in Wikidata) sind auffindbar, wann wurden sie geboren und welcher philosophischen Schule gehören sie an? Falls vorhanden, sollte ein Bild des:der Philosoph:in angezeigt werden.
 
-**Antwort:** *zum selber knobeln...*
+**Antwort:** https://w.wiki/9bkm
 
 ### Anfragen an die DBpedia
 
@@ -740,6 +744,25 @@ Versucht Einträge in der DBpedia zu finden, auf die die folgenden Merkmale (in 
 * Es handelt sich um eine Frau.
 * Es handelt sich um eine Philosophin des 20. Jahrhunderts.
 * Es handelt sich um ein NS-Opfer.
+
+**Lösung:** Um nach Kategorien in der deutsch-sprachigen Wikipedia zu suchen, muss am besten (sofern erreichbar...) der [SPARQL-Endpunkt](http://de.dbpedia.org/sparql) der deutschen DBpedia-Instanz verwendet werden. Die Query, die dann die korrekten Ergebnisse zurückliefert, lautet wie folgt: 
+
+```sparql
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?name ?abstract 
+WHERE {
+    ?philo dct:subject <http://de.dbpedia.org/resource/Kategorie:Frau> ;
+           dct:subject <http://de.dbpedia.org/resource/Kategorie:Philosoph_(20._Jahrhundert)> ;
+           dct:subject <http://de.dbpedia.org/resource/Kategorie:NS-Opfer> ;
+           rdfs:label ?name .
+    OPTIONAL { ?philo dbo:abstract ?abstract . }
+}
+```
 
 ### Anfragen mit ChatGPT
 
@@ -766,4 +789,10 @@ Bereitet den folgenden Artikel vor:
 * Drucker, Johanna: Mapping and GIS (2021). In: The Digital Humanities Coursebook. An Introduction to Digital Methods for Research and Scholarship (im OLAT-Materialordner)
 
 ## Sitzung am 28.05.
+
+### Aufgabe zur nächsten Woche
+
+Bereitet den folgenden Aufsatz von Judith N. Shklar vor:
+
+* Shklar, Judith N.: Verpflichtung, Loyalität und Exil (im OLAT-Materialordner)
 
