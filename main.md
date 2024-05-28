@@ -58,10 +58,10 @@ In diesem Seminar wollen wir uns interdisziplinär und mit Methoden der digitale
 | 21.05. | Wikidata, DBpedia, SPARQL |
 | 28.05. | Karten, Kartendaten und (Web)GIS |
 | 04.06. | Präsentation der Zwischenergebnisse, Reflexion |
-| 11.06. | Vortrag Maria Robaskiewicz ([History of Women Philosophers and Scientists](https://historyofwomenphilosophers.org/)) |
-| 18.06. | **III. Praxisteil / Projektphase.** |
-| 25.06. | tba |
-| 02.07. | tba |
+| 11.06. | Vortrag Maria Robaskiewicz ([History of Women Philosophers and Scientists](https://historyofwomenphilosophers.org/)): Flüchtlinge, Neuankömmlinge und das Recht, Rechte zu haben. Hannah Arendt über Migration und Exil. |
+| 18.06. | **III. Praxisteil / Projektphase.** Recherchemethoden und Quellen; *linked data* selbst verfassen |
+| 25.06. | FAIR-Prinzipien und Forschungsdatenmanagment mit Britta Petersen (RZ) |
+| 02.07. | Arbeitssitzung |
 | 09.07. | *Doppelsitzung:* Abschlusspräsentation |
 
 ### Prüfungsleistung
@@ -790,9 +790,151 @@ Bereitet den folgenden Artikel vor:
 
 ## Sitzung am 28.05.
 
+### Referat "Arendt und Shklar"
+
+(Von Elaine Ringeloth und Fleming Jensen)
+
+Story Map Hannah Arendt: https://arcg.is/9KOLj0
+
+Story Map Judith Shklar: https://arcg.is/155aq51
+
+#### GIS (Geographic Information System)
+
+* GIS verknüpft Ortsinformationen mit Daten.
+* Erlaubt Schichten-basierte Datenvisualisierung auf Karten.
+* Nutzt Datenquellen wie Satellitenbilder, GPS, Koordinaten und Verkehrsdaten.
+
+#### Hannah Arendt
+
+1. Geburt in Hannover-Linden am 14. Oktober 1906
+2. Ab 1910: Aufgewachsen und Schulbesuch Königsberg (heute Kaliningrad, Russland)
+
+    * Politische Sensibilität durch Aufwachsen in der Weimarer Republik.
+
+3. 1914 zwischenzeitlicher Schulbesuch in Berlin-Charlottenburg
+4. Ab 1924 Studium u.a. der Philosophie in Marburg
+
+    * Einfluss von Heidegger auf ihre Überlegungen zu Existenz, Freiheit und Authentizität.
+
+5. 1926 bis 1928 Studium und Promotion in Heidelberg
+
+    * Die Gedanken Karl Jaspers zu Kommunikation und Zwischenmenschlichkeit haben Einfluss auf ihr späteres Werk „Vita activa“.
+
+6. Wissenschaftliche Arbeit und Wanderjahre zwischen 1929 und 1933 u.a. in Berlin, Potsdam, Frankfurt und Heidelberg
+
+    * Aufstieg der Nationalsozialisten beeinflusst Arendts politisches Bewusstsein und ihre Auseinandersetzung mit dem Totalitarismus.
+
+7. Fluchtbeginn zunächst nach Karlsbad, Tschechoslowakei (heute Karlovy Vary, Tschechische Republik), nach Gestapo-Untersuchung 1933
+8. Aufenthalt in Prag, Tschechoslowakei (heute Tschechische Republik) und Genf, Schweiz
+9. Ab 1933 Exilleben in Paris, Frankreich 
+
+    * Kontakt mit verschiedenen Exilanten führt zu neuem Verständnis von Exil, Heimatlosigkeit, Notwendigkeit von politischer Zugehörigkeit und Identität.
+
+10. 1940 bis 1941 Inhaftierung im Internierungslager Gurs, Frankreich
+
+    * Seit der Gestapo-Verhaftung kam es bei Arendt zu einem Verständnis der Bedingungen des menschlichen Daseins.
+
+11. Ab 1941 leben in New York City, New York, USA.
+
+    * Zuflucht und Aufnahme am Bard College.
+    * 1951 veröffentlicht sie „The Origins of Totaliarianism“, in dem sie Ursprünge und Charakteristika totalitärer Regieme untersucht.
+    * 1958 veröffentlicht sie „Vita activa“, in dem sie verschiedene menschliche Aktivitäten analysiert und aufweist, dass diese bedeutend für menschliche Freiheit und politisches Leben sind.
+
+12. 1961 Beobachtung der Eichmann-Prozesse Jerusalem, Israel
+
+    * Arendt ist als Journalistin bei den Prozessen dabei.
+    * Thema: Organisation Eichmanns für Judentransporte in Vernichtungslager.
+    * Arendt erkennt, dass das Böse auch in unauffälligen Personen verborgen sein kann.
+
+13. 1963 bis 1967 Lehrauftrag in Chicago, Illinois, USA
+14. Ab 1967 Professur in New York City, New York, USA
+
+    * Durch Austausch mit amerikanischen Denkern kommt es zu neuem Denken über Demokratie und Freiheit.
+
+15. 1975 Tod am zweiten Herzinfarkt in New York City, New York, USA
+16. Beisetzung auf dem Bard Campus in Annandale-up-Hudson, New York, USA
+
+#### Judith N. Shklar
+
+1. Geburt in Riga, Lettland, am 24.09.1928
+
+    * Armut und Feindseligkeiten durch willkürliche Machthaber prägen ihre Kindheit.
+    * Eltern legen im Kontrast zum Rest der Gesellschaft großen Wert auf die Ausbildung moralischer, körperlicher und intellektueller Fähigkeiten.
+    * Antisemitische Ereignisse beeinflussen Shklars Leben stark.
+    * Tod der Schwester Miriam kurz vor Beginn der Flucht durch Unfall mit defektem Gasboiler wird von Shklar als schlimmstes Erlebnis ihres Lebens beschrieben.
+
+2. 1939 Flucht nach Stockholm, Schweden
+
+    * Liberale Atmosphäre und die erste Erfahrung mit der Abwesenheit von Antisemitismus.
+
+3. 1940 Reise durch die UdSSR nach Yokohama, Japan
+4. Internierungshaft in Seattle, Washington, USA
+
+    * Inhaftierung als illegale Einwanderer.
+    * Freilassung durch Presseberichte über ihre adrett gekleidete und wohlerzogene Familie.
+
+5. Juli 1940 Erwerb eines kanadischen Aufenthaltsvisum in New York City, New York, USA
+6. 1941 Ankunft in Montreal, Quebec, Kanada
+
+    * Zum Ende der Flucht ändert sie ihren Namen von Judita zu Judith und entfremdet sich von den Eltern, die sie verachtet, da sie sie für ihre Religion verantwortlich macht.
+    * Unterschiedliches Interesse an Krieg und Bildung, was zu Judiths Isolation führt.
+    * Regelmäßiges Lesen seit dem zwölften Lebensjahr, Leidenschaft für Geschichte.
+
+7. Ab 1945 Studium der politischen Theorie an der McGill University in Montreal, Kanada
+8. 1951 bis 1955 Doktorandin am Radcliffe College in Harvard, Massachusetts
+
+    * Intensive, kompetitive Atmosphäre unter Shklar und Kommilitonen im Gegensatz zu elitärer Oberschicht.
+    * Beschäftigung mit Faschismuserklärung, optimistische Sicht auf philosophische Tradition mit einem Fokus auf positivistische, empirische Politikwissenschaft.
+    * In ihrem ersten Buch von 1951 „After Utopia“ beschreibt sie den Verlust an metaphysischer Gewissheit und unfraglichem Gemeinschaftsgefühl.
+    * Optimismus als Grundlage für politische Theorie und Gerechtigkeit, weshalb sie den Tod der politischen Theorie verkündet.
+
+9. 1957 wird Shklar Assistenzprofessorin in Harvard, Massachusetts
+
+    * 1964: Veröffentlichung von „Legalism“: Beziehung von politischer Theorie, historischem Bewusstsein, normativen Schlüssen. Dabei beschreibt Legalismus moralische Beziehungen als von Regeln geleitete Pflichten und Rechte.
+    * Shklar versteht sich als Liberale, nicht als Feministin.
+
+10. Ab 1983 Veranstaltungen an Auslandsuniversitäten, u.a. in Oxford, England
+
+    * 1984 veröffentlicht sie „Ganz normale Laster“, in dem sie den Grausamkeit als schlimmstes Vergehen unter Menschen analysiert.
+    * Wichtigkeit der Idee der Gerechtigkeit bekommt höheren Stellenwert, was sie früher wegen mangelnder politischer Hoffnung als nicht theoretisierbar erklärt.
+
+11. Ende der 1980er zurück in Harvard, Massachusetts, USA
+
+    * Widerspricht Hannah Arendt in Debatte um Staatsbürgerschaft und stellt klar, dass fehlende Staatsbürgerschaft schlimmes politisches Schicksal für Menschen ist.
+    * Kritisiert Abhängigkeit politischer Verpflichtung von nationaler und ethnischer Zugehörigkeit, da es zu Ungerechtigkeit führt.
+
+12. Am 17.09.1992 stirbt sie an einem Herzinfarkt in Cambridge, Massachusetts
+
+### Was kann man alles mit Karten machen?
+
+Drucker beschreibt in ihrem Text verschiedene Möglichkeiten, wie sich Karten in Forschungsvorhaben verwenden lassen:
+
+* *Show* something on a map.
+* *Analyze* an aspect of spatial experience.
+* *Narrate* an event using a map or maps to present the argument.
+* *Interpret* a map as a historical and critical form.
+* *Create* a map from place-based references.
+* *Employ* coordinate data or use the map as a picture.
+
+Besprecht in Zweiergruppen, wie sich diese verschiedenen Möglichkeiten auf unser Thema - Flucht von Philosophinnen aus Nazi-Deutschland - beziehen lassen. 
+
+### Biographie und Theorie
+
+Wie lassen sich biographische Spurensuche und Theoriearbeit sinnvoll verknüpfen? 
+
+> Asking even the simplest question about space raises cultural issues and ethical ones immediately. How big is a particular city block and how is its location specified? Blocks differ dramatically in their metric dimensions, but also, in the way they are experienced. If the only system applied is that of latitude and longitude, then how are the cultural factors in an urban environment to be codified? A block might be extremely long for a woman walking alone at night and very short for a young man on a skateboard in the morning. On a cold day, a hot day, or during a protest, the space changes. (Drucker, 2021, S. 142)
+
+> GIS systems were not developed for the humanities, but to map natural and social phenomena. GIS systems embody certain positivist assumptions that privilege physical reality over social and cultural experience (Pickles n.d.). Humanists have adopted these tools and platforms for research about places and spatial experience. (Drucker, 2021, S. 133)
+
 ### Aufgabe zur nächsten Woche
 
 Bereitet den folgenden Aufsatz von Judith N. Shklar vor:
 
 * Shklar, Judith N.: Verpflichtung, Loyalität und Exil (im OLAT-Materialordner)
+
+## Sitzung am 04.06. 
+
+### Präsentationen
+
+### Reflexion
 
