@@ -932,6 +932,16 @@ Bereitet den folgenden Aufsatz von Judith N. Shklar vor:
 
 * Shklar, Judith N.: Verpflichtung, Loyalität und Exil (im OLAT-Materialordner)
 
+**In den Kleingruppen:**
+
+Überlegt euch eine (oder zwei) im Seminarkontext (d.h. Exilphilosophinnen betreffende) SPARQL-Queries. Visualisiert die Ergebnisse oder verwendet die Wikidata-Möglichkeiten zur Visualisierung der Anfrageantworten. Bereitet eine kurze (3 bis 5 Minuten) Präsentation des Ergebnisses vor, in der ihr vorstellt:
+
+* was ihr gesucht habt
+* warum das interessant ist
+* was das Ergebnis ist
+* wie sich damit vielleicht weiter arbeiten lässt
+* welche Schwierigkeiten ihr hattet
+
 ## Sitzung am 04.06. 
 
 ### Präsentationen
