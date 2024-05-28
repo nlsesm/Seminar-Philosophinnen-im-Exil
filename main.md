@@ -563,6 +563,64 @@ Versucht die Darstellungsform der Daten über Arendt in Verbindung mit dem Artik
 
 ## Sitzung am 14.05.
 
+### Sitzungsprotokoll
+
+(von **Leon Klausing**)
+
+> In dieser Sitzung wurde das neue Thema: **LOD (Linked Open Data)** eingeführt. <br> 
+> Es wurde hauptsächlich in 4 Kleingruppen selbständig zusammen gearbeitet. <br> Anhand des Artikels  
+> (https://programminghistorian.org/en/lessons/intro-to-linked-data)  und andere Web Ressourcen wurden in Gruppen die wichtigsten Konzepte 
+> und Eigenschaften der LOD recherchiert.
+> Die Ergebnisse wurden anschließend von jeder Gruppe an allen präsentiert. <br>
+> Hier werden die wichtigsten Ergebnisse und Definitionen zu den Fragen der Sitzung aufgelistet. 
+
+
+**Was ist 'Linked Open Data'?**
+
+Während das WWW ein Netz aus Webseiten ist, soll mit <a href='https://de.wikipedia.org/wiki/Linked_Open_Data'>LOD</a> ein Netz aus Daten entstehen, die aus verschiedenen Quellen zusammen automatisch weiterverwendet werden können.
+
+Allgemeines: 
+
+* LOD bedeutet, dass die Daten frei zugänglich und unter Lizenzen verfügbar sind, die ihre Nutzung und Weiterverarbeitung erlauben. 
+
+* Ein zentrales Konzept von LOD ist die Eindeutigkeit: Jeder Eintrag, sei es eine Person, ein Ort oder ein Konzept, wird durch eine eindeutige Kennung, einen Uniform Resource Identifier (URI), identifiziert.
+
+* Ein Tripel, bestehend aus Subjekt, Prädikat und Objekt, bildet die grundlegende Struktur von Linked Data und beschreibt Aussagen über Ressourcen.
+
+Uniform Resource Identifier (URI):
+
+* Die <a href='https://de.wikipedia.org/wiki/Uniform_Resource_Identifier'>URI</a> ist eine zuverlässige Methode zur eindeutigen Identifizierung einer Entität (einer Webseite, eines Objekts, einer Beziehung usw.) auf eine Weise, die von jedem genutzt werden kann.
+
+* Eine <a href='https://de.wikipedia.org/wiki/Uniform_Resource_Locator'>URL</a> (Uniform Resource Locator) ist eine spezifische Art von URI, die nicht nur identifiziert, sondern auch den Ort und die Methode zum Abrufen der Ressource angibt.
+
+* Das <a href='https://aws.amazon.com/route53/what-is-dns/#:~:text=DNS%2C%20or%20the%20Domain%20Name,example%2C%20192.0.2.44'>DNS</a> (Domain Name System) sorgt dafür, dass Domänennamen (z.B. www.example.com) weltweit eindeutig sind. Dies unterstützt die Eindeutigkeit von URIs, da eine URI oft einen Domänennamen enthält, der eindeutig von einer Organisation kontrolliert wird.
+
+Ontologien:
+
+* Eine <a href='https://www.tecislava.com/blog/ontology#:~:text=Ontologien%20in%20der%20Informatik%20und,explizit%20formuliert%20und%20Wissen%20generiert.'>Ontologie</a> ist ein formales Modell, das Konzepte und deren Beziehungen in einem bestimmten Bereich definiert. Sie bietet eine gemeinsame Struktur und Terminologie für die Beschreibung von Daten.
+
+* <a href='https://de.wikipedia.org/wiki/Taxonomie'>Taxonomien</a> sind hierarchische Klassifikationen von Begriffen. Ontologien unterscheiden sich davon, da sie umfassendere Modelle sind, die sowohl Hierarchien als auch komplexere Beziehungen zwischen Begriffen darstellen.
+
+RDF und Datenformate:
+
+* <a href='https://de.wikipedia.org/wiki/Serialisierung'>Serialisierung</a> ist der Prozess, bei dem Datenstrukturen in ein speicher- oder übertragbares Format umgewandelt werden.
+
+* <a href='https://de.wikipedia.org/wiki/Turtle_(Syntax)'>Turtle</a> (Terse RDF Triple Language) ist ein kompaktes und lesbares Format zur Serialisierung von RDF-Daten. Es verwendet Präfixe, um lange URI-Referenzen abzukürzen und die Lesbarkeit zu verbessern.
+
+**Warum 'Linked Data'?**
+
+* "Wenn alle Datensätze offen veröffentlicht würden und das gleiche Format zur Strukturierung der Informationen verwendeten, wäre es möglich, alle Datensätze gleichzeitig zu durchsuchen. Die Analyse riesiger Datenmengen ist potenziell viel leistungsfähiger, als wenn jeder seine eigenen individuellen Datensätze im Web nutzt, die als <a href='https://en.wikipedia.org/wiki/Information_silo'>Informationssilos</a> bekannt sind."
+
+* Dies wurde vom Professor mit ein paar Beispielsgraphen veranschaulicht (**TODO: link von "flussigen" Graph einfügen**).
+
+**SPARQL**
+
+* <a href='https://de.wikipedia.org/wiki/SPARQL'>SPARQL</a> ist eine Abfragesprache für RDF-Daten. Es wird verwendet, um Daten aus RDF-Datenbanken abzufragen, zu manipulieren und zu extrahieren.
+
+* Eine SPARQL-Anfrage besteht aus verschiedenen Teilen, wie SELECT, WHERE, ORDER BY und FILTER (Hinweis: SPARQL unterscheidet nicht zwischen Groß- und Kleinbuchstaben, aber es ist gute Praxis, Schlüsselwörter immer groß zu schreiben). <br> Wörter, die mit einem "?" anfangen, sind Variablen, die durch die Abfrage gebundene Werte darstellen.
+
+* SPARQL-Anfragen könnten verwendet werden, um Informationen über Philosoph:innen zu suchen, wie z.B. biografische Daten, Werke, Netzwerke und Zusammenhänge zwischen verschiedenen Philosoph:innen und deren Einfluss.
+
 ### Bildet Kleingruppen!
 
 > Bildet Kleingruppen mit 2 bis 4 Teilnehmer:innen. Jede Kleingruppe *muss* mindestens eine:n Philosophie- und Informatikstudierenden beinhalten.
