@@ -875,7 +875,7 @@ WHERE {
    SERVICE wikibase:label {bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en"}
   }
 ``````
-![Geburtsorte aller deutschen PhilosophInnen](image.png)
+![Geburtsorte aller deutschen PhilosophInnen](img/SPARQL0.png)
 Das Ergebnis der Anfrage mit Tabelleneinträgen:
 https://w.wiki/ACDb
 
@@ -900,7 +900,7 @@ Durch die nachfolgende Beschränkung auf das biologische Geschlecht 'weiblich' n
 
 Diese Veränderung lässt sich auch anhand der Koordinaten-Karte anschaulich verdeutlichen: 
 
-![Geburstorte der weiblichen Philosphinnen](image-1.png)
+![Geburstorte der weiblichen Philosphinnen](img/SPARQL1.png)
 
 3. Suche mir alle jüdischen Philosphinnen welche in Deutschland geboren wurden:
 ```
@@ -917,7 +917,7 @@ WHERE {
    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
 }
 ```
-![Hannah Arendt](image-2.png)
+![Hannah Arendt](img/SPARQL2.png)
 https://w.wiki/ACER
 
 Es ergibt sich als Ergebnis nur Hannah Arendt.
@@ -947,8 +947,8 @@ WHERE {
 ```
 
 Die überstehende Anfrage gibt uns den Geburstort sowie Sterbeort von Hannah Arendt heraus
-![GeburtsortsSowieSterbeortHannah](image-3.png)
-![InfoHannah](image-4.png)
+![GeburtsortsSowieSterbeortHannah](img/SPARQL3.png)
+![InfoHannah](img/SPARQL4.png)
 https://w.wiki/ACEg
 
 
@@ -976,7 +976,7 @@ WHERE {
 }
 ```
 
-![Sterbekarte](image-5.png)
+![Sterbekarte](img/SPARQL5.png)
 https://w.wiki/ACEu
 
 
@@ -1003,7 +1003,7 @@ WHERE {
 Die Menge dieser registrierten Menschen auf wikidata beträgt ungefähr um die 5000. 
 Durch die Beschränkung auf das Judentum reduziert sich die Anzahl der Ergebnisse auf 131.
 
-![SterbeorteDerMenschenInKZ](image-6.png)
+![SterbeorteDerMenschenInKZ](img/SPARQL6.png)
 https://w.wiki/ACFN
 
 
