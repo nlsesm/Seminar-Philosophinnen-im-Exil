@@ -569,9 +569,10 @@ Versucht die Darstellungsform der Daten über Arendt in Verbindung mit dem Artik
 
 > In dieser Sitzung wurde das neue Thema: **LOD (Linked Open Data)** eingeführt. <br> 
 > Es wurde hauptsächlich in 4 Kleingruppen selbständig zusammen gearbeitet. <br> Anhand des Artikels  
-> (https://programminghistorian.org/en/lessons/intro-to-linked-data)  und andere Web Ressourcen wurden in Gruppen die wichtigsten Konzepte 
+> (https://programminghistorian.org/en/lessons/intro-to-linked-data) und weiteren Web Ressourcen wurden die wichtigsten Konzepte 
 > und Eigenschaften der LOD recherchiert.
-> Die Ergebnisse wurden anschließend von jeder Gruppe an allen präsentiert. <br>
+> Die Ergebnisse wurden anschließend von jeder Gruppe im Plenum präsentiert. <br>
+>
 > Hier werden die wichtigsten Ergebnisse und Definitionen zu den Fragen der Sitzung aufgelistet. 
 
 
@@ -611,7 +612,7 @@ RDF und Datenformate:
 
 * "Wenn alle Datensätze offen veröffentlicht würden und das gleiche Format zur Strukturierung der Informationen verwendeten, wäre es möglich, alle Datensätze gleichzeitig zu durchsuchen. Die Analyse riesiger Datenmengen ist potenziell viel leistungsfähiger, als wenn jeder seine eigenen individuellen Datensätze im Web nutzt, die als <a href='https://en.wikipedia.org/wiki/Information_silo'>Informationssilos</a> bekannt sind."
 
-* Dies wurde vom Professor mit ein paar Beispielsgraphen veranschaulicht (**TODO: link von "flussigen" Graph einfügen**).
+* Dies wurde mit einem Beispielsgraphen veranschaulicht, einer aus [DBpedia generierten Übersicht von Exilphiloph:innen](https://exiled-philosophers.streamlit.app).
 
 **SPARQL**
 
