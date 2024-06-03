@@ -58,10 +58,10 @@ In diesem Seminar wollen wir uns interdisziplinär und mit Methoden der digitale
 | 21.05. | Wikidata, DBpedia, SPARQL |
 | 28.05. | Karten, Kartendaten und (Web)GIS |
 | 04.06. | Präsentation der Zwischenergebnisse, Reflexion |
-| 11.06. | Vortrag Maria Robaskiewicz ([History of Women Philosophers and Scientists](https://historyofwomenphilosophers.org/)) |
-| 18.06. | **III. Praxisteil / Projektphase.** |
-| 25.06. | tba |
-| 02.07. | tba |
+| 11.06. | Vortrag Maria Robaskiewicz ([History of Women Philosophers and Scientists](https://historyofwomenphilosophers.org/)): Flüchtlinge, Neuankömmlinge und das Recht, Rechte zu haben. Hannah Arendt über Migration und Exil. |
+| 18.06. | **III. Praxisteil / Projektphase.** Recherchemethoden und Quellen; *linked data* selbst verfassen |
+| 25.06. | FAIR-Prinzipien und Forschungsdatenmanagment mit Britta Petersen (RZ) |
+| 02.07. | Arbeitssitzung |
 | 09.07. | *Doppelsitzung:* Abschlusspräsentation |
 
 ### Prüfungsleistung
@@ -98,7 +98,7 @@ Das Poster wird in der letzten (Doppel-)Sitzung **am 09. Juli 2024** vorgestellt
 
 #### Hinweise zu Podcasts (für Philosoph_innen)
 
-Umfangreiche Hinweise zur Erstellung von Podcasts als Prüfungsleistung findet ihr im [folgenden Leitfaden](https://liascript.github.io/course/?https://raw.githubusercontent.com/mauriemann/Podcast/main/Podcast_main.md#24).
+Umfangreiche Hinweise zur Erstellung von Podcasts als Prüfungsleistung findet ihr im [folgenden Leitfaden](https://liascript.github.io/course/?https://raw.githubusercontent.com/mauriemann/Podcast/main/Podcast_main.md).
 
 #### Hinweise zum "Sitzungsprotokoll" (für Informatiker_innen)
 
@@ -125,6 +125,10 @@ Eine gute (oder bessere) Arbeit
 * Bezieht die fachliche Expertise Mitstudierender aus der Philosophie mit ein 
 * Nennt und verarbeitet Quellen, die über die Seminarliteratur hinausgehen
 * Integriert sich nahtlos in das existierende LiaScript-Material für die Sitzung
+
+Das LiaScript-Material findet ihr in diesem GitHub-Repository: https://github.com/ggb/Seminar-Philosophinnen-im-Exil
+
+Um das Material zu erweitern, könnt ihr das Repo forken und entsprechend [dieses Workflows](https://github.com/ggb/Seminar-Philosophinnen-im-Exil) eine Pull Request stellen.
 
 #### Hinweise zur Peer Review (für Informatiker_innen)
 
@@ -515,6 +519,19 @@ Weitere Informationen folgen...
 >
 >Welchen Einfluss hat die Organisation von Wissen auf die Generierung von neuen Einsichten und Erkenntnissen?
 
+#### Tools, die in der Diskussion erwähnt wurden
+
+Literaturverwaltungssoftware:
+
+* [Citavi](https://www.citavi.com/de) (kommerzielles Programm, die Uni Kiel stellt Studierenden eine [kostenfreie Lizenz zur Verfügung](https://www.rz.uni-kiel.de/de/angebote/software/citavi/citavi))
+* [Zotero](https://www.zotero.org/) (gute freie Alternative)
+* [Jabref](https://www.jabref.org/) (besonders gut für die Arbeit in den Naturwissenschaften und der Informatik geeignet)
+
+Software für das Anlegen von digitalen Zettelkästen bzw. die Organisation von Notizen:
+
+* [Obisidian](https://obsidian.md/)
+* [Zettlr](https://www.zettlr.com/)
+
 ### Referat "Gretel Adorno"
 
 Weitere Informationen folgen...
@@ -545,3 +562,448 @@ Betrachtet anschließend die Informationen Hannah Arendts in der Wikipedia, der 
 Versucht die Darstellungsform der Daten über Arendt in Verbindung mit dem Artikel zu bringen. Welche Möglichkeiten könnten sich eröffnen?
 
 ## Sitzung am 14.05.
+
+### Sitzungsprotokoll
+
+(von **Leon Klausing**)
+
+> In dieser Sitzung wurde das neue Thema: **LOD (Linked Open Data)** eingeführt. <br> 
+> Es wurde hauptsächlich in 4 Kleingruppen selbständig zusammen gearbeitet. <br> Anhand des Artikels  
+> (https://programminghistorian.org/en/lessons/intro-to-linked-data) und weiteren Web Ressourcen wurden die wichtigsten Konzepte 
+> und Eigenschaften der LOD recherchiert.
+> Die Ergebnisse wurden anschließend von jeder Gruppe im Plenum präsentiert. <br>
+>
+> Hier werden die wichtigsten Ergebnisse und Definitionen zu den Fragen der Sitzung aufgelistet. 
+
+
+**Was ist 'Linked Open Data'?**
+
+Während das WWW ein Netz aus Webseiten ist, soll mit <a href='https://de.wikipedia.org/wiki/Linked_Open_Data'>LOD</a> ein Netz aus Daten entstehen, die aus verschiedenen Quellen zusammen automatisch weiterverwendet werden können.
+
+Allgemeines: 
+
+* LOD bedeutet, dass die Daten frei zugänglich und unter Lizenzen verfügbar sind, die ihre Nutzung und Weiterverarbeitung erlauben. 
+
+* Ein zentrales Konzept von LOD ist die Eindeutigkeit: Jeder Eintrag, sei es eine Person, ein Ort oder ein Konzept, wird durch eine eindeutige Kennung, einen Uniform Resource Identifier (URI), identifiziert.
+
+* Ein Tripel, bestehend aus Subjekt, Prädikat und Objekt, bildet die grundlegende Struktur von Linked Data und beschreibt Aussagen über Ressourcen.
+
+Uniform Resource Identifier (URI):
+
+* Die <a href='https://de.wikipedia.org/wiki/Uniform_Resource_Identifier'>URI</a> ist eine zuverlässige Methode zur eindeutigen Identifizierung einer Entität (einer Webseite, eines Objekts, einer Beziehung usw.) auf eine Weise, die von jedem genutzt werden kann.
+
+* Eine <a href='https://de.wikipedia.org/wiki/Uniform_Resource_Locator'>URL</a> (Uniform Resource Locator) ist eine spezifische Art von URI, die nicht nur identifiziert, sondern auch den Ort und die Methode zum Abrufen der Ressource angibt.
+
+* Das <a href='https://aws.amazon.com/route53/what-is-dns/#:~:text=DNS%2C%20or%20the%20Domain%20Name,example%2C%20192.0.2.44'>DNS</a> (Domain Name System) sorgt dafür, dass Domänennamen (z.B. www.example.com) weltweit eindeutig sind. Dies unterstützt die Eindeutigkeit von URIs, da eine URI oft einen Domänennamen enthält, der eindeutig von einer Organisation kontrolliert wird.
+
+Ontologien:
+
+* Eine <a href='https://www.tecislava.com/blog/ontology#:~:text=Ontologien%20in%20der%20Informatik%20und,explizit%20formuliert%20und%20Wissen%20generiert.'>Ontologie</a> ist ein formales Modell, das Konzepte und deren Beziehungen in einem bestimmten Bereich definiert. Sie bietet eine gemeinsame Struktur und Terminologie für die Beschreibung von Daten.
+
+* <a href='https://de.wikipedia.org/wiki/Taxonomie'>Taxonomien</a> sind hierarchische Klassifikationen von Begriffen. Ontologien unterscheiden sich davon, da sie umfassendere Modelle sind, die sowohl Hierarchien als auch komplexere Beziehungen zwischen Begriffen darstellen.
+
+RDF und Datenformate:
+
+* <a href='https://de.wikipedia.org/wiki/Serialisierung'>Serialisierung</a> ist der Prozess, bei dem Datenstrukturen in ein speicher- oder übertragbares Format umgewandelt werden.
+
+* <a href='https://de.wikipedia.org/wiki/Turtle_(Syntax)'>Turtle</a> (Terse RDF Triple Language) ist ein kompaktes und lesbares Format zur Serialisierung von RDF-Daten. Es verwendet Präfixe, um lange URI-Referenzen abzukürzen und die Lesbarkeit zu verbessern.
+
+**Warum 'Linked Data'?**
+
+* "Wenn alle Datensätze offen veröffentlicht würden und das gleiche Format zur Strukturierung der Informationen verwendeten, wäre es möglich, alle Datensätze gleichzeitig zu durchsuchen. Die Analyse riesiger Datenmengen ist potenziell viel leistungsfähiger, als wenn jeder seine eigenen individuellen Datensätze im Web nutzt, die als <a href='https://en.wikipedia.org/wiki/Information_silo'>Informationssilos</a> bekannt sind."
+
+* Dies wurde mit einem Beispielsgraphen veranschaulicht, einer aus [DBpedia generierten Übersicht von Exilphiloph:innen](https://exiled-philosophers.streamlit.app).
+
+**SPARQL**
+
+* <a href='https://de.wikipedia.org/wiki/SPARQL'>SPARQL</a> ist eine Abfragesprache für RDF-Daten. Es wird verwendet, um Daten aus RDF-Datenbanken abzufragen, zu manipulieren und zu extrahieren.
+
+* Eine SPARQL-Anfrage besteht aus verschiedenen Teilen, wie SELECT, WHERE, ORDER BY und FILTER (Hinweis: SPARQL unterscheidet nicht zwischen Groß- und Kleinbuchstaben, aber es ist gute Praxis, Schlüsselwörter immer groß zu schreiben). <br> Wörter, die mit einem "?" anfangen, sind Variablen, die durch die Abfrage gebundene Werte darstellen.
+
+* SPARQL-Anfragen könnten verwendet werden, um Informationen über Philosoph:innen zu suchen, wie z.B. biografische Daten, Werke, Netzwerke und Zusammenhänge zwischen verschiedenen Philosoph:innen und deren Einfluss.
+
+### Bildet Kleingruppen!
+
+> Bildet Kleingruppen mit 2 bis 4 Teilnehmer:innen. Jede Kleingruppe *muss* mindestens eine:n Philosophie- und Informatikstudierenden beinhalten.
+>
+> Stellt euch einander vor.
+> 
+> Jede Kleingruppe bearbeitet eine der nachfolgenden Fragengruppen und beantwortet die darin enthaltenen Fragen in Bezug auf die Datenbankeinträge über Hannah Arendt (s. letzte Sitzung). Alle Kleingruppen sollten eine kurze Präsentation vorbereiten, um die Antworten auf ihre Fragen dem Plenum zu präsentieren. Die Form ist dabei den Gruppen überlassen.
+>
+> Ihr habt dafür insgesamt 25 Minuten Zeit.
+
+![Bildet Olsenbanden!](img/Bildet_olsenbanden.jpg)
+
+### Was ist 'Linked Data'?
+
+Gruppe 1: Allgemeines
+
+* Was bedeutet "offen" im Zusammenhang mit *linked open data*? Warum ist Offenheit erstrebenswert?
+* Was hat es mit der Eindeutigkeit von Einträgen in *linked data* auf sich? Was soll eindeutig sein?
+* Was ist ein Tripel? Welche Rolle kommt Tripeln zu?
+
+Gruppe 2: Uniform Resource Identifier (URI)
+
+* Was ist eine URI? Wie unterscheiden sich URIs von URLs?
+* Welche Rolle spielt bzgl. der Eindeutigkeit von URIs das *domain name system* (DNS)?
+* Wozu werden URIs in *linked data* verwendet/benötigt?
+* Was bedeutet Dereferenzierung (*dereferenciation*)?
+
+Gruppe 3: Ontologien
+
+* Was ist (im Zusammenhang mit *linked data*) eine Ontologie?
+* Wie werden Ontologien im *linked data*-Kontext eingesetzt?
+* Wie unterscheiden sich Ontologien von Taxonomien?
+* Was ist ein Vokabular, was ist ein Schema?
+
+Gruppe 4: RDF und Datenformate
+
+* Was heißt "Serialisierung" (*serialisation*)?
+* Was ist Turtle? Wie ist Turtle aufgebaut?
+* Was sind *prefixes* und wozu werden sie benötigt?
+* In welchem Verhältnis steht RDF zu RDF/XML und RDF zu Turtle?
+
+(optional) Gruppe 5: SPARQL
+
+* Was kann SPARQL? Wozu wird es benötigt?
+* Wie ist eine SPARQL-Anfrage aufgebaut? Was bedeuten Wörter mit einem "?" am Anfang?
+* Was für SPARQL-Anfragen könnten im Zusammenhang mit Exilphilosophinnen interessant sein?
+
+### Warum 'Linked Data'?
+
+[Exiled Philosophers](https://exiled-philosophers.streamlit.app/)
+
+![Ein Netzwerk von Philosoph:innen, die fliehen mussten: Automatisch generiert mit DBpedia-Daten](img/netzwerk.png)
+
+### Zur nächsten Sitzung
+
+Lest den folgenden Artikel:
+
+* Matthew Lincoln, "Using SPARQL to access Linked Open Data," Programming Historian 4 (2015), [https://doi.org/10.46430/phen0047](https://doi.org/10.46430/phen0047).
+
+und/oder schaut das folgende Video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJph4q0Im98?si=pW6w69zukq7jQEAO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Sitzung am 21.05.
+
+Wiederholung bzw. Vertiefung aus der letzten Sitzung:
+
+* Was kann SPARQL? Wozu wird es benötigt?
+* Wie ist eine SPARQL-Anfrage aufgebaut? Was bedeuten Wörter mit einem "?" am Anfang?
+* Was für SPARQL-Anfragen könnten im Zusammenhang mit Exilphilosophinnen interessant sein?
+
+### Bildet (erneut) Kleingruppen!
+
+> Bildet Kleingruppen mit 2 bis 4 Teilnehmer:innen. Jede Kleingruppe *muss* mindestens eine:n Philosophie- und Informatikstudierenden beinhalten.
+>
+> Stellt euch einander – falls nötig – vor.
+
+![Bildet Olsenbanden!](img/Bildet_olsenbanden.jpg)
+
+
+### Netzwerk: Beispiel
+
+Für das nachfolgende Beispiel wird auf *namespaces* bzw. Präfixe verzichtet
+
+![Ein Geflecht von Beziehungen](img/5944ff.png)
+
+| subject  | predicate    | object   |
+|----------|---------------|----------|
+| Paul     | istKindVon    | Simone   |
+| Paul     | istKindVon    | Eva      |
+| Paul     | istKindVon    | Tim      |
+| Paul     | befreundetMit | Heiner   |
+| Paul     | befreundetMit | Lisa     |
+| Heiner   | istKindVon    | Eva      |
+| Heiner   | istKindVon    | Tim      |
+| Heiner   | befreundetMit | Paul     |
+| Lisa     | istKindVon    | Tim      |
+| Lisa     | istKindVon    | Marie    |
+| Lisa     | istKindVon    | Heinrich |
+| Lisa     | befreundetMit | Simone   |
+| Simone   | istKindVon    | Bob      |
+| Simone   | istKindVon    | Judith   |
+| Simone   | befreundetMit | Lisa     |
+| Eva      | istKindVon    | Bob      |
+| Eva      | istKindVon    | Pia      |
+| Eva      | befreundetMit | Tim      |
+| Eva      | befreundetMit | Judith   |
+| Tim      | istKindVon    | Judith   |
+| Tim      | istKindVon    | Pia      |
+| Tim      | befreundetMit | Marie    |
+| Marie    | istKindVon    | Judith   |
+| Marie    | istKindVon    | Pia      |
+| Marie    | istKindVon    | Carsten  |
+| Marie    | befreundetMit | Eva      |
+| Heinrich | istKindVon    | Bob      |
+| Heinrich | istKindVon    | Carsten  |
+| Judith   | befreundetMit | Eva      |
+| Judith   | befreundetMit | Pia      |
+| Judith   | befreundetMit | Bob      |
+| Pia      | befreundetMit | Judith   |
+
+#### Aufbau einer (einfachen) Anfrage
+
+```sparql
+# Zeilen, die mit einem '#' sind Kommentare und werden 
+# ignoriert; sie dienen nur dem Verständnis
+
+# benötigte Präfixe werden zu Beginn der Query angeführt 
+# und können dann im Weiteren verwendet werden
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?attr
+WHERE {
+  dbr:My_Subject dbo:my_predicate ?attr .
+}
+```
+
+Um für die folgenden Beispiele zu fragen, welche Freunde Lisa hat, wäre eine einfache Query entsprechend:
+
+```sparql
+SELECT DISTINCT ?freunde
+WHERE {
+  Lisa befreundetMit ?freunde . 
+}
+```
+
+#### Aufgaben
+
+Formuliert jeweils Anfragen zur Beantwortung der folgenden Fragen:
+
+1. Wer sind die Eltern von Tim?
+2. Wer sind die Freunde der Eltern von Heiner?
+3. Wer sind die Eltern der Eltern von Heiner?
+4. Wer sind die Freunde der Eltern der Eltern von Heiner?
+5. Wer sind die Kinder von Judith?
+6. Wer sind die Kinder der Kinder von Judith?
+
+### Anfragen an Wikidata
+
+Ausgehend von der Wikidata-Seite von [Hannah Arendt](https://www.wikidata.org/wiki/Q60025) betrachten wir die folgenden Fragen und ihre Beantwortung mit SPARQL.
+
+**Frage:** Welche anderen Philosoph:innen gehören zur gleichen philosophischen Schule (*movement* in Wikidata) wie Hannah Arendt und an welchen Universitäten wurden sie ausgebildet?
+
+**Antwort:** https://w.wiki/9bkw
+
+---
+
+**Frage:** Welche anderen Schüler der gleichen Lehrer (*student of* in Wikidata) sind auffindbar, wann wurden sie geboren und welcher philosophischen Schule gehören sie an? Falls vorhanden, sollte ein Bild des:der Philosoph:in angezeigt werden.
+
+**Antwort:** https://w.wiki/9bkm
+
+### Anfragen an die DBpedia
+
+Versucht Einträge in der DBpedia zu finden, auf die die folgenden Merkmale (in diesem Fall: Wikipedia-Kategorien) zutreffen:
+
+* Es handelt sich um eine Frau.
+* Es handelt sich um eine Philosophin des 20. Jahrhunderts.
+* Es handelt sich um ein NS-Opfer.
+
+**Lösung:** Um nach Kategorien in der deutsch-sprachigen Wikipedia zu suchen, muss am besten (sofern erreichbar...) der [SPARQL-Endpunkt](http://de.dbpedia.org/sparql) der deutschen DBpedia-Instanz verwendet werden. Die Query, die dann die korrekten Ergebnisse zurückliefert, lautet wie folgt: 
+
+```sparql
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?name ?abstract 
+WHERE {
+    ?philo dct:subject <http://de.dbpedia.org/resource/Kategorie:Frau> ;
+           dct:subject <http://de.dbpedia.org/resource/Kategorie:Philosoph_(20._Jahrhundert)> ;
+           dct:subject <http://de.dbpedia.org/resource/Kategorie:NS-Opfer> ;
+           rdfs:label ?name .
+    OPTIONAL { ?philo dbo:abstract ?abstract . }
+}
+```
+
+### Anfragen mit ChatGPT
+
+ChatGPT kann eine große Unterstützung bei der Formulierung von SPARQL-Queries sein. 
+
+Im folgenden Beispiel wurde die obige Tabelle (im Ganzen) als Ausgangspunkt für die Beantwortung der Fragen als Hintergrundinformation verwendet. Sobald es an komplexere SPARQL-Queries geht, muss man sehr darauf achten, dass die *namespaces* korrekt generiert und verwendet werden. 
+
+![ChatGPT kann auch SPARQL](img/chatgpt-sparql.png)
+
+### Aufgabe bis zum 04.06.
+
+Überlegt euch eine (oder zwei) im Seminarkontext (d.h. Exilphilosophinnen betreffende) SPARQL-Queries. Visualisiert die Ergebnisse oder verwendet die Wikidata-Möglichkeiten zur Visualisierung der Anfrageantworten. Bereitet eine kurze (3 bis 5 Minuten) Präsentation des Ergebnisses vor, in der ihr vorstellt:
+
+* was ihr gesucht habt
+* warum das interessant ist
+* was das Ergebnis ist
+* wie sich damit vielleicht weiter arbeiten lässt
+* welche Schwierigkeiten ihr hattet
+
+### Aufgabe zur nächsten Woche
+
+Bereitet den folgenden Artikel vor:
+
+* Drucker, Johanna: Mapping and GIS (2021). In: The Digital Humanities Coursebook. An Introduction to Digital Methods for Research and Scholarship (im OLAT-Materialordner)
+
+## Sitzung am 28.05.
+
+### Referat "Arendt und Shklar"
+
+(Von Elaine Ringeloth und Fleming Jensen)
+
+Story Map Hannah Arendt: https://arcg.is/9KOLj0
+
+Story Map Judith Shklar: https://arcg.is/155aq51
+
+#### GIS (Geographic Information System)
+
+* GIS verknüpft Ortsinformationen mit Daten.
+* Erlaubt Schichten-basierte Datenvisualisierung auf Karten.
+* Nutzt Datenquellen wie Satellitenbilder, GPS, Koordinaten und Verkehrsdaten.
+
+#### Hannah Arendt
+
+1. Geburt in Hannover-Linden am 14. Oktober 1906
+2. Ab 1910: Aufgewachsen und Schulbesuch Königsberg (heute Kaliningrad, Russland)
+
+    * Politische Sensibilität durch Aufwachsen in der Weimarer Republik.
+
+3. 1914 zwischenzeitlicher Schulbesuch in Berlin-Charlottenburg
+4. Ab 1924 Studium u.a. der Philosophie in Marburg
+
+    * Einfluss von Heidegger auf ihre Überlegungen zu Existenz, Freiheit und Authentizität.
+
+5. 1926 bis 1928 Studium und Promotion in Heidelberg
+
+    * Die Gedanken Karl Jaspers zu Kommunikation und Zwischenmenschlichkeit haben Einfluss auf ihr späteres Werk „Vita activa“.
+
+6. Wissenschaftliche Arbeit und Wanderjahre zwischen 1929 und 1933 u.a. in Berlin, Potsdam, Frankfurt und Heidelberg
+
+    * Aufstieg der Nationalsozialisten beeinflusst Arendts politisches Bewusstsein und ihre Auseinandersetzung mit dem Totalitarismus.
+
+7. Fluchtbeginn zunächst nach Karlsbad, Tschechoslowakei (heute Karlovy Vary, Tschechische Republik), nach Gestapo-Untersuchung 1933
+8. Aufenthalt in Prag, Tschechoslowakei (heute Tschechische Republik) und Genf, Schweiz
+9. Ab 1933 Exilleben in Paris, Frankreich 
+
+    * Kontakt mit verschiedenen Exilanten führt zu neuem Verständnis von Exil, Heimatlosigkeit, Notwendigkeit von politischer Zugehörigkeit und Identität.
+
+10. 1940 bis 1941 Inhaftierung im Internierungslager Gurs, Frankreich
+
+    * Seit der Gestapo-Verhaftung kam es bei Arendt zu einem Verständnis der Bedingungen des menschlichen Daseins.
+
+11. Ab 1941 leben in New York City, New York, USA.
+
+    * Zuflucht und Aufnahme am Bard College.
+    * 1951 veröffentlicht sie „The Origins of Totaliarianism“, in dem sie Ursprünge und Charakteristika totalitärer Regieme untersucht.
+    * 1958 veröffentlicht sie „Vita activa“, in dem sie verschiedene menschliche Aktivitäten analysiert und aufweist, dass diese bedeutend für menschliche Freiheit und politisches Leben sind.
+
+12. 1961 Beobachtung der Eichmann-Prozesse Jerusalem, Israel
+
+    * Arendt ist als Journalistin bei den Prozessen dabei.
+    * Thema: Organisation Eichmanns für Judentransporte in Vernichtungslager.
+    * Arendt erkennt, dass das Böse auch in unauffälligen Personen verborgen sein kann.
+
+13. 1963 bis 1967 Lehrauftrag in Chicago, Illinois, USA
+14. Ab 1967 Professur in New York City, New York, USA
+
+    * Durch Austausch mit amerikanischen Denkern kommt es zu neuem Denken über Demokratie und Freiheit.
+
+15. 1975 Tod am zweiten Herzinfarkt in New York City, New York, USA
+16. Beisetzung auf dem Bard Campus in Annandale-up-Hudson, New York, USA
+
+#### Judith N. Shklar
+
+1. Geburt in Riga, Lettland, am 24.09.1928
+
+    * Armut und Feindseligkeiten durch willkürliche Machthaber prägen ihre Kindheit.
+    * Eltern legen im Kontrast zum Rest der Gesellschaft großen Wert auf die Ausbildung moralischer, körperlicher und intellektueller Fähigkeiten.
+    * Antisemitische Ereignisse beeinflussen Shklars Leben stark.
+    * Tod der Schwester Miriam kurz vor Beginn der Flucht durch Unfall mit defektem Gasboiler wird von Shklar als schlimmstes Erlebnis ihres Lebens beschrieben.
+
+2. 1939 Flucht nach Stockholm, Schweden
+
+    * Liberale Atmosphäre und die erste Erfahrung mit der Abwesenheit von Antisemitismus.
+
+3. 1940 Reise durch die UdSSR nach Yokohama, Japan
+4. Internierungshaft in Seattle, Washington, USA
+
+    * Inhaftierung als illegale Einwanderer.
+    * Freilassung durch Presseberichte über ihre adrett gekleidete und wohlerzogene Familie.
+
+5. Juli 1940 Erwerb eines kanadischen Aufenthaltsvisum in New York City, New York, USA
+6. 1941 Ankunft in Montreal, Quebec, Kanada
+
+    * Zum Ende der Flucht ändert sie ihren Namen von Judita zu Judith und entfremdet sich von den Eltern, die sie verachtet, da sie sie für ihre Religion verantwortlich macht.
+    * Unterschiedliches Interesse an Krieg und Bildung, was zu Judiths Isolation führt.
+    * Regelmäßiges Lesen seit dem zwölften Lebensjahr, Leidenschaft für Geschichte.
+
+7. Ab 1945 Studium der politischen Theorie an der McGill University in Montreal, Kanada
+8. 1951 bis 1955 Doktorandin am Radcliffe College in Harvard, Massachusetts
+
+    * Intensive, kompetitive Atmosphäre unter Shklar und Kommilitonen im Gegensatz zu elitärer Oberschicht.
+    * Beschäftigung mit Faschismuserklärung, optimistische Sicht auf philosophische Tradition mit einem Fokus auf positivistische, empirische Politikwissenschaft.
+    * In ihrem ersten Buch von 1951 „After Utopia“ beschreibt sie den Verlust an metaphysischer Gewissheit und unfraglichem Gemeinschaftsgefühl.
+    * Optimismus als Grundlage für politische Theorie und Gerechtigkeit, weshalb sie den Tod der politischen Theorie verkündet.
+
+9. 1957 wird Shklar Assistenzprofessorin in Harvard, Massachusetts
+
+    * 1964: Veröffentlichung von „Legalism“: Beziehung von politischer Theorie, historischem Bewusstsein, normativen Schlüssen. Dabei beschreibt Legalismus moralische Beziehungen als von Regeln geleitete Pflichten und Rechte.
+    * Shklar versteht sich als Liberale, nicht als Feministin.
+
+10. Ab 1983 Veranstaltungen an Auslandsuniversitäten, u.a. in Oxford, England
+
+    * 1984 veröffentlicht sie „Ganz normale Laster“, in dem sie den Grausamkeit als schlimmstes Vergehen unter Menschen analysiert.
+    * Wichtigkeit der Idee der Gerechtigkeit bekommt höheren Stellenwert, was sie früher wegen mangelnder politischer Hoffnung als nicht theoretisierbar erklärt.
+
+11. Ende der 1980er zurück in Harvard, Massachusetts, USA
+
+    * Widerspricht Hannah Arendt in Debatte um Staatsbürgerschaft und stellt klar, dass fehlende Staatsbürgerschaft schlimmes politisches Schicksal für Menschen ist.
+    * Kritisiert Abhängigkeit politischer Verpflichtung von nationaler und ethnischer Zugehörigkeit, da es zu Ungerechtigkeit führt.
+
+12. Am 17.09.1992 stirbt sie an einem Herzinfarkt in Cambridge, Massachusetts
+
+### Was kann man alles mit Karten machen?
+
+Drucker beschreibt in ihrem Text verschiedene Möglichkeiten, wie sich Karten in Forschungsvorhaben verwenden lassen:
+
+* *Show* something on a map.
+* *Analyze* an aspect of spatial experience.
+* *Narrate* an event using a map or maps to present the argument.
+* *Interpret* a map as a historical and critical form.
+* *Create* a map from place-based references.
+* *Employ* coordinate data or use the map as a picture.
+
+Besprecht in Zweiergruppen, wie sich diese verschiedenen Möglichkeiten auf unser Thema - Flucht von Philosophinnen aus Nazi-Deutschland - beziehen lassen. 
+
+### Biographie und Theorie
+
+Wie lassen sich biographische Spurensuche und Theoriearbeit sinnvoll verknüpfen? 
+
+> Asking even the simplest question about space raises cultural issues and ethical ones immediately. How big is a particular city block and how is its location specified? Blocks differ dramatically in their metric dimensions, but also, in the way they are experienced. If the only system applied is that of latitude and longitude, then how are the cultural factors in an urban environment to be codified? A block might be extremely long for a woman walking alone at night and very short for a young man on a skateboard in the morning. On a cold day, a hot day, or during a protest, the space changes. (Drucker, 2021, S. 142)
+
+> GIS systems were not developed for the humanities, but to map natural and social phenomena. GIS systems embody certain positivist assumptions that privilege physical reality over social and cultural experience (Pickles n.d.). Humanists have adopted these tools and platforms for research about places and spatial experience. (Drucker, 2021, S. 133)
+
+### Aufgabe zur nächsten Woche
+
+Bereitet den folgenden Aufsatz von Judith N. Shklar vor:
+
+* Shklar, Judith N.: Verpflichtung, Loyalität und Exil (im OLAT-Materialordner)
+
+**In den Kleingruppen:**
+
+Überlegt euch eine (oder zwei) im Seminarkontext (d.h. Exilphilosophinnen betreffende) SPARQL-Queries. Visualisiert die Ergebnisse oder verwendet die Wikidata-Möglichkeiten zur Visualisierung der Anfrageantworten. Bereitet eine kurze (3 bis 5 Minuten) Präsentation des Ergebnisses vor, in der ihr vorstellt:
+
+* was ihr gesucht habt
+* warum das interessant ist
+* was das Ergebnis ist
+* wie sich damit vielleicht weiter arbeiten lässt
+* welche Schwierigkeiten ihr hattet
+
+## Sitzung am 04.06. 
+
+### Präsentationen
+
+### Reflexion
+
