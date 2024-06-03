@@ -796,3 +796,225 @@ Bereitet den folgenden Aufsatz von Judith N. Shklar vor:
 
 * Shklar, Judith N.: Verpflichtung, Loyalität und Exil (im OLAT-Materialordner)
 
+
+## Protokoll und Aufbereitung der Sitzung vom 21.05.
+
+(von **Roni Aba**)
+
+Dieses Protokoll fasst die Inhalte der Sitzung vom 21.05.2024 zusammen. Es strukturiert die im Seminar präsentierten Erkenntnisse und ergänzt sie an geeigneten Stellen mit zusätzlichen gekennzeichneten Quellen.
+
+**Ziel der Sitzung**
+Das Ziel der Sitzung war es, den StudentInnen die Abfragesprache SPARQL (Abkürzend für: SPARQL Protocol and RDF Query Language) näherzubringen. Mit der Abfragesprache SPARQL können wir Daten aus einer RDF-Datenbank abfragen, wobei RDF für Resource Description Framework steht. RDF bildet die Grundlage für die Speicherung und den Austausch von Daten im Internet. 
+
+
+### Was ist ein Tripel? 
+Ein Tripel besteht aus drei Grundbausteien.
+    * Subjekt
+    * Prädikat 
+    * Objekt
+Exemplare für solche Tripel wäre folgende Beispiele
+
+    >(Subjekt: maxMusterMann ,Prädikat: istMitgliedVon,Objekt:philiosphinnenImExil)
+     (Subjekt: Tim ,Prädikat: istMitgliedVon,Objekt:philiosphinnenImExil)
+     (Subjekt: Lisa, Prädikat:istKindVon, Objekt:Herbert)
+
+Ein Tripel legt die Struktur für eine SPARQL-Anfrage fest, indem es die Darstellung und Abfrage komplexer Datenbeziehungen ermöglicht. 
+
+### Aufbau einer SPARQL-Anfrage 
+Eine SPARQL-Abfrage besteht aus folgenden zwei erforderlichen Bestandteilen:
+    * SELECT-BLOCK
+        * Gibt an welche Variablen zurückgegeben werden sollen
+    * WHERE-BLOCK 
+        * Definiert das Abfragemuster
+
+Eine SPARQL-Anfrage durchsucht zunächst die Datenbank nach den gewünschten Variablen. Werden keine passenden Einträge gefunden, gibt SPARQL keine Ergebnisse zurück. Falls jedoch Dateneinträge gefunden werden, werden die Tripel im WHERE-Block ausgeführt und eine Teilmenge der Daten angezeigt. 
+
+
+Anhand einer SPARQL-Anfrage werden im Folgenden die grundlegenden Elemente erläutert, die zum Schreiben einer solchen Abfrage benötigt werden 
+    >#Katzen
+    SELECT ?item ?itemLabel
+    WHERE
+    {
+    ?item wdt:P31 wd:Q146. #
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # <span lang="en" dir="ltr" class="mw-content-ltr">Helps get the label in your language, if not, then en language</span>
+    }
+
+    * SELECT-BLOCK
+        * Variablen die ausgegeben werden sollen werden mit einem am Anfang des Wortes gekennzeichnet. In unseren Beispiel wäre es ?item welches uns die ID des itemLabels ausgibt, welche das Label des gefundenden Objektes representiert
+        
+    * WHERE-Block
+        * Es werden Tripel zur definierung der Teilmenge geschrieben 
+        * Am Anfang des Tripels binden wir unsere Variable ?item als Subjekt
+        * die wdt(wikidata-type) representiert unser Prädikat des Tripels, die wdt ist gebunden an einer wikidata-ID mit der Kennzeichnung P31 (diese steht für Objekte/Menschen)
+        * Am Ende unseres Tripels wird ein Objekt prädikat, dies geschiet durch ein  wd(wikidata) Prädikat, welches ebenfalls durch eine eindeutige ID gekennzeichnet ist, in unserem Fall bindet sich das Objekt mit der wd:Q146 (Nummer für Hauskatze)
+        * Service wikibase:label Zeile  
+            * Gibt Informationen in der automatisch Eingestellten Sprache des Computer zurück, wenn diese nicht dargestellt werden kann wird der Inhalt auf Englisch dargestellt. 
+    
+
+
+### Verbindung zum Seminar 
+Dieses Seminar bietet einen Einblick in die Digital Humanities, die eine Brücke zwischen Informatik und den Geisteswissenschaften bilden.
+Zu Beginn des Seminars wurden die StudentInnen dazu aufgefordert den Text 'Wir Flüchtlinge?' von Hannah Arendt zu lesen. Arendt, eine jüdische Philosophin, wurde am 14. Oktober 1906 in Linden-Limmer (Hannover) geboren. Die Recherche nach Informationen über sie oder andere jüdische PhilosophInnen im Internet gestaltet sich häufig als herausfordernd. Jedoch bietet Query Servic eine unterstützende Möglichkeit. 
+
+Um den Einstieg zu erleichtern, empfiehlt es sich, die Anfrage zunächst grob zu formulieren und anschließend schrittweise zu präzisieren, um die relevanten Informationen zu extrahieren. 
+
+Die verfügbaren Informationen über Hannah Arendt erleichtern es, sowohl sie als auch andere jüdische PhilosophInnen schnell zu identifizieren. 
+
+
+>1. Filtere mir alle PhilosophInnen welche in Deutschland geboren wurden:
+
+``````
+#Geburtsorte der PhilosophInnen aus Deutschland 
+#defaultView:Map{"hide": ["?coord"]}
+SELECT ?subj ?subjLabel ?birthplaceLabel ?birthplace  ?birthplaceCoord 
+WHERE {
+   ?subj wdt:P106 wd:Q4964182 . # Philosophin
+   ?subj wdt:P19 ?birthplace .  # Philosophin, Geburtsort 
+   ?birthplace wdt:P17 wd:Q183 .  # Philosophin, Geburtsort -> Germany 
+   ?birthplace wdt:P625 ?birthplaceCoord . # Geburtsort
+   SERVICE wikibase:label {bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en"}
+  }
+``````
+![Geburtsorte aller deutschen PhilosophInnen](image.png)
+Das Ergebnis der Anfrage mit Tabelleneinträgen:
+https://w.wiki/ACDb
+
+Bei der groben Anfrage erfolgt eine große Ergebnismenge. Die Überprüfung der Korrekheit kann durch einen Blick in die Ergebnistabelle eigenständig vorgenommen werden. 
+Im nächsten Schritt wird bei derselben Anfrage das biologische Geschlecht 'männlich' ausgeschlossen. 
+
+2. Suche mir alle Philosphinnen welche in Deutschland geboren wurden:
+```
+#Geburtsorte weiblicher deutscher Philosphinen
+#defaultView:Map{"hide": ["?coord"]}
+SELECT ?subj ?subjLabel ?birthplaceLabel ?birthplace  ?birthplaceCoord 
+WHERE {
+   ?subj wdt:P106 wd:Q4964182 . # Philosophin
+   ?subj wdt:P19 ?birthplace .  # Philosophin, Geburtsort 
+   ?birthplace wdt:P17 wd:Q183 .  # Philosophin, Geburtsort -> Germany 
+   ?birthplace wdt:P625 ?birthplaceCoord . # Geburtsort
+   ?subj wdt:P21 wd:Q6581072 . # Geschlecht: weiblich
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+ }
+```
+Durch die nachfolgende Beschränkung auf das biologische Geschlecht 'weiblich' nach der ursprünglichen Abfrage mit 2763 Ergebnissen verringert sich die Anzahl der Ergebnisse auf 230. 
+
+Diese Veränderung lässt sich auch anhand der Koordinaten-Karte anschaulich verdeutlichen: 
+
+![Geburstorte der weiblichen Philosphinnen](image-1.png)
+
+3. Suche mir alle jüdischen Philosphinnen welche in Deutschland geboren wurden:
+```
+#Geburtsorte weiblicher deutscher Philosphinen, welche zum Judentum angehören
+#defaultView:Map{"hide": ["?coord"]}
+SELECT ?subj ?subjLabel ?birthplaceLabel ?birthplace  ?birthplaceCoord 
+WHERE {
+   ?subj wdt:P106 wd:Q4964182 . # Philosophin
+   ?subj wdt:P19 ?birthplace .  # Philosophin, Geburtsort 
+   ?birthplace wdt:P17 wd:Q183 .  # Philosophin, Geburtsort -> Germany 
+   ?birthplace wdt:P625 ?birthplaceCoord . # Geburtsort
+   ?subj wdt:P21 wd:Q6581072 . # Geschlecht: weiblich
+   ?subj wdt:P140 wd:Q9268 . # Religion = Judentum 
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+```
+![Hannah Arendt](image-2.png)
+https://w.wiki/ACER
+
+Es ergibt sich als Ergebnis nur Hannah Arendt.
+
+4. Geburtsorte sowie Todesorte weiblicher deutscher jüdischer Philosphinen des 20. Jahrhunderts
+```
+#defaultView:Map{"hide": ["?coord"]}
+#Geburtsorte sowie Todesorte weiblicher deutscher jüdischer Philosphinen des 20. Jahrhunderts
+SELECT ?subj ?subjLabel ?birthyear ?deathyear ?birthplaceLabel ?deathplaceLabel ?birthplace   ?deathplace  ?birthplaceCoord ?deathplaceCoord 
+WHERE {
+   ?subj wdt:P106 wd:Q4964182 . # Philosophin
+   ?subj wdt:P19 ?birthplace .  # Philosophin, Geburtsort 
+   ?birthplace wdt:P17 wd:Q183 .  # Philosophin, Geburtsort -> Germany 
+   ?birthplace wdt:P625 ?birthplaceCoord . # Geburtsort
+   ?subj wdt:P21 wd:Q6581072 . # Geschlecht: weiblich
+   ?subj wdt:P140 wd:Q9268 . # Religion = Judentum 
+   ?subj wdt:P20 ?deathplace .  # Philosophin, Sterbeort 
+   ?deathplace wdt:P625 ?deathplaceCoord . # Sterbeort
+   OPTIONAL { ?subj wdt:P569 ?dob }
+   BIND(YEAR(?dob) AS ?birthyear)
+   FILTER(?birthyear >= 1870 && ?birthyear < 1950) # Geboren im 20. Jahrhundert
+   OPTIONAL { ?subj wdt:P570 ?bob }
+   BIND(YEAR(?bob) AS ?deathyear)
+   FILTER(?deathyear >= 1900 && ?deathyear < 2000) # Geboren im 20. Jahrhundert
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+```
+
+Die überstehende Anfrage gibt uns den Geburstort sowie Sterbeort von Hannah Arendt heraus
+![GeburtsortsSowieSterbeortHannah](image-3.png)
+![InfoHannah](image-4.png)
+https://w.wiki/ACEg
+
+
+Durch das Entfernen der Filterung nach Religion und Geschlecht aus der Anfrage, können genauer die Orte identifiziert werden, wohin deutsche PhilosophInnen währen des Zweiten Weltkriegs geflohen sind und wo sie gestorben sind. Über die Ergebnistabelle können die individuellen Fluchtrouten nachverfolgt werden. 
+
+
+5. Sterbeorte der PhilosophInnen welche in Deutschland zwischen 1870 und 1950 geboren wurden.
+```
+#defaultView:Map{"hide": ["?coord"]}
+#Sterbeorte der PhilosophInnen welche in Deutschland zwischen 1870 und 1950 geboren wurden.
+SELECT DISTINCT ?subj ?subjLabel ?birthyear ?deathyear ?birthplaceLabel ?deathplaceLabel ?birthplace   ?deathplace ?deathplaceCoord 
+WHERE {
+   ?subj wdt:P106 wd:Q4964182 . # Pilosoph
+   ?subj wdt:P19 ?birthplace .  # Philosophin, Geburtsort 
+   ?birthplace wdt:P17 wd:Q183 .  # Philosoph, Geburtsort -> Germany 
+   ?subj wdt:P20 ?deathplace .  # Philosoph -> Sterbeort 
+   ?deathplace wdt:P625 ?deathplaceCoord . # Sterbeortkoordinaten
+   OPTIONAL { ?subj wdt:P569 ?dob }
+   BIND(YEAR(?dob) AS ?birthyear)
+   FILTER(?birthyear >= 1870 && ?birthyear < 1950) # Geboren im 20. Jahrhundert
+   OPTIONAL { ?subj wdt:P570 ?bob }
+   BIND(YEAR(?bob) AS ?deathyear)
+   FILTER(?deathyear >= 1900 && ?deathyear < 2000) # Geboren im 20. Jahrhundert
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+```
+
+![Sterbekarte](image-5.png)
+https://w.wiki/ACEu
+
+
+Anhand der Weltkarte lässt sich feststellen, dass die meisten deutschen PhilosophInnen entweder in Deutschland oder in dessen unmittelbarer Nähe verstorben sind. Einige wenige konnten jedoch nach Amerika fliehen, darunter auch Hannah Arendt.
+
+Darüber hinaus ist es möglich, die Anzahl der jüdischen Personen darzustellen, die Einträge in der Datenbank Wikidata haben.
+
+
+````
+# Death places of Jews who died in concentration camps between 1930 and 1945
+# defaultView:Map{"hide": ["?coord"]}
+SELECT ?person ?personLabel ?deathPlace ?deathPlaceLabel ?deathYear ?coord
+WHERE {
+   ?person wdt:P20 ?deathPlace . # Sterbeort
+   ?deathPlace wdt:P31 wd:Q152081 . # Sterbeort ist ein Konzentrationslager
+   ?person wdt:P570 ?dod . # Todesdatum
+   ?deathPlace wdt:P625 ?coord . # Koordinaten des Sterbeortes
+   BIND(YEAR(?dod) AS ?deathYear)
+   FILTER(?deathYear >= 1930 && ?deathYear <= 1945) # Todesjahr zwischen 1930 und 1945
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+``````
+Die Menge dieser registrierten Menschen auf wikidata beträgt ungefähr um die 5000. 
+Durch die Beschränkung auf das Judentum reduziert sich die Anzahl der Ergebnisse auf 131.
+
+![SterbeorteDerMenschenInKZ](image-6.png)
+https://w.wiki/ACFN
+
+
+Fazit:
+
+SPARQL-Anfragen ermöglichen eine umfangreiche Darstellung und Visualisierung von Daten. Allerdings kann, wie aus der Anfrage in Punkt 3 ersichtlich ist, dies auch zu falschen Ergebnissen führen. Es ist wichtig zu betonen, dass Hannah Arendt nicht die einzige jüdische Philosophin war, doch aufgrund der spezifischen Abfrage wurden ausschließlich Daten über sie zurückgegeben.
+
+Dies verdeutlicht die Notwendigkeit, Datenbanken kontinuierlich zu pflegen und weiterzuentwickeln, um eine präzise und umfassende Nutzung durch die NutzerInnen zu gewährleisten. Durch eine fortlaufende Aktualisierung und Erweiterung der Datenbanken kann vermieden werden, dass wichtige Informationen über andere Persönlichkeiten oder Ereignisse unentdeckt bleiben. Dies unterstreicht die Bedeutung einer kontinuierlichen Verbesserung der Datenbanken, um ihre Effektivität und Benutzerfreundlichkeit zu optimieren.
+
+
+
+
+
+
