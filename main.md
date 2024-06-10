@@ -1227,5 +1227,116 @@ Bereitet den folgenden Aufsatz von Judith N. Shklar vor:
 
 ### Präsentationen
 
+#### Query für Sitzung am 04.06.24
+
+(Flemming Jensen, Elaine Ringeloth, Nils Nicklaus)
+
+##### Philosophinnen deren Staatsbürgerinnenschaft sich zwischen 1930 und 1945 verändert hat.
+
+```sparql
+SELECT ?philosopher ?philosopherLabel ?dateOfBirth ?placeOfBirthLabel ?newCountryLabel ?when ?causeLabel
+WHERE {
+  ?philosopher wdt:P106 wd:Q4964182;       # philosopher hasOccupation philosopher
+               wdt:P21 wd:Q6581072;        # philosopher hasGender female
+               p:P27 ?statement.           # philosophers propertyCountryOfCitizenshipIsNode statement
+  
+  # checks for change of citizenship during world war 2
+  Optional {?statement ps:P27 ?newCountry.}   # statements mainValueIs country
+  Optional {?statement pq:P828 ?cause.}    # statements qualifierHasCause cause
+  ?statement pq:P580 ?when.     # statements qualifierStartTime when
+  
+  # additional data to the philosopher
+  ?philosopher wdt:P569 ?dateOfBirth.
+  OPTIONAL { ?philosopher wdt:P19 ?placeOfBirth.}
+  
+  # change of citizenship is during the time of NS-Germany and not at date of birth
+  FILTER ((?when >= "1930-01-01T00:00:00Z"^^xsd:dateTime && ?when <= "1945-09-02T23:59:59Z"^^xsd:dateTime)
+          && (?when != ?dateOfBirth)) 
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ?philosopherLabel
+```
+###### Erkenntnis
+
+[Ayn Rand](https://de.wikipedia.org/wiki/Ayn_Rand) und [Maria Reichenbach](https://uelex.de/uebersetzer/reichenbach-maria/) sind zwei Philosophinnen, welche wir zuvor nicht kannten und nun genauer untersucht werden könnten.
+
+##### Gleiche Query für Philosophen und Philosophinnen
+
+```sparql
+SELECT ?philosopher ?philosopherLabel ?genderLabel ?dateOfBirth ?placeOfBirthLabel ?newCountryLabel ?when ?causeLabel
+WHERE {
+  ?philosopher wdt:P106 wd:Q4964182;       # philosopher hasOccupation philosopher
+               wdt:P21 ?gender;        # philosopher hasGender female
+               p:P27 ?statement.           # philosophers propertyCountryOfCitizenshipIsNode statement
+  
+  # checks for change of citizenship during world war 2
+  Optional {?statement ps:P27 ?newCountry.}   # statements mainValueIs country
+  Optional {?statement pq:P828 ?cause.}    # statements qualifierHasCause cause
+  ?statement pq:P580 ?when.     # statements qualifierStartTime when
+  
+  # additional data to the philosopher
+  ?philosopher wdt:P569 ?dateOfBirth.
+  OPTIONAL { ?philosopher wdt:P19 ?placeOfBirth.}
+  
+  # change of citizenship is during the time of NS-Germany and not at date of birth
+  FILTER ((?when >= "1930-01-01T00:00:00Z"^^xsd:dateTime && ?when <= "1945-09-02T23:59:59Z"^^xsd:dateTime)
+          && (?when != ?dateOfBirth)) 
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ?gender ?philosopherLabel
+```
+
+##### Aggregation nach Geschlecht
+
+```sparql
+SELECT ?genderLabel (COUNT(DISTINCT ?philosopher ) AS ?numberOfPhilosophers)
+WHERE {
+  ?philosopher wdt:P106 wd:Q4964182;       # philosopher hasOccupation philosopher
+               wdt:P21 ?gender;        # philosopher hasGender female
+               p:P27 ?statement.           # philosophers propertyCountryOfCitizenshipIsNode statement
+  
+  # checks for change of citizenship during world war 2
+  ?statement pq:P580 ?when.     # statements qualifierStartTime when
+  
+  # additional data to the philosopher
+  ?philosopher wdt:P569 ?dateOfBirth.
+  
+  # change of citizenship is during the time of NS-Germany and not at date of birth
+  FILTER ((?when >= "1930-01-01T00:00:00Z"^^xsd:dateTime && ?when <= "1945-09-02T23:59:59Z"^^xsd:dateTime)
+          && (?when != ?dateOfBirth)) 
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+GROUP BY ?genderLabel
+```
+
+###### Erkenntnis
+
+Zeigt Diskrepanz der Datenlage zwischen Philosophen und Philosophinnen.
+
+##### Erklärung zu den einzelnen Präfixen
+
+- wd: entities
+- wdt: direct properties
+- p: complete statement/property nodes
+- ps: main value of statement (wird auch als Objekt gegeben bei ?subject wdt:predicate ?object)
+- pq: qualifiers of statement node
+
+##### "Beantwortung" der Fragen
+
+Überlegt euch eine (oder zwei) im Seminarkontext (d.h. Exilphilosophinnen betreffende)
+SPARQL-Queries. Visualisiert die Ergebnisse oder verwendet die Wikidata-Möglichkeiten zur
+Visualisierung der Anfrageantworten. Bereitet eine kurze (3 bis 5 Minuten) Präsentation des
+Ergebnisses vor, in der ihr vorstellt:
+
+- **was ihr gesucht habt:** Wir haben nach Philosophinnen gesucht, die zu Zeiten des 2. Weltkriegs gelebt und ihren Wohnort gewechselt haben.
+- **warum das interessant ist:** Neue Philosophinnen kennenlernen, Vergleich zu Philosophen ziehen
+- **was das Ergebnis ist:** Es kamen bei unsere Suche drei Philosophinnen heraus: Hannah Arendt, Ayn Rand und Maria Reichenbach
+- **wie sich damit vielleicht weiterarbeiten lässt:** field of work, Vergleich der Zeiten der Einbürgerung (gab es eine Welle?) -> bei drei etwas schwierig ... 
+- **welche Schwierigkeiten ihr hattet:** Zugriff auf die Qualifier einzelner Attribute/Statements zu erhalten. Eine Schwierigkeit war, dass bei der Zuteilung des Jahres auch Philosophinnen rauskamen, die in der Zeit des 2. Weltkriegs geboren worden. Grund hierfür war unsere Anfrage „country of citizenship“, weil sie ebenfalls das Attribut „?newCountry“ zugeschrieben bekommen haben.
+
+
 ### Reflexion
 
