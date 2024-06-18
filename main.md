@@ -1340,3 +1340,252 @@ Ergebnisses vor, in der ihr vorstellt:
 
 ### Reflexion
 
+
+## Sitzung am 11.06.
+
+Vortrag von Maria Robaszkiewicz
+
+## Sitzung am 18.06. 
+
+### Aufgabe für die Projektphase
+
+1. Bildet Kleingruppen oder findet Euch in den schon bestehenden Gruppen zusammen.
+2. Jede:r Studierende sucht sich eine Philosophin, die bisher nicht im Seminar behandelt wurde (d.h. Hannah Arendt, Judith Shklar, Simon Weil, Alice Salomon, Gretel Adorno, etc. sind nicht möglich). Zur Vermeidung von Doppelungen: Meldet uns bis zum 25.06. die Autorinnen, an denen ihr arbeitet. 
+3. Erstellt ein RDF Turtle-Dokument für die Philosophin. Erfasst Stammdaten, Lebensereignisse, akad. Werdegang (wenn vorhanden) und (wichtige) Publikationen. 
+4. Als Gruppe: Erstellt eine Präsentation (in Markdown), in der Ihr Euer Vorgehen und Eure Autorinnen vorstellt. 
+5. Helft Euch gegenseitig in den Gruppen! Meldet Euch mit Fragen und Problemen bei uns!
+
+Die Ergebnisse werden am 09.07. präsentiert. Bis zum 05.07. *müssen* die RDF Turtle- und Markdown-Dateien bei uns eingegangen sein. 
+
+### Wo und wie recherchieren?
+
+* DBpedia, Wikidata, Wikipedia
+* [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/)
+* (Uni-)Bibliothek(en)
+* Wörterbücher, Enzyklopädien
+* populäre Publikationen (Marseille 1940, Das Café der trunkenen Philosophen, Feuer der Freiheit)
+* [History of Women Philosophers](https://historyofwomenphilosophers.org)
+* ... eure Ideen?
+
+### *Linked Data* selbst erfassen
+
+#### Turtle: Grundlegende Informationen festhalten
+
+Turtle ist eine syntax-arme Möglichkeit *linked data* selbst zu verfassen. 
+
+Die [Syntax von Turtle](https://www.w3.org/TR/turtle/) folgt der Triple-Struktur von Linked Data: Subjekt - Prädikat - Objekt. Dabei gibt es diverse Kurzschreibweisen: Listen von verschiedenen Objekten, die zum gleichen Subjekt-Objekt gehören, werden mit "," abgetrennt. Das gleiche Subjekt, dass mit verschiedenen Prädikaten beschrieben werden soll, kann mit ";" abgetrennt werden. 
+
+Grundlegende Informationen lassen sich mit FOAF und den uns schon (mehr oder weniger) bekannten DBpedia-Prädikaten erfassen. 
+
+```ttl
+@prefix ex: <http://www.exiled-philosophers.org/> .  # unser eigener Namespace
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+ex:Hannah_Arendt a foaf:Person
+    ; foaf:name "Hannah Arendt"
+    ; dbo:birthName "Hannah Arendt"
+    ; dbo:birthDate "1906-10-14"^^xsd:date
+    ; dbo:birthPlace dbr:Linden-Limmer
+    ; dbo:deathDate "1975-12-04"^^xsd:date
+    ; dbo:influencedBy dbr:Karl_Jaspers, dbr:Martin_Heidegger, dbr:Walter_Benjamin
+    ; dbo:influenced dbr:Giorgio_Agamben, dbr:Judith_N._Shklar .
+```
+
+#### Verweise auf bestehende LD-Ressourcen
+
+Das Rad muss und sollte nicht neu erfunden werden: Ihr könnte auf bereits schon bestehende *linked data*-Ressourcen verweisen, in dem ihr das Prädikat `owl:sameAs` verwendet: 
+
+```ttl
+# andere Präfixe zur Übersichtlichkeit ausgelassen
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:Hannah_Arendt a foaf:Person 
+    ; foaf:name "Hannah Arendt"
+    ; owl:sameAs dbr:Hannah_Arendt  # Verlinkung mit der DBpedia
+    ; owl:sameAs <https://explore.gnd.network/gnd/11850391X>  # Verlinkung mit dem GND Network
+    ; dbo:birthName "Hannah Arendt"
+    ; dbo:birthDate "1906-10-14"^^xsd:date
+    ; dbo:birthPlace dbr:Linden-Limmer
+    ; dbo:deathDate "1975-12-04"^^xsd:date
+    ; dbo:influencedBy dbr:Karl_Jaspers, dbr:Martin_Heidegger, dbr:Walter_Benjamin
+    ; dbo:influenced dbr:Giorgio_Agamben, dbr:Judith_N._Shklar . 
+```
+
+#### Biographische Daten erfassen
+
+Die Auszeichnung der biographischen Daten erfolgt Ereignis-orientiert mit Hilfe des Schemas *Bio*: https://vocab.org/bio/
+
+```ttl
+# andere Präfixe zur Übersichtlichkeit ausgelassen
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+
+ex:Hannah_Arendt a foaf:Person 
+    ; foaf:name "Hannah Arendt"
+
+    # wg. der Übersichtlichkeit ausgelassen... 
+
+    ; bio:event _:emigrationParis, _:emigrationNewYork, _:marriageAnders, _:marriageBlücher, _:graduation .
+
+_:emigrationParis a bio:Emigration 
+    ; bio:date "1933"^^xsd:gYear 
+    ; bio:place dbr:Berlin, dbr:Paris
+    ; rdfs:label "Nachdem sie von der Gestapo verhaftet wurde, beschließt Arendt Deutschland zu verlassen. Sie flieht über Karlsbad, Genua und Genf nach Paris." .
+
+_:emigrationNewYork a bio:Emigration
+    ; bio:date "1941"^^xsd:gYear 
+    ; bio:place dbr:Paris, dbr:New_York 
+    ; rdfs:label "Nach einer abenteuerlichen Flucht aus dem Lager Gurs gelingt Arendt zusammen mit ihrem zweiten Mann Heinrich Blücher die Flucht über Spanien und Portugal nach New York." .
+
+_:marriageAnders a bio:Marriage 
+    ; bio:partner dbr:Günther_Anders
+    ; rdfs:label "Arendt heiratet Günther Anders-Stern 1929, die Ehe wird bereits 1937 geschieden. Anders hilft ihr und ihrem zweiten Ehemann bei der Flucht in die USA. Beide bleiben lebenslang in Kontakt, s. Briefwechsel."
+    ; dcterms:references _:briefwechselArendtAnders
+    ; bio:date "1929"^^xsd:gYear 
+    ; bio:place dbr:Nowawes
+    ; bio:event [
+        a bio:Divorce 
+        ; bio:date "1937"^^xsd:date
+    ] .
+``` 
+
+#### Bibliographische Daten erfassen
+
+Die Auszeichnung der bibliographischen Daten erfolgt mit Hilfe des Schemas *Bibo*: http://purl.org/ontology/bibo/ und der *Dublin Core Terms*: http://purl.org/dc/terms/. 
+
+```ttl
+# andere Präfixe zur Übersichtlichkeit ausgelassen
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Hannah_Arendt a foaf:Person 
+    ; foaf:name "Hannah Arendt"
+
+    # wg. der Übersichtlichkeit ausgelassen... 
+
+    ; dbo:author _:vitaActiva, _:ursprünge .
+
+_:vitaActiva a bibo:Book
+    ; dcterms:title "Vita Activa" 
+    ; dcterms:creator ex:Hannah_Arendt, dbr:Hannah_Arendt 
+    ; dcterms:issued "1958"^^xsd:gYear 
+    ; bibo:isbn "9783406648364" 
+    ; dcterms:publisher "Piper" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Political theory", "Philosophy of history" .
+
+_:ursprünge a bibo:Book 
+    ; dcterms:title "Elemente und Ursprünge totaler Herrschaft" 
+    ; dcterms:creator ex:Hannah_Arendt, dbr:Hannah_Arendt 
+    ; dcterms:issued "1951"^^xsd:gYear 
+    ; bibo:isbn "9783596294311" 
+    ; dcterms:publisher "Piper" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Totalitarianism", "Political theory" .
+```
+
+#### Gesamtes Beispiel
+
+```ttl
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Hannah_Arendt a foaf:Person 
+    ; foaf:name "Hannah Arendt"
+    ; owl:sameAs dbr:Hannah_Arendt
+    ; owl:sameAs <https://explore.gnd.network/gnd/11850391X>
+    ; dbo:birthName "Hannah Arendt"
+    ; dbo:birthDate "1906-10-14"^^xsd:date
+    ; dbo:birthPlace dbr:Linden-Limmer
+    ; dbo:deathDate "1975-12-04"^^xsd:date
+    ; dbo:influencedBy dbr:Karl_Jaspers, dbr:Martin_Heidegger, dbr:Walter_Benjamin
+    ; dbo:influenced dbr:Giorgio_Agamben, dbr:Judith_N._Shklar 
+    ; bio:event _:emigrationParis, _:emigrationNewYork, _:marriageAnders, _:marriageBlücher, _:graduation
+    ; dbo:author _:vitaActiva, _:ursprünge .
+
+_:emigrationParis a bio:Emigration 
+    ; bio:date "1933"^^xsd:gYear 
+    ; bio:place dbr:Berlin, dbr:Paris
+    ; rdfs:label "Nachdem sie von der Gestapo verhaftet wurde, beschließt Arendt Deutschland zu verlassen. Sie flieht über Karlsbad, Genua und Genf nach Paris." .
+
+_:emigrationNewYork a bio:Emigration
+    ; bio:date "1941"^^xsd:gYear 
+    ; bio:place dbr:Paris, dbr:New_York 
+    ; rdfs:label "Nach einer abenteuerlichen Flucht aus dem Lager Gurs gelingt Arendt zusammen mit ihrem zweiten Mann Heinrich Blücher die Flucht über Spanien und Portugal nach New York." .
+
+_:marriageAnders a bio:Marriage 
+    ; bio:partner dbr:Günther_Anders
+    ; rdfs:label "Arendt heiratet Günther Anders-Stern 1929, die Ehe wird bereits 1937 geschieden. Anders hilft ihr und ihrem zweiten Ehemann bei der Flucht in die USA. Beide bleiben lebenslang in Kontakt, s. Briefwechsel."
+    ; dcterms:references _:briefwechselArendtAnders
+    ; bio:date "1929"^^xsd:gYear 
+    ; bio:place dbr:Nowawes
+    ; bio:event [
+        a bio:Divorce 
+        ; bio:date "1937"^^xsd:date
+    ] .
+
+_:marriageBlücher a bio:Marriage 
+    ; bio:partner dbr:Heinrich_Blücher
+    ; bio:date "1940"^^xsd:gYear 
+    ; bio:place dbr:Paris .
+
+_:graduation a bio:Graduation 
+    ; bio:date "1928"^^xsd:gYear 
+    ; bio:place dbr:Heidelberg 
+    ; bio:participant dbr:Karl_Jaspers
+    ; rdfs:label "Arendt promoviert bei Karl Jaspers in Heidelberg mit einer Arbeit mit dem Titel 'Der Liebesbegriff bei Augustin'." .
+
+_:vitaActiva a bibo:Book
+    ; dcterms:title "Vita Activa" 
+    ; dcterms:creator ex:Hannah_Arendt, dbr:Hannah_Arendt 
+    ; dcterms:issued "1958"^^xsd:gYear 
+    ; bibo:isbn "9783406648364" 
+    ; dcterms:publisher "Piper" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Political theory", "Philosophy of history" .
+
+_:ursprünge a bibo:Book 
+    ; dcterms:title "Elemente und Ursprünge totaler Herrschaft" 
+    ; dcterms:creator ex:Hannah_Arendt, dbr:Hannah_Arendt 
+    ; dcterms:issued "1951"^^xsd:gYear 
+    ; bibo:isbn "9783596294311" 
+    ; dcterms:publisher "Piper" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Totalitarianism", "Political theory" .
+
+_:briefwechselArendtAnders a bibo:Book
+    ; dcterms:title "Schreib doch mal ,hard facts' über dich. Briefe 1939-1975" 
+    ; dcterms:creator ex:Hannah_Arendt, dbr:Hannah_Arendt, dbr:Günther_Anders 
+    ; dcterms:issued "1993"^^xsd:gYear 
+    ; bibo:isbn "9783492311724" 
+    ; dcterms:publisher "Piper" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Correspondence", "Philosophy", "Political theory" .
+```
+
+#### Validierung, Visualisierung, Tools
+
+Für das Aufschreiben von RDF Turtle empfiehlt sich die Nutzung eines (einfachen) Texteditors (nicht Word!), wie [Visual Studio Code (VS Code)](https://code.visualstudio.com/). Für VS Code gibt es diverse Plugins, die die Arbeit erleichtern und und unterstützen, bspw.:  
+
+* Stardog/RDF Languages Extension Pack
+* RDF Sketch
+
+Es gibt außerdem diverse Online-Editoren und Software für die Validierung von Turtle. Wir werden in der Arbeitssitzung darauf zurück kommen. 
+
+## Sitzung am 25.06. 
