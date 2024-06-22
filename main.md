@@ -1597,15 +1597,20 @@ Es gibt außerdem diverse Online-Editoren und Software für die Validierung von 
 > Die meisten Informationen dazu finden sich im Skript zum 18.06., ich will hier das Skript um in Präsenz geklärte Fragen ergänzen.<br>
 > Abschließend hat man sich wieder in Kleingruppen gefunden und mit der Aufteilung der Philosophinnen begonnen.
 <br>
+
 Vortrag von Maria Robaszkiewicz
 -------------------------------
+
 * Website: [History of Women Philosophers](https://historyofwomenphilosophers.org)
 * Buchempfehlung: [Hannah Arendt and Politics](https://edinburghuniversitypress.com/book-hannah-arendt-and-politics.html)
   <br>
+  
 Praxisteil
 ==========
+
 zur Aufgabenstellung
 --------------------
+
 Die Aufgabenstellung der Projektphase befindet sich hier: [Aufgabe](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#74)
 
 * Alle in der Gruppe kriegen *jeweils* eine Philosophin zugeteilt, um die Größe des insgesamt entstehenden Datensatzes zu maximieren. Die Aufgabe soll trotzdem als Gruppe gelöst werden.
@@ -1618,6 +1623,7 @@ Die Aufgabenstellung der Projektphase befindet sich hier: [Aufgabe](https://lias
 
 zur Recherche
 -------------
+
 [Die Stelle im Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#75)<br>
 
 * [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/): Bei dieser Quelle wurde als Beispiel Query `philosopher+refugee+jew+woman` verwendet. Zudem wurde darauf hingewiesen, dass sich unten bei den Ergebnissen auch "related Entrys" finden.
@@ -1626,6 +1632,7 @@ zur Recherche
 
 zur Datenerstellung
 -------------------
+
 * Zu jeder Philosophin soll jeweils eine Datei erstellt werden.
 * Es sollen nach Möglichkeit bereits vorhandene Instanzen in (bekannten) Datenbanken verwendet werden.
 * Es existieren auch bereits Schemata, z.B. auch für Personeneinträge. Nach Möglichkeit soll man sich daran halten. [Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#79) [Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#80)
