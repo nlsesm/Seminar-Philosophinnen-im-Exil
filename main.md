@@ -1225,7 +1225,54 @@ Bereitet den folgenden Aufsatz von Judith N. Shklar vor:
 
 ## Sitzung am 04.06. 
 
-### Präsentationen
+### Sitzungsprotokoll
+
+(von **Maximilian Glaß**)
+
+**Präsentationen**
+
+Den Hauptteil der Zeit wurden in dieser Sitzung die Ergebnisse der Arbeit in Kleingruppen präsentiert, in denen schon in den vorherigen Wochen zusammengearbeitet wurde. Die Aufgabe hierbei war, im Seminarkontext relevante SPARQL-Queries zu finden und diese vorzustellen und einige Fragen zu beantworten.
+
+Was wir gesucht haben:
+
+* Philosophinnen, die ihre Staatsangehörigkeit während der NS-Zeit geändert haben
+* Philosophinnen, die generell mehrere Staatsangehörigkeit besaßen und zu denen deutsch gehört(e)
+* Philosophinnen, die den Wohnort während der NS-Zeit geändert haben
+* Die verschiedenen Bewegungen oder Schulen, denen damalige Philosophinnen angehörten
+
+Warum die Queries interessant sind:
+
+* Es wurde versucht von einem Wechsel der Staatsangehörigkeit auf Flucht während der NS-Zeit zu schließen.
+* Es wurde hauptsächlich versucht erstmal andere Philosophinnen kennenzulernen, über die es sich möglicherweise lohnen würde, mehr zu erfahren.
+* Durch die Gegenüberstellung von Queries, die nach weiblichen und männlichen PhilosophInnen suchten, konnte man auch schon quantitativ eine gewisse Diskrepanz zwischen den weiblichen und männlichen RepräsentantInnen feststellen.
+
+Wie sich damit weiterarbeiten lässt:
+
+* Man kann zum Beispiel nach Verbindungen bei den Wohnortswechseln suchen. Gibt es hierbei zeitliche oder räumliche Ähnlichkeiten bei Philosophinnen auf der Flucht?
+* Kann man eventuell auch die Datenlage verbessern bezüglich der Diskrepanz? Sind vielleicht Philosophinnen bekannt, die über die Queries nicht gefunden werden (können)?
+* Lassen sich die Ergebnisse graphisch noch besser weiterverarbeiten?
+
+Schwierigkeiten bei der Arbeit mit LOD und Wikidata:
+
+* Die fehlende Eindeutigkeit bei einigen properties. So gibt es zum Beispiel mehrere Instanzen von der property "Konzentrationslager", wie sich bei der Suche herausstellte(z.B.: Q328468 und Q152081). Dies führt zu fehlenden Elementen in der Ergebnismenge oder erfordert (eigentlich unnötige) Anpassungen der Queries.
+* Bei der Staatsangehörigkeit gab es zum Teil auch Wechsel der Staatsformen oder andere Umbenennungen der einzelnen Staaten, sodass die Suche hier verfälscht wurde, beziehungsweise nicht durch Änderung der Staatsangehörigkeit auf Flucht geschlossen werden konnte.
+* Die Unterschiede von einigen Eigenschaften, zum Beispiel "occupation" und "field of work", führen zu Verwirrung und teilweise komplizierteren Queries. So ist zum Beispiel Hannah Arendt unter "occupation" als Philosophin geführt, Gretel Adorno hat hingegen nur unter "field of work" Philosophie eingetragen.
+
+Fazit: 
+
+Die Arbeit mit LOD führte zu interessanten Denkanstößen und Überlegungen und auch die graphischen Darstellungsmöglichkeiten bei Wikidata wurden gelobt. Ein großer Vorteil ist die Zugänglichkeit und die schiere Anzahl der vorhandenen Daten. Häufig sind aber zumindest Vorkenntnisse der Datenlage oder der Datenbank notwendig und es ist immer erforderlich die Ergebnisse kritisch zu hinterfragen, da die Daten nicht vollständig sein können oder es durch Redundanzen zu den oben genannten Verwirrungen kommen kann, daher geht bei der Arbeit mit LOD häufig auch eine intensive Recherche und der Rückgriff auf weitere Literatur einher. 
+
+**Arbeit am Text: Shklar, Judith N.: Verpflichtung, Loyalität und Exil**
+
+Im letzten Teil der Sitzung wurde noch auf den Text eingegangen, der zu dieser Sitzung vorzubereiten war. Es wurde in der kurzen verbleibenden Zeit anhand des Textes unter anderem eingegangen auf:
+
+* politischen Liberalismus und den (negativen) Freiheitsbegriff
+* die moralischen Pflichten gegenüber dem Staat oder dem Gesetz
+* über den Exilbegriff(Zusammenhang mit Ortswechsel oder innerlich)
+* Vergleich von antikem und modernem Exil und den damit einhergehendem Ostrazismus
+* Unterschiede zwischen Verpflichtung, Bekenntnis, Loyalität, Gefolgschaft und Treue
+
+### Weitere Präsentationen
 
 #### Query für Sitzung am 04.06.24
 
@@ -1337,9 +1384,7 @@ Ergebnisses vor, in der ihr vorstellt:
 - **wie sich damit vielleicht weiterarbeiten lässt:** field of work, Vergleich der Zeiten der Einbürgerung (gab es eine Welle?) -> bei drei etwas schwierig ... 
 - **welche Schwierigkeiten ihr hattet:** Zugriff auf die Qualifier einzelner Attribute/Statements zu erhalten. Eine Schwierigkeit war, dass bei der Zuteilung des Jahres auch Philosophinnen rauskamen, die in der Zeit des 2. Weltkriegs geboren worden. Grund hierfür war unsere Anfrage „country of citizenship“, weil sie ebenfalls das Attribut „?newCountry“ zugeschrieben bekommen haben.
 
-
 ### Reflexion
-
 
 ## Sitzung am 11.06.
 
