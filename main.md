@@ -1395,16 +1395,19 @@ Vortrag von Maria Robaszkiewicz
 ### Aufgabe für die Projektphase
 
 1. Bildet Kleingruppen oder findet Euch in den schon bestehenden Gruppen zusammen.
-2. Jede:r Studierende sucht sich eine Philosophin, die bisher nicht im Seminar behandelt wurde (d.h. Hannah Arendt, Judith Shklar, Simon Weil, Alice Salomon, Gretel Adorno, etc. sind nicht möglich). Zur Vermeidung von Doppelungen: Meldet uns bis zum 25.06. die Autorinnen, an denen ihr arbeitet. 
-3. Erstellt ein RDF Turtle-Dokument für die Philosophin. Erfasst Stammdaten, Lebensereignisse, akad. Werdegang (wenn vorhanden) und (wichtige) Publikationen. 
-4. Als Gruppe: Erstellt eine Präsentation (in Markdown), in der Ihr Euer Vorgehen und Eure Autorinnen vorstellt. 
+2. Jede:r Studierende sucht sich eine Philosophin, die bisher nicht im Seminar behandelt wurde (d.h. Hannah Arendt, Judith Shklar, Simon Weil, Alice Salomon, Gretel Adorno, etc. sind nicht möglich). Zur Vermeidung von Doppelungen: Meldet uns (Moritz **und** Gregor) bis zum 25.06. die Autorinnen, an denen ihr arbeitet: Schickt uns als Gruppe eine Mail mit den Teilnehmer:innen und den Philosophinnen, die ihr bearbeitet. 
+3. Erstellt ein RDF Turtle-Dokument für die Philosophin, d. h. für jede Philosophin ein Dokument. Erfasst Stammdaten, Lebensereignisse, akad. Werdegang (wenn vorhanden) und (wichtige) Publikationen. 
+4. Als Gruppe: Erstellt eine Präsentation (in Markdown), in der Ihr Euer Vorgehen (wo und wie habt ihr recherchiert?) und Eure Autorinnen (was ist interessant an den Philosophinnen und wie hängt ihr Wirken zusammen?) vorstellt. Wie ihr die Präsentation gestaltet, ist euch freigestellt, ebenso die Aufgabenverteilung innerhalb der Präsentation. Die Präsentation sollte eine Länge von 10 Minuten nicht überschreiten. 
 5. Helft Euch gegenseitig in den Gruppen! Meldet Euch mit Fragen und Problemen bei uns!
 
 Die Ergebnisse werden am 09.07. präsentiert. Bis zum 05.07. *müssen* die RDF Turtle- und Markdown-Dateien bei uns eingegangen sein. 
 
+Weitere Ergänzungen und Erläuterungen zur Aufgabenstellung finden sich auch im Sitzungsprotokoll. 
+
 ### Wo und wie recherchieren?
 
 * DBpedia, Wikidata, Wikipedia
+* [GND Explorer](https://explore.gnd.network/)
 * [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/)
 * (Uni-)Bibliothek(en)
 * Wörterbücher, Enzyklopädien
@@ -1684,3 +1687,47 @@ zur Datenerstellung
 * Das große Ziel aller Projektarbeiten ist, die Daten in einer gemeinsamen Cloud zu sammeln und zu veröffentlichen. [Opendata der Uni Kiel](https://opendata.uni-kiel.de/content/index.xml)
 
 ## Sitzung am 25.06. 
+
+### Ergänzung zu Quellen
+
+Bitte erfasst die Quellen Eurer Informationen mit in Eurem Turtle-Dokument. Dazu gibt es zwei Möglichkeiten:
+
+**1. Als Kommentar**
+
+```ttl
+_:emigrationNewYork a bio:Emigration # s. dazu Thomas Meyer: Hannah Arendt. Die Biographie. S. 172ff.
+    ; bio:date "1941"^^xsd:gYear 
+    ; bio:place dbr:Paris, dbr:New_York 
+    ; rdfs:label "Nach einer abenteuerlichen Flucht aus dem Lager Gurs gelingt Arendt zusammen mit ihrem zweiten Mann Heinrich Blücher die Flucht über Spanien und Portugal nach New York." .
+```
+
+**2. Als explizite Referenz (besser!!!)**
+
+```ttl
+_:emigrationNewYork a bio:Emigration
+    ; bio:date "1941"^^xsd:gYear 
+    ; bio:place dbr:Paris, dbr:New_York 
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:meyerBiographie
+        ; bibo:pageStart "172"
+        ; bibo:pageEnd "180"
+    ]
+    ; rdfs:label "Nach einer abenteuerlichen Flucht aus dem Lager Gurs gelingt Arendt zusammen mit ihrem zweiten Mann Heinrich Blücher die Flucht über Spanien und Portugal nach New York." .
+
+_:meyerBiographie a bibo:Book
+    ; dcterms:title "Hannah Arendt: Die Biographie" 
+    ; dcterms:creator dbr:Thomas_Meyer_(Philosoph)
+    ; dcterms:issued "2023"^^xsd:gYear 
+    ; bibo:isbn "3492059937" 
+    ; dcterms:publisher "Piper" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Biography", "Philosophy" .
+```
+
+### Referat
+
+### FAIRe Daten mit Britta Petersen
+
+
+## Sitzung am 02.07.
