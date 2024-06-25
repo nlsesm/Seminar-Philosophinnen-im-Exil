@@ -1633,7 +1633,7 @@ Für das Aufschreiben von RDF Turtle empfiehlt sich die Nutzung eines (einfachen
 
 Es gibt außerdem diverse Online-Editoren und Software für die Validierung von Turtle. Wir werden in der Arbeitssitzung darauf zurück kommen. 
 
-#### Sitzunggsprotokoll
+### Sitzunggsprotokoll
 
 (von **Sebastian Glaß**)
 
@@ -1656,11 +1656,11 @@ Praxisteil
 zur Aufgabenstellung
 --------------------
 
-Die Aufgabenstellung der Projektphase befindet sich hier: [Aufgabe](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#74)
+Die Aufgabenstellung der Projektphase befindet sich hier: [Aufgabe](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#75)
 
 * Alle in der Gruppe kriegen *jeweils* eine Philosophin zugeteilt, um die Größe des insgesamt entstehenden Datensatzes zu maximieren. Die Aufgabe soll trotzdem als Gruppe gelöst werden.
 * Die in der Gruppe gewählten Philosophinnen müssen in keiner Beziehung zueinander stehen (es wird aber empfohlen).
-* Die Philosophinnen sollen Teil der Exilthematik sein.
+* Die Philosophinnen müssen Teil der Exilthematik sein.
 * Die Präsentation erfolgt als Gruppe, es soll ein einheitliches Vorgehen klar werden.
 * Art der Präsentation und Aufteilung in der Gruppe sind frei.
 * Die Abgabe erfolgt als Gruppe an Moritz *und* Gregor.
@@ -1669,7 +1669,7 @@ Die Aufgabenstellung der Projektphase befindet sich hier: [Aufgabe](https://lias
 zur Recherche
 -------------
 
-[Die Stelle im Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#75)<br>
+Es wurden verschiedene Möglichkeiten der Recherche besprochen, die für die Sammlung von Informationen über Philosophinnen interessant sein könnten, s. [Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#76). <br>
 
 * [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/): Bei dieser Quelle wurde als Beispiel Query `philosopher+refugee+jew+woman` verwendet. Zudem wurde darauf hingewiesen, dass sich unten bei den Ergebnissen auch "related Entrys" finden.
 * [Directory of Women Philosophers](https://historyofwomenphilosophers.org/directory-selection/): Über die Jahreszahlen lassen sich hier Kandidaten für Exilphilosophinnen finden. Es ist eine Listenansicht verfügbar.
@@ -1680,7 +1680,7 @@ zur Datenerstellung
 
 * Zu jeder Philosophin soll jeweils eine Datei erstellt werden.
 * Es sollen nach Möglichkeit bereits vorhandene Instanzen in (bekannten) Datenbanken verwendet werden.
-* Es existieren auch bereits Schemata, z.B. auch für Personeneinträge. Nach Möglichkeit soll man sich daran halten. [Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#79) [Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#80)
+* Es existieren auch bereits Schemata, z.B. auch für Personeneinträge. Nach Möglichkeit soll man sich daran halten. [Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#80), [Skript](https://liascript.github.io/course/?https://raw.githubusercontent.com/ggb/Seminar-Philosophinnen-im-Exil/main/main.md#81)
 * Das große Ziel aller Projektarbeiten ist, die Daten in einer gemeinsamen Cloud zu sammeln und zu veröffentlichen. [Opendata der Uni Kiel](https://opendata.uni-kiel.de/content/index.xml)
 
 ## Sitzung am 25.06. 
