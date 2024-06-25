@@ -1272,7 +1272,7 @@ Im letzten Teil der Sitzung wurde noch auf den Text eingegangen, der zu dieser S
 * Vergleich von antikem und modernem Exil und den damit einhergehendem Ostrazismus
 * Unterschiede zwischen Verpflichtung, Bekenntnis, Loyalität, Gefolgschaft und Treue
 
-### Präsentationen
+### Weitere Präsentationen
 
 #### Query für Sitzung am 04.06.24
 
@@ -1384,9 +1384,7 @@ Ergebnisses vor, in der ihr vorstellt:
 - **wie sich damit vielleicht weiterarbeiten lässt:** field of work, Vergleich der Zeiten der Einbürgerung (gab es eine Welle?) -> bei drei etwas schwierig ... 
 - **welche Schwierigkeiten ihr hattet:** Zugriff auf die Qualifier einzelner Attribute/Statements zu erhalten. Eine Schwierigkeit war, dass bei der Zuteilung des Jahres auch Philosophinnen rauskamen, die in der Zeit des 2. Weltkriegs geboren worden. Grund hierfür war unsere Anfrage „country of citizenship“, weil sie ebenfalls das Attribut „?newCountry“ zugeschrieben bekommen haben.
 
-
 ### Reflexion
-
 
 ## Sitzung am 11.06.
 
