@@ -159,9 +159,13 @@ Eine gute (oder bessere) Arbeit
 
 #### Hinweise zur Ausarbeitung (für Informatiker_innen)
 
-**Aufgabenstellung:** tba
+**Aufgabenstellung:** Verfasst eine kurze, wissenschaftliche Ausarbeitung, die eine Fragestellung zur Anwendung von *linked open data*-Technologien im Kontext des Seminarthemas (Philosophinnen im Exil) beantwortet. 
 
-Die Ausarbeitung kann bis zum **30. September 2024** (Ende des Semesters) per E-Mail (ggb@informatik.uni-kiel.de) bei mir als PDF eingereicht werden.
+Die Ausarbeitung sollte eine Einleitung mit Motivation, eine Darstellung des Hintergrunds und Forschungskontexts, eine Vorstellung und Begründung der Methodik, die Ergebnisse und Diskussion eurer Untersuchung, sowie einen kurzen Abschluss und Ausblick beinhalten. Eure Untersuchung und Ausarbeitung dürfen alle Materialien, die ihr im Laufe des Semesters erarbeitet hat, benutzen. Ihr könnt bspw. eure Zwischen- oder Abschlusspräsentation als Grundlage verwenden. 
+
+Sprecht bis zum **31. Juli 2024** ein Thema mit mir (Gregor) per E-Mail, Mattermost oder in einer Sprechstunde (Termin auf Anfrage) ab.
+
+Die Ausarbeitung muss bis zum **30. September 2024** (Ende des Semesters) per E-Mail (ggb@informatik.uni-kiel.de) bei mir als PDF eingereicht werden.
 
 Weitere Formalia:
 
@@ -1729,5 +1733,12 @@ _:meyerBiographie a bibo:Book
 
 ### FAIRe Daten mit Britta Petersen
 
+Brittas Präsentation findet ihr hier: [FDM, FAIR & LOD](https://liascript.github.io/course/?https://raw.githubusercontent.com/RDM4CAU/lehre/main/Philo_DH-Sem_2024/FDM.md#1)
+
 
 ## Sitzung am 02.07.
+
+Arbeitssitzung. 
+
+
+## Sitzung am 09.07.
