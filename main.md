@@ -1728,13 +1728,47 @@ _:meyerBiographie a bibo:Book
     ; dcterms:language "de" 
     ; dcterms:subject "Biography", "Philosophy" .
 ```
+### Sitzungsprotokoll
 
-### Referat
+Dieses Protokoll fasst den Inhalt der Sitzung vom 25. Juni 2024 zusammen. Zunächst wurde kurz über Turtle gesprochen, wobei insbesondere daran erinnert wurde, wie man mit der Quelle und Referenz bei der Aufgabe für den Praxisteil umgehen sollte (sieht Ergänzung zu Quellen bei der sitzung von 25.06 für mehr Informationen dazu). Die Sitzung fand in zwei Teilen statt: Zunächst gab es ein Referat über Helene Stöcker, anschließend einen Vortrag mit Britta Petersen über die 
+FAIR-Prinzipien und Forschungsdatenmanagment. Ich fasse im Folgenden den Inhalt der beiden Teile kurz zusammen.
 
-### FAIRe Daten mit Britta Petersen
+#### Referat über Helene Stöcker 
 
-Brittas Präsentation findet ihr hier: [FDM, FAIR & LOD](https://liascript.github.io/course/?https://raw.githubusercontent.com/RDM4CAU/lehre/main/Philo_DH-Sem_2024/FDM.md#1)
+Helene Stöcker wurde anhand ihrer Biografie, ihrem Projekt "Bund für Mutterschutz und Sexualreform" und der Verbindung zu Digital Humanities (da die Bibliographie und die Autobiographie etc. mit Wikidata gemacht wurde) vorgestellt. Ihr Leben im Exil (1933) und die auffälligen Merkmale und Ironien in ihrem Werk wurden ebenfalls diskutiert.
 
+#### Vortrag mit Britta Petersen
+
+Brittas Präsentation findet ihr hier: [FDM, FAIR & LOD](https://liascript.github.io/course/?https://raw.githubusercontent.com/RDM4CAU/lehre/main/Philo_DH-Sem_2024/FDM.md#1).
+
+Da die meistens Informationen aus dem Vortrag bereit auf der Folien stand, fasse ich hier kurz den Hauptinhalt des Vortrags zusammen.
+
+##### Definition von Begriffen 
+
+- Das Forschungsdatenmanagement (FDM) umfasst den Prozess der Transformation, Selektion und Speicherung von Forschungsdaten.
+- Was sind Forschungsdaten? Bedeutung und Beispiele: Hier wurde man auf die Seite Answergarden (https://answergarden.ch/1522365) weitergeleitet.
+- Beispiele für Forschungsdaten sind Messdaten, Laborwerte, audiovisuelle Informationen etc.
+- Alle Informationen über Forschung sind Daten, die wir managen müssen.
+
+##### Zweck der FAIR-Datengrundsätze
+
+- Die FAIR-Prinzipien dienen als Leitprinzipien dafür, dass Daten langfristig und unabhängig zugänglich, nachnutzbar und nachprüfbar bleiben.
+
+##### FAIR-Prinzipien vs. Linked Open Daten (LOD) 
+
+- Der Hauptunterschied liegt in der Accessibility, da im Vergleich zu den Linked Open Daten nicht alle Forschungsergebnisse zur Verfügung gestellt werden. Forschungsdaten (FDM) sollten generell so offen wie möglich sein.
+- Das Hauptziel der FAIR-Prinzipien ist eine Erhöhung der Nachnutzbarkeit von Daten.
+- Das Hauptziel des LOD-Prinzips ist die Erhöhung der Zugänglichkeit von Daten.
+
+##### FDM und gute wissenschaftliche Praxis (GWP) 
+
+- Eine gute FDM und die Anwendung der FAIR-Prinzipien werden als Teil der guten wissenschaftlichen Praxis (GWP) angesehen.
+- Außerdem wurden die CAU-Richtlinien zu GWP und der Zusammenhang mit dem Prinzip der FAIRness kurz angesprochen.
+
+##### Aktualität des FDM an CAU 
+
+- Stand des CAU FDM Anfang 2013 im Vergleich zum aktuellen Stand: https://www.datamanagement.uni-kiel.de/de/forschungsdatenmanagement-an-der-cau.
+- Es wurde auch grob über den IGSN-Dienst von CAU gesprochen (https://igsn.uni-kiel.de/de).
 
 ## Sitzung am 02.07.
 
