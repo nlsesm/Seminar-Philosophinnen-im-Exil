@@ -16,7 +16,7 @@
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 
-ex:Gertrud_Bing a foaf:Person 
+ex:Lion_Hilde a foaf:Person 
     ; foaf:name "Lion Hilde"
     ; owl:sameAs <https://explore.gnd.network/gnd/128248505>
     ; owl:sameAs wd:Q1618230
