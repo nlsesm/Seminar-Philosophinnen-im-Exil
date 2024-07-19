@@ -1776,3 +1776,555 @@ Arbeitssitzung.
 
 
 ## Sitzung am 09.07.
+
+
+### Gruppe 1
+
+#### Marie Jahoda
+
+**Recherche:**
+
+- dbpedia
+- wikidata
+- wikipedia
+- Wien Geschichte Wiki
+- Zeit Online
+- FemBio
+
+**Zur Person:**
+
+- Soziologin
+- großer Fokus auf Empirik
+- Erforschung von Arbeitslosigkeit
+
+  --> "Die Arbeitslosen von Marienthal"
+
+**Exil:**
+
+- London
+- New York
+- wieder UK (University of Sussex)
+
+#### Gertrud Bing
+
+**Vorgehen und Recherche:**
+
+- dbpedia
+- wikidata
+- wikipedia
+- GND
+- DNB(Deutsche Nationalbibliothek)
+- Leibniz-Zentrum für Literatur- und Kulturforschung
+- purl.org
+
+**Wissenswertes:**
+
+- Bibliothekarin
+- Philosophin
+- Editorin
+- Rettung der KBW vor Nationalsozialisten nach London
+- Leiterin Warburg Institute in London
+- Einsatz für Exilanten und Exilantinnen
+- Vermittlung von Stellen an jüdische Intellektuelle
+- enge Zusammenarbeit mit Hilde Lion
+
+#### Charlotte Bühler
+
+**Recherche:**
+
+- Wikipedia
+- Wikidata
+- Geschichtewiki
+- Digitales Deutsches Frauenarchiv
+- DnB
+
+**Erkenntnisse:**
+
+**Leben:**
+
+- geb. 20.12.1893 in Berlin als Charlotte Malachowski
+- verst. 03.02.1974 in Stuttgart
+- eingeboren in berüchtigte jüdische Familie
+- 1913 begann sie mit dem Psychologie- und Philosophiestudium in Freiburg
+- 1916 ging sie die Ehe mit dem älteren Karl Bühler ein 
+- 1917 und 1919 gebar sie zwei Kinder 
+- 1918 promovierte sie in München
+- 1920 habilitierte Charlotte Bühler mit einer Arbeit über "Entdeckung und Erfindung in Literatur und Kunst" in Dresden, sie wurde als erste Frau an der TU Dresden als Privatdozentin ernannt
+
+**Exil:**
+
+- März 1938 befand sie sich auf Vortragsreise in London, doch kehrte nicht mehr nach Wien zurück
+- Reise nach Oslo und Verhaftung ihres Mannes Karl Bühler
+- Nachdem Freispruch blieb das Ehepaar in Norwegen/Oslo
+- Bühler erhielt daraufhin eine Professorenstelle in Oslo
+- Karl Bühler emigrierte in die USA, Charlotte Bühler tat es ihm 1940 nach
+- Karl Bühler verstarb 1963 in LA
+- Im selben Jahrzehnt gründete Charlotte Bühler die "American Association for Humansitic Psychology" und fungierte hier als Präsidentin
+- 1956 kehrte sie nach Wien zurück, 1974 verstarb sie letztendlich in Stuttgart
+
+**Werke:**
+
+- "Kindheit und Jugend. Genese des Bewusstseins." von Charlotte Bühler, 1928
+- "Soziologische und psychologische Studien über das erste Lebensjahr." von Charlotte Bühler, Hildegrad Hetzer und Beatrice Tudor-Hart, 1927
+
+#### Käte Hamburger
+
+**Recherche**
+
+Wikipedia 
+
+Wikidata
+
+Dbpedia
+
+GND Network
+
+**Zur Person**
+
+geb. 28.09.1896 in Hamburg  
+  
+verst. 08.04.1992 in Stuttgart
+
+Tochter einer jüdischen Bankiersfamilie
+
+Philosophin, Sprachlehrerin, Journalistin, Autorin und Germanistin
+
+**Akademischer Werdegang**
+
+Studium:  Philosophie, Literaturgeschichte und Geschichte in Berlin und Hamburg
+
+1922 promoviert Käte Hamburger bei Clemens Baeumker in München mit der Arbeit 'Schillers Analyse des Menschen als Grundlage seiner Kultur- und Geschichtsphilosophie. Ein Beitrag zum Problem des Individualismus, dargestellt auf Grund seiner philosophischen Schriften'.
+
+Obwohl ihr im Exil verfasstes Hauptwerk 'Die Logik der Dichtung' Hamburger ebenso wie ihre anderen im Exil verfassten Schriften zunächst nicht als akademische Leistung anerkannt und ihr infolgedessen die Habilitation verweigert wurde, gilt es heutzutage als wissenschaftlich relevant.
+
+1957 habilitierte Hamburger dann doch noch an der Technischen Universität Stuttgart im  Bereich der allgemeinen Literaturwissenschaft.
+
+**Flucht und Exil**
+
+In Hoffnung auf eine Anstellung an einer Universität emigrierte sie nach der Vertreibung durch die Nazis zunächst nach Dijon in Frankreich.
+
+Noch im selben Jahr verließ Hamburger Frankreich und emigrierte nach Göteborg in Schweden, wo sie als Sprachlehrerin und Autorin tätig war.
+
+1956 kehrt Käte Hamburger nach Deutschland zurück.
+
+#### Margarete Berent
+
+**Recherche**
+
+- Wikidata
+- Wikipedia
+- Digitales Deutsches Frauenarchiv
+- DBpedia
+- Universitätsbibliothek
+- GND
+
+**Zur Person**
+
+- Juristin
+- Geburt: 9. Juli 1887 in Berlin
+- Tod: 23. Juni 1965 in New York
+- Wuchs in einer jüdischen Kaufmannsfamilie auf
+- Eltern waren Natalie (geb. Gabriel) und Max Berent; ihr Bruder Hans und seine Familie wurden im KZ Auschwitz ermordet.
+
+ **Studium und Berufliche Laufbah**n
+
+- Studium: Studierte Rechts- und Staatswissenschaften in Berlin, später in Erlangen
+- Juristische Hilfskraft in Anwaltsbüros
+- Leiterin der Charlottenburger Rechtsschutzstelle für Frauen
+- Dezernentin der Adoptionsstelle der Deutschen Zentrale für Jugendfürsorge
+- Arbeit im Juristischen Büro der Allgemeinen Elektrizitätsgesellschaft (AEG) in Berlin
+- Zulassung als Rechtsanwältin am 7. März 1925.
+
+**Verfolgung und Exil**
+
+- Ausschluss aus der Anwaltskammer: 23. Juni 1933 wegen „nicht arischer Abstammung
+- Arbeit in der Zentralstelle für jüdische Wirtschaftshilfe und der Zentralwohlfahrtsstelle der Juden in Deutschland.
+- Emigration: 1939 über Chile in die USA(1940)
+- dort Studium an der New York University und Arbeit in verschiedenen Berufen
+- Wiederaufnahme der juristischen Tätigkeit: 1949 Zulassung zur Anwaltskammer in New
+  York
+- Arbeitete bis 1965 in der Rechtsabteilung der Stadtverwaltung von New York
+
+**Zusammenhang mit anderen Philosophinen**
+
+- **Margarete Berent**  war mit** [Hilde Lion](https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/hilde-lion "weitere Informationen zu Hilde Lion im Digitalen Deutschen Frauenarchiv")**  und andere Philosophin an der Deutschen Akademie als Sozialarbeiterinnen und verwandte Berufe tätig
+
+#### Lion Hilde
+
+**Recherche**
+
+- Wikidata
+- Digitales deutsches Frauenarchiv
+- Wikipedia
+- DBPedia
+
+**Zur Person**
+
+- Geburt: 07. Juni 1892 in Hamburg
+- Tod: 03. Juli 1964.
+- Beruf: Soziologin
+- Wurde in eine jüdische Kaufmannsfamilie geboren 
+
+**Akademischer Werdegang**
+
+- **1917 - 1919** Studium der Wohlfahrtspflege am Sozialpädagogischen Seminar in Hamburg, Abschluss Zertifikat Lehrerin und Sozialpädagogin
+- **1919 - 1924** Studium der Volkswirtschaft und Pädagogik an den Universitäten in Freiburg, Berlin und Köln.
+- **1924 - 1928** Lehrerin im sozialpädagogischen Seminar des Vereins Jugendheim Charlottenburg
+- **1924** Promotion zum Dr. rer. pol., Dissertation Die klassenkämpferische und die katholisch-konfessionelle deutsche Frauenbewegung
+- **1928** Studienleiterin Deutsche Akademie für soziale und pädagogische Frauenarbeit
+- **1929 - 1933** Direktorin Deutsche Akademie für soziale und pädagogische Frauenarbeit
+
+**Exil**
+
+- Hilde Lion, die keine jüdische Identität hatte, emigrierte im November 1933 nach London, vorerst zu einem Studienaufenthalt auf Einladung und mit einem Stipendium des Internationalen Akademikerbundes.
+- Sie Verstarb am 08.04.1970 in Hindhead/Surrey
+
+#### Gemeinsamkeiten
+
+- Philosophinnen und Autorinnen
+- Akademische Werdegänge, sie promovierten alle
+- Fünf von Sechs Philosophinnen flüchteten in englischsprachige Länder
+- Deutschland als Ausgangspunkt
+- Sie engagierten sich für politische und soziale Problemstellungen
+- Pionierarbeiterinnen im jeweiligen Fachgebiet
+- Sie fungierten ebenfalls alle als Autorinnen
+
+### Gruppe 2
+
+Die Präsentation der Gruppe findet ihr hier: https://pads.zapf.in/Philosophie
+
+### Gruppe 3
+
+von Elaine Ringeloth, Fleming Jensen und Nils Nicklaus
+
+**Biografische Daten zu Emmy Wolff, Siddy Wronsky und Maria Reichenbach**
+![](img/Abstract_waterpainting_illustration-small.png)
+
+---
+#### Emmy Wolff
+
+![Wolff](img/IMG_Wolff.jpg)
+
+- 1890 - Geboren in Bernburg
+- Studium der Sozialwissenschaften
+- 1924 - Promotion zur Dr. rer. pol. in Frankfurt
+- 1925 - persönliche Referentin von Gertrud Bäumer in Berlin
+- 1927 bis 1931 - Geschäftsführerin des BDF
+- Herausgeberin von *Frauengenerationen in Bildern*
+- 1927, 1929/30 - Dozentin an der Deutschen Akademie für soziale und pädagogische Frauenarbeit
+- Verlust aller Ämter nach der Machtübernahme der Nationalsozialisten
+- 1935 - Flucht und Exil in England und Leitung der Stoatley Rough School
+- Bis 1938 reiste Emmy Wolff mehrmals nach Deutschland, um die Emigration von Kindern zu organisieren
+- 1969 - Verstirbt Emmy Wolff in Haslemere
+
+---
+
+#### Siddy Wronsky
+
+![Wronsky](img/IMG_Wronsky.jpg)
+
+- 1983 - Geboren in Berlin
+- 1903/1905 - Lehrerin mit Aufbaustudium der Heil- und Sonderpädagogik
+- 1908 - Gründung und Tätigkeit in der Sozialen Frauenschule Berlin
+- 1914-1919 - Vorstandsmitglied des Berliner Nationalen Frauendienstes
+- 1921 - Co-Autorin *Leitfaden der Wohlfahrtspflege* (mit Alice Salomon)
+- 1925 - Mitbegründerin der Deutschen Akademie für soziale und pädagogische Frauenarbeit
+- 1933 - Emigration nach Palästina
+- 1934 - Aufbau eines Systems der Sozialen Arbeit in Palästina
+- 1936 - Autorin "Social Work and the Jewish Community Idea in Palestine
+- 1947 - Siddy Wronsky verstirbt in Jerusalem
+
+--- 
+#### Maria Reichenbach
+
+- 1909 - Geboren in Berlin
+- 1933 (Vor Machtergreifung) - Doktortitel in Philosophie
+- Dann neunmonatiges Exil in Italien
+- 1934 - Dort lernt sie eine deutsch-jüdischen Familie kennen und geht als ihr Kindermädchen mit nach Istanbul
+- 1939 Migration nach Los Angeles mit ihrem Mann und dem gemeinsamen Kind
+- 1939 - Besucht an der UCLA Kurse von Hans Reichenbach und arbeitet dort später
+- 1946 - Hochzeit mit Hans Reichenbach und fortan Übersetzerin der Werke ihres Mannes
+- 1949-1974 - Professorin der Philosophie am Los Angeles City College
+- Als Herausgeberin Tätig und vertritt Hans Reichenbach auf Kongressen nach seinem Tod
+- 2013 - Maria Reichenbach verstirbt in Los Angeles
+
+---
+#### Verifizierung und LOD mit URN
+
+![LOD](img/IMG_LOD.jpg)
+
+- Verifizierung der Syntax mittels [Turtle Validator](https://github.com/IDLabResearch/TurtleValidator)
+- URN (Uniform Resource Name) ist ein Persistant Identifier
+- Deutsche Nationalbibliothek verwaltet und vergibt die URN
+- URN-Resolver führt Mapping zwischen URN und URL durch
+
+
+---
+
+#### Literatur
+
+-  Prof. Dr. Sabine Toppe (2024): Emmy Wolff, in: Digitales Deutsches Frauenarchiv, URL: https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/emmy-wolff. Zuletzt besucht am: 04.07.2024 
+-  Prof. Dr. Sabine Toppe (2024): Siddy (Sidonie) Wronsky, in: Digitales Deutsches Frauenarchiv, URL: https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/siddy-sidonie-wronsky. Zuletzt besucht am: 04.07.2024 
+- Avkiran, Ariadne Sevgi: Maria Reichenbach, 1909–2013. In: Germersheimer Übersetzerlexikon UeLEX (online), 27. Juli 2022. URL: https://uelex.de/uebersetzer/reichenbach-maria/. Zuletzt besucht am: 06.07.2024
+- Avkıran, A. S. (2023):  Das private Netzwerk im Exil. In: Henking, I. W., P. Dietiker und M. Rougemont (Hrsg.): Translation und Exil (1933-1945) II. Netzwerke des Übersetzens. Wien/Berlin. S. 473-491. URL: https://link.springer.com/chapter/10.57088/978-3-7329-8977-5_20
+
+### Gruppe 4
+
+#### Einleitung  
+
+- In dieser Präsentation werden 3 wichtige Philosophinnen vorgestellt, die sich mit der Frauenrechtsbewegung auseinandergesetzt haben.  
+- Anita Augsburg (Melih)
+- Lida Heymann (Leon)  
+- Ricarda Huch (Bjarne)  
+
+#### Lida Heymann  
+
+- Geboren am 15. März 1868 in Hamburg, gestorben am 31. Juli 1943.
+- Bildung: Privatunterricht zu Hause, höhere Töchterschule, Mädchenpensionat in Dresden.
+- Aktivismus: Hilfe für Kinder und Eltern von Armenschulen, Gründung eines erstmaliges Frauenzentrum in Hamburg (1897), Gründung des Deutschen Vereins für Frauenstimmrecht (1902) , Gründung von IFFF (Internationaler Frauenbund für Frieden und Freiheit) in 1915 in Den Haag; weitere Beiträgen zur Demokratie und Freiheit, wodurch sie sich gegen den Nationalsozialismus positioniert hat.
+- Emigration in die Schweiz 1933 aufgrund der Machtergreifung Hitlers. Exil in der Schweiz bis zum Tod.
+- In der Schweiz schrieb sie "Erlebtes - Erschautes".
+
+#### Anita Augspurg  
+
+- Geboren am 22. September 1857 in Verden, gestorben am 20. Dezember 1943.
+- Erste promovierte Juristin des deutschen Kaiserreiches, Abschluss 1897 in Zürich. Damit erste promovierte Juristin in der Kaiserzeit.
+- Mitbegründerin des Deutschen Vereins für Frauenstimmrecht, Engagement für Ehereform und Frauenstimmrecht.
+- Aufruf zum Eheboykott 1905.
+- Emigration nach Zürich 1933, lebte und arbeitete dort im Exil.
+- Veröffentlichte im Leben einige feministische Werke.
+
+#### Ricarda Huch  
+
+- Geboren am 18. Juli 1864 in Braunschweig, gestorben am 17. November 1947.
+- Schriftstellerin, Historikerin und Philosophin. Bekannt für ihre kulturellen und historischen Beiträge sowie ihre Unterstützung der Frauenbewegung.
+- 1892 als eine der ersten Frauen in Geschichte promoviert.
+- Politisch sehr aktiv, hat sich für die Friedensbewegung und gegen den Nationalsozialismus eingesetzt. Außerdem unterstützte sie die Frauenbewegung.
+- Ihre Werke sind sehr vielfältig und umfassen Gedichte, Romane und historische Abhandlungen.
+- Philosophisch hat sie sich stark mit Religion und Entmenschlichung beschäftigt.
+    - Der Sinn der heiligen Schrift. Insel-Verlag, Leipzig 1919.
+    - Entpersönlichung. Insel-Verlag, Leipzig 1921.
+
+#### Gemeinsame Errungenschaften
+
+- Zusammenarbeit im Kampf für Frauenrechte und Frieden.
+- Anita und Lida haben ihren ganzen Leben lang zusammen gearbeitet und waren verlobt.
+- Gründung des Internationalen Frauenbundes für Frieden und Freiheit (IFFF) 1915.
+- Ihr Lebenswerk und dessen Einfluss auf die Frauenbewegung und darüber hinaus.
+
+### Gruppe 5
+
+#### Einführung
+
+Unsere Philosophinnen:
+
+- Ayn Rand
+- Isa Gruner
+- Elisabeth Selbert
+- Rivka Horwitz
+
+
+#### Philosophin 1: Ayn Rand
+
+##### Vorgehen
+1. zuerst heraussuchen von möglichst umfangreichen Quellen (Wikiorg, Stanford EoP, Britannica)
+
+2. Fokus auf Biographie
+
+    - Parsen der Lebensereignisse Sektion der Quellen
+    - Einzelne Abschnitte vergleichen und vervollständigen
+    - Ereignisse einzeln recherchieren um Umstimmigkeiten auszuschliessen
+    - daraus lassen sich dann auch Stammdaten extrahieren
+
+3. Fokus auf Bibliographie
+
+    -  Primärquelle ist hier https://aynrand.org (Organisation zum Nachlass von Ayn Rand)
+    - Absicherung durch vergleich mit anderen Quellen
+
+##### Ayn Rands Person
+
+- Aufwachsen in der Sovjetunion im frühen 20. Jahrhundert
+- Flucht vor politischen Umbrüchen, Verstaatlichung der Apotheke des Vaters
+- Studiert aber weiter in Sovjetunion und emigriert mit Abschluss in Geschichte, Philosphie und Drehbuchschreiben nach New York um dem Kommunismus zu entkommen
+- Schreibt dort viele Drehbuecher und lernt Frank O'Connor kennen und heiratet ihn
+-  entwickelt den philophischen Objektivisimus (eng verwoben mit Kapitalismus):
+
+    - Ablehnung von Altruismus
+    - betont Bedeutung des rationalen Eigeninteresses
+- lehnte Feminismus der damaligen Form ab und strebte eher nach Individualismus und rationales Selbstineresse im Sinne des Objektivismus
+- Bei Interesse: https://aynrand.org/ bietet extensives Material zur Beschäftigung mit Ayn Rands Person und philosophischem Erbe
+
+
+#### Philosophin 2: Isa Gruner
+
+##### Vorgehen
+
+Informationen sammeln über Wikidata. Im nächsten Schritt Informationen über Wikipedia sammeln.
+
+##### Philosophin: Isa Gruners Person
+
+Am 14. November 1897 geboren in Wilhelmshaven 
+
+Ausgezeichnet für ein Bundesverdienstkreuz
+
+Besonders Interessant: In der Zeit des Nationalsozialismus führte Gründer die Leitung des Flüchtlingkinderheims im Landjugendheim Finkenkrug weiter.
+
+- Lernte Soziale Arbeit kennen durch die Einladung im „American Friends Service Comitee“ in Philadelphia, USA. 
+- 1956 gründete sie ein alkoholfreien Mittagstisch 
+- im weiteren war sie Mitglied des Deutschen Berufverbandes für Sozialarbeiter, Mitglied des Deutschen Paritätischen Wohlfahrtsverbands und Förderin des Berlin Frauenvereins im Jahr 1945.
+- Berlin Frauenverein: immer wieder haben aktive Mitfrauen mitgewirkt. Projekte zur Verbesserung der Lebenslage Alleinerziehende Mütter.
+
+
+#### Philosophin 3: Elisabeth Selbert
+
+##### Vorgehen
+1. sammeln von Informationen (wikidata, wikipedia, Stanford EoP)
+
+2. Fokus auf Biographie 
+
+    - abgleichen von Informationen und Abschnitten
+    - Prüfung von einzelenen Ereignissen um Unstimmigkeiten zu meiden
+
+3. Fokus auf Bibliographie
+
+    - Absicherung durch Vergleich mit weiteren Quellen 
+
+Primärquelle ist hier https://de.wikipedia.org/wiki/Elisabeth_Selbert
+
+##### Elisabeth Selberts Person
+> Aufwachsen im Deutschen Kaiserreich und der Weimarer Republik
+> Studium der Rechtswissenschaften, trotz sozialer und politischer Hindernisse
+> Wichtige Rolle bei der Verfassung des Grundgesetzes der Bundesrepublik Deutschland
+> Kämpft für Gleichberechtigung der Frauen und Verankerung dieses Prinzips im Grundgesetz
+> Entwickelt einen pragmatischen und inklusiven Ansatz zur Frauenrechtsbewegung:
+
+- Betonung der rechtlichen Gleichstellung
+- Einsatz für soziale Gerechtigkeit und Chancengleichheit
+
+> Verbindet ihren Einsatz für Frauenrechte mit einem starken Engagement in der Sozialdemokratie und der Arbeiterbewegung
+
+> Bei Interesse: Die Hessische Landeszentrale für politische Bildung bietet umfassendes Material zur Beschäftigung mit Elisabeth Selberts Leben und Werk 
+
+#### Philosophin 4: Rivka Horwitz
+
+##### Vorgehen
+
+1. Informationen sammeln (Wikipedia, wikidata)
+
+2. Fokus auf Biografie
+
+    - Lebensabschnitte unterteilen
+    - Ereignisse zusammenfassen und abgleichen
+    - Unstimmigkeiten vermeiden
+
+3. Fokus auf Bibliografie
+
+    - Absicherung der Ergebnisse durch weitere Quellen
+Primärquelle: https://de.wikipedia.org/wiki/Rivka_Horwitz#Schriften
+
+##### Rivka Horwitz' Person
+
+- 1926 als Rivka Goldschmidt in Bad Homburg vor der Höhe geboren
+- Mit der Mutter nach Palästina ausgewandert
+- Studierte Philosophie, jüdische Geistesgeschichte und religiöse Mystik in Jerusalem und New York.
+- Heiratete in den USA Josef Horwitz > kehrte mit ihm und den Kindern nach Israel zurück
+- Schwerpunkt ihrer Arbeiten: Erforschung des jüdischen Erbes in der deutschen Geistesgeschichte. Fokus auf Moses Mandelssohn, Martin Buber und Franz Rosenzweig.
+- Sie war als Gastprofessorin in den USA und Deutschland tätig
+- Rivka Horwitz starb am 04. Januar 2007 in Jerusalem
+
+
+### Gruppe 6
+
+#### Grete (eigentl. Clara Margarete) Hermann
+<image src="https://mujeresconciencia.com/app/uploads/2020/06/grete.jpg" alt="Bildbeschreibung">
+
+* geboren am 02.03.1901 in Bremen
+* 1921 Studium der Fächer Mathematik, Physik und Philosophie in Göttingen und Freiburg
+* 1925 Promotion
+* musste 1934 aus Deutschland fliehen, da sie aktiv gegen das Regime der Nationalsozialisten gearbeitet hat
+    * 1934 Emigration zunächst nach Dänemark
+    * 1937 Emigration nach England
+* 1946 Rückkehr nach Deutschland
+* 1950-1966 Professorin für Philosophie und Physik an der Pädagogischen Hochschule Bremen
+* gestorben am 15.04.1984 in Bremen
+
+#### Ilse Rosenthal-Schneider (geb. Schneider)
+<image src="https://www.uni-siegen.de/fb6/phima/pigs/ilseschneider.png" alt="Bildbeschreibung">
+
+* geboren am 25.04.1891 in Finsterwalde
+* 1909-1920 Studium der Fächer Philosophie, Mathematik und Physik in Berlin
+* 1920 Promotion
+* Heirat mit Hans Samuel A. Rosenthal
+* 1938 Emigration über London nach Australien, aufgrund der jüdischen Abstammung ihres Mannes
+* 1952-1961 Dozentin für Geschichte und Philosophie der Naturwissenschaften an der Universität Sidney
+* gestorben am 06.02.1990 in Sidney
+
+#### Dore Jacobs (geb. Marcus)
+<image src="https://www.djhaus.de/wp-content/uploads/2022/05/Dore-Jacobs.jpg" alt="Bildbeschreibung">
+
+* geboren am 27.06.1894 in Essen
+* 1911-1912 Studium der Fächer Mahematik und Physik in Heidelberg 
+* 1912-1913 Studium für Rythmik und Gehörbildung an der Techniscen Hochschule Dresden unter Émile Jaques-Dalcroze
+* 1914 Rückkehr nach Essen und heiratet Artur Jacobs
+* 1914-1915 führt Studium an der Universität Bonn nur halbherzig weiter; konzentriert sich mehr auf Bewegungsbildungskurse
+    * Einfluss von Zionisten Martin Huber
+    * "Judenfrage" während des Studiums
+* 1918 Geburt von Sohn Gottfried
+* Gründung "Bund. Gemeinschaft fü sozialistisches Leben
+    * Mittelpunkt: Artur und Dore Jacobs
+    * Ziel: "ethischer Sozialismus" und eine "ausbeutungsfreie Gesellschaft" (Weniger die Rede von der Marxschen Lehre als von Kants Philosophie)
+    * Mitglieder sogfältig ausgewählt, kein Beitritt nach eigenem Entschluss
+    * Unterordnung besimmter Gesetze:
+        * Entscheidungen über politische und berufliche Wege,
+        * die Abkehr von einer Konfession, 
+        * Alkohol-Abstinenz, Experimente wie die „Bewährungsehe“
+        * und die Kollektiverziehung
+* 1925 Gründung der "Bundesschule für Körprbildung und rythmische Erziehung" (heute: Dore-Jacobs.Berufskolleg.)
+* 1933 Verbot des Bunds
+* 1934 Schließung der Schule
+* Verleih der Räumlichkiten an kath. Pfarrgemeinde St. Lambertus
+* geringe Einnahmen durch Privatunterricht
+* Sohn Gottfried fand Schutz zunächst bei Tante Eva in Hamburg; danach bei Verwandten in den Niederlanden
+* Dore half seit 10.November 1938 bei der Flucht jüdischer Flüchtlinge
+* 1944 Flucht mit Artur von Wuppertal nach Meersburg (Bodensee) 
+    * unter falschem Namen in einer Pension geleitet von "Bund-"Freundinnen 
+* 1945 aufbau ihrer Körperbildungsarbeit in Wuppertal
+* 1947 Rückkehr nach Essen
+* Gestorben am 05.03.1979 in Essen
+
+#### Frieda Wunderlich 
+
+<image src="https://www.digitales-deutsches-frauenarchiv.de/sites/default/files/styles/share_image/public/2022-11/lbi_cjh-000211606_friedawunderlich.jpg?itok=Pib0W2yo" alt="Bildbeschreibung">
+
+* Geboren: 08.11. 1884 in Berlin 
+* 1914-1918: Leiterin einer Kommission des Nationalen Frauendienstes
+* 1920-1933: Dozentin an einer sozialen Frauenschule (Berlin)
+* 1923-1933: Herausgeberin der Berliner Wochenzeitung Soziale Praxis 
+* 1924 – 1925: Richterin am Obersten Sozialversicherungsgericht in Berlin
+* 1925 – 1933: Parteimitglied der DDP in Berlin
+    * 1930 – 1932: Abgeordnete im Preußischen Landtag für die DDP
+* 1925 – 1933: Lehrkraft an der Deutschen Akademie für soziale und pädagogische Frauenarbeit
+* 1927 – 1933: Nebenamtliche Dozentin an der Deutschen Gesundheitsfürsorgeschule Berlin-Charlottenburg
+* 1930 – 1933: Professorin für Soziologie und Sozialpolitik an das Staatliche Berufspädagogische Institut in Berlin
+* 1933: Emigration nach New York 
+* 1931 – 1933: Generalsekretärin der Gesellschaft für Soziale Reform
+* 1933: Professur für Wirtschaftswissenschaften, Soziologie und Sozialwissenschaften an der Graduate Faculty der New School for Social 
+* 1933: Gründung der University of Exile in New York und der Graduate Faculty der New School for Social Research
+    *  1939: Dekanin der Graduiertenfakultät für Politik- und Sozialwissenschaften an der Graduate Faculty der New School for Social Research der University of Exile
+* Gestorben: 09.12.1965 in New Yersey
+
+#### Eveline Goodman-Thau 
+
+<image src="https://www.juedische-allgemeine.de/wp-content/uploads/2019/05/imago55018443h-1536x2304-834x1251-c-default.jpg" alt="Bildbeschreibung">
+
+* Geburtstag: 20.06.1934 Wien 
+* Exil: 1938-1956 nach Holland
+    * ging in den Niederlanden in die Schule und machte ihren Schulabschluss 
+* Lebt derzeit in: Israel	
+* Tätigkeiten: Rabbinerin; Professorin für jüdische Religions- und Geistesgeschichte
+* 1966-1976: Direktorin von Institute for Research on Dutch Jewry 
+* 1983-1987: Dozentin für Contemporary Jewish Thought,  akademische Beraterin des WZO Youth and Hechalutz Department, des Martin Buber Institute of the Hebrew University und des Brookdale Institute for Human Development. 
+* 1987: Lehrtätigkeit in deutschen Universitäten in Berlin, Tübingen, Heidelberg, Kassel, Oldenburg, Halle-Wittenberg
+* 1993: Promotion zu dem Thema „Zeitumbruch – Zur messianischen Grunderfahrung in der jüdischen Tradition“
+* 2010: Gastprofessorin in Osnabrück
+* 2014: Gastprofessorin in Lüneburg
