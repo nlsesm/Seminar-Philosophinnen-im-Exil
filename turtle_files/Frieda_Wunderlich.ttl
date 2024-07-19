@@ -1,0 +1,225 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Frieda_Wunderlich a foaf:Person 
+    ; foaf:name "Frieda Wunderlich"
+    ; owl:sameAs dbr:Frieda_Wunderlich
+    ; dbo:birthName "Frieda Wunderlich"
+    ; dbo:birthDate "1884-11-08"^^xsd:date
+    ; dbo:birthPlace dbr:Charlottenburg
+    ; dbo:deathDate "1965-12-09"^^xsd:date
+    ; dbo:deathPlace dbr:New_Jersey
+    ; dbo:religion dbr:Judaism
+    ; bio:event _:leiterinFrauendienst, _:dozentinFrauenschule, _:herausgeberin, _:generalsekretärinIASP, _:richterin, _:lehrkraft, _:dozentinGesundheitsfürsorge, _:delegierte, _:professorinBerlin, _:abgeordnete, _:genralsekretärinGSR, _:emigration, _:gründungUniversityOfExile, _:profesorinNewYork, _:dekanin
+    ; dbo:author _:bedeutungFürNationalökonomie, _:bekämpfungArbeitslosigkeit, _:betriebswissenschaftenFabriklehre, _:produktivität, _:fabrikpflegeBetriebspolitik, _:heimatarbeitsausstellung, _:sozialversicherung, _:krisenursachen, _:versicherung, _:unemployment, _:politicalDemocracy, _:americanScholar, _:defenseEconomy, _:war, _:britishLabor, _:germanLabourCourts, _:farmerSovietZone, _:farmLaborGermany .
+
+# Biografische Ereignisse von https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/frieda-wunderlich#actor-publication
+
+_:leiterinFrauendienst a bio:Employment
+    ; bio:date "1914"^^xsd:gYear
+    ; rdfs:label "Von 1914 bis 1918 war Frieda Wunderlich Leiterin einer Kommission des Nationalen Frauendienstes." .
+
+_:dozentinFrauenschule a bio:Employment
+    ; bio:date "1920"^^xsd:gYear
+    ; bio:place dbr:Berlin
+    ; rdfs:label "Von 1920 bis 1933 war Frieda Wunderlich Dozentin an einer sozialen Frauenschule in Berlin." .
+
+_:herausgeberin a bio:Employment
+    ; bio:date "1923"^^xsd:gYear
+    ; bio:place dbr:Berlin
+    ; rdfs:label "Von 1923 bis 1933 war Frieda Wunderlich Herausgeberin der Berliner Wochenzeitung Soziale Praxis." .
+
+_:generalsekretärinIASP a bio:Employment
+    ; bio:date "1923"^^xsd:gYear
+    ; rdfs:label "Von 1923 bis 1933 war Frieda Wunderlich Generalsekretärin des deutschen Zweiges der International Association for Social Progress." .
+
+_:richterin a bio:Employment
+    ; bio:date "1924"^^xsd:gYear
+    ; bio:place dbr:Berlin
+    ; rdfs:label "Von 1924 bis 1925 war Frieda Wunderlich Richterin am Obersten Sozialversicherungsgericht in Berlin." .
+
+_:lehrkraft a bio:Employment
+    ; bio:date "1925"^^xsd:gYear
+    ; rdfs:label "Von 1925 bis 1933 war Frieda Wunderlich Lehrkraft an der Deutschen Akademie für soziale und pädagogische Frauenarbeit." .
+
+_:dozentinGesundheitsfürsorge a bio:Employment
+    ; bio:date "1927"^^xsd:gYear
+    ; bio:place dbr:Charlottenburg
+    ; rdfs:label "Von 1927 bis 1933 war Frieda Wunderlich Nebenamtliche Dozentin an der Deutschen Gesundheitsfürsorgeschule Berlin-Charlottenburg." .
+
+_:delegierte a bio:Event
+    ; bio:date 1928
+    ; bio:place dbr:Paris
+    ; rdfs:label "1928 war Frieda Wunderlich Delegierte auf der Konferenz für Wohlfahrtspflege und Sozialpolitik in Paris." .
+
+_:professorinBerlin a bio:Employment
+    ; bio:date "1930"^^xsd:gYear
+    ; bio:place dbr:Berlin
+    ; rdfs:label "Von 1930 bis 1933 war Frieda Wunderlich Professorin für Soziologie und Sozialpolitik am Staatlichen Berufspädagogischen Institut in Berlin." .
+
+_:abgeordnete a bio:Employment
+    ; bio:date "1930"^^xsd:gYear
+    ; bio:place dbr:Berlin
+    ; bio:Employer dbr:Landtag_of_Prussia
+    ; rdfs:label "Von 1930 bis 1932 war Frieda Wunderlich Abgeordnete im Preußischen Landtag für die DDP." .
+
+_:genralsekretärinGSR a bio:Employment
+    ; bio:date "1931"^^xsd:gYear
+    ; rdfs:label "Von 1931 bis 1933 war Frieda Wunderlich Generalsekretärin der Gesellschaft für Soziale Reform." .
+
+_:emigration a bio:Emigration 
+    ; bio:date "1933"^^xsd:gYear 
+    ; bio:place dbr:New_York
+    ; rdfs:label "1933 emigrierte Frieda Wunderlich nach New York." .
+
+_:gründungUniversityOfExile a bio:Event
+    ; bio:date 1933
+    ; bio:place dbr:New_York
+    ; rdfs:label "1933 gründete Frieda Wunderlich die University of Exile in New York und die Graduate Faculty der New School for Social Research." .
+
+_:profesorinNewYork a bio:Employment
+    ; bio:date 1933
+    ; bio:place dbr:New_York
+    ; rdfs:label "1933 hatte Frieda Wunderlich eine Professur für Wirtschaftswissenschaften, Soziologie und Sozialwissenschaften an der Graduate Faculty der New School for Social." .
+
+_:dekanin a bio:Employment
+    ; bio:date 1939
+    ; bio:place dbr:New_York
+    ; rdfs:label "1933 war Frieda Wunderlich Dekanin der Graduiertenfakultät für Politik- und Sozialwissenschaften an der Graduate Faculty der New School for Social Research der University of Exile." .
+
+#Werke/Artikel von https://portal.dnb.de/opac/showShortList?currentPosition=22&currentResultId=auRef%3D117354899%26any
+
+_:bedeutungFürNationalökonomie a bibo:Book
+    ; dcterms:title "Hugo Münsterbergs Bedeutung für die Nationalökonomie" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1920"^^xsd:gYear 
+    ; dcterms:publisher "Fischer" 
+    ; dcterms:language "de" .
+
+_:bekämpfungArbeitslosigkeit a bibo:Book
+    ; dcterms:title "Die Bekämpfung der Arbeitslosigkeit in Deutschland seit Beendigung des Krieges" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1925"^^xsd:gYear 
+    ; dcterms:publisher "Fischer"
+    ; dcterms:language "de" .
+
+_:betriebswissenschaftenFabriklehre a bibo:Book
+    ; dcterms:title "Betriebswissenschaften und Fabrikpflege" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1925"^^xsd:gYear 
+    ; dcterms:publisher "Deutscher Verband der Sozialbeamtinnen"
+    ; dcterms:language "de" .
+
+_:produktivität a bibo:Book
+    ; dcterms:title "Produktivität" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1926"^^xsd:gYear 
+    ; dcterms:publisher "G. Fischer" 
+    ; dcterms:language "de" .
+
+_:fabrikpflegeBetriebspolitik a bibo:Book
+    ; dcterms:title "Fabrikpflege: Ein Beitrag zur Betriebspolitik" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1926"^^xsd:gYear 
+    ; dcterms:publisher "Springer" 
+    ; dcterms:language "de" .
+
+_:heimatarbeitsausstellung a bibo:Book
+    ; dcterms:title "Die deutsche Heimatarbeitsausstellung 1925" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1927"^^xsd:gYear 
+    ; dcterms:publisher "G. Fischer" 
+    ; dcterms:language "de" .
+
+_:sozialversicherung a bibo:Book
+    ; dcterms:title "Der Kampf um die Sozialversicherung" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1930"^^xsd:gYear 
+    ; dcterms:publisher "Deutscher Verband d. Sozialbeamtinnen" 
+    ; dcterms:language "de" .
+
+_:krisenursachen a bibo:Book
+    ; dcterms:title "Krisenursachen – Krisenüberwindung" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1931"^^xsd:gYear 
+    ; dcterms:publisher "Büro für Sozialpolitik" 
+    ; dcterms:language "de" .
+
+_:versicherung a bibo:Book
+    ; dcterms:title "Versicherung, Fürsorge, Krisenrisiko" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1932"^^xsd:gYear 
+    ; dcterms:publisher "Lühe" 
+    ; dcterms:language "de" .
+
+_:unemployment a bibo:Book
+    ; dcterms:title "New aspects of unemployment in Germany" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1934"^^xsd:gYear 
+    ; dcterms:language "en" .
+
+_:politicalDemocracy a bibo:Book
+    ; dcterms:title "Political and economic democracy" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1937"^^xsd:gYear 
+    ; dcterms:publisher "Norton" 
+    ; dcterms:language "en" .
+
+_:americanScholar a bibo:Book
+    ; dcterms:title "The American scholar" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1938"^^xsd:gYear 
+    ; dcterms:publisher "Phi Beta Kappa" 
+    ; dcterms:language "en" .
+
+_:defenseEconomy a bibo:Book
+    ; dcterms:title "Germany’s defense econmy and the decay of capitilism" 
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1938"^^xsd:gYear 
+    ; dcterms:publisher "The quarterly journal of economics" 
+    ; dcterms:language "en" .
+
+_:war a bibo:Book
+    ; dcterms:title "War in our time"
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1939"^^xsd:gYear 
+    ; dcterms:publisher "Norton" 
+    ; dcterms:language "en" .
+
+_:britishLabor a bibo:Book
+    ; dcterms:title "British labor and the war"
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1941"^^xsd:gYear 
+    ; dcterms:publisher "The Graduate Faculty of Political and Social Science, New School for Social Research" 
+    ; dcterms:language "en" .
+
+_:germanLabourCourts a bibo:Book
+    ; dcterms:title "German Labour Courts"
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1946"^^xsd:gYear 
+    ; dcterms:publisher "The University of North Carolina Press" 
+    ; dcterms:language "en" .
+
+_:farmerSovietZone a bibo:Book
+    ; dcterms:title "Farmer and farm labor in the Soviet Zone of Germany"
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1958"^^xsd:gYear 
+    ; dcterms:publisher "Twanye" 
+    ; dcterms:language "en" .
+
+_:farmLaborGermany a bibo:Book
+    ; dcterms:title "Farm Labor in Germany 1810 - 1945 : Its historical development within the framework of agricultural and social policy"
+    ; dcterms:creator ex:Frieda_Wunderlich
+    ; dcterms:issued "1961"^^xsd:gYear 
+    ; dcterms:publisher "Princeton University Press" 
+    ; dcterms:language "en" .

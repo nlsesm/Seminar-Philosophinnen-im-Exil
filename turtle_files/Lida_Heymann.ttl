@@ -1,0 +1,48 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Lida_Heymann a foaf:Person 
+    ; foaf:name "Lida Heymann"
+    ; owl:sameAs dbr:Lida_Heymann
+    ; owl:sameAs <https://explore.gnd.network/gnd/118704524>
+    ; dbo:birthName "Lida Gustava Heymann"
+    ; dbo:birthDate "1868-03-15"^^xsd:date
+    ; dbo:birthPlace dbr:Hamburg
+    ; dbo:deathDate "1943-07-31"^^xsd:date
+    ; dbo:education _:privateSchool
+    ; bio:event _:activism, _:foundingWomensAssociation, _:earlyHelpInHamburg, _:emigrationSchweiz.
+
+_:privateEducation a dbo:EducationalInstitution
+    ; rdfs:label "Privatschule in Hamburg"
+    ; bio:label "Lida Heymann wurde zunächst privat zu Hause unterrichtet, dann besuchte sie eine höhere Töchterschule und anschließend ein internationales Mädchenpensionat in Dresden ".
+
+_:activism a bio:Activism 
+    ; bio:date "1880"^^xsd:gYear
+    ; rdfs:label "Sie hat Hilfe an Kinder und Eltern von Armenschulen in Hamburg geleistet und dann in den 90er die Lebenssituation von Frauen verbessert.".
+
+_:buildingKidsAndWomenCenter a bio:Organization
+    ; bio:date "1897"^^xsd:gYear
+    ; rdfs:label "Nach dem Tod ihres Vaters gründete sie in 1897 ein Kinder- und Frauenzentrum in Hamburg, wo Hilfsbedürftige Frauen und Kinder sich aufhalten konnten".
+
+_:foundingWomensAssociation a bio:Organization
+    ; bio:date "1902"^^xsd:gYear
+    ; rdfs:label "1902 gründete Heymann gemeinsam mit Anita Augspurg den Deutschen Verein für Frauenstimmrecht, der sich zu einem Schwerpunkt der Deutschen Frauenbewegung um die Jahrhundertwende entwickelte.".
+
+_:foundingIFFF a bio:Organization
+    ; bio:date "1915"^^xsd:gYear
+    ; rdfs:label "1915 gründete Lida das IFFF (Internationaler Frauenbund für Frieden und Freiheit) in Den Haag.".
+
+_:emigrationSchweiz a bio:Emigration 
+    ; bio:date "1933"^^xsd:gYear
+    ; bio:place "Zürich"
+    ; rdfs:label "Während Hitlers „Machtergreifung“ 1933 befanden sich beide auf einer Auslandsreise, von der sie nicht mehr nach Deutschland zurückkehrten. Das Vermögen beider wurde konfisziert. Die Bibliothek und alle Unterlagen aus der jahrzehntelangen Arbeit von Heymann und Augspurg in der nationalen und internationalen Frauenbewegung gingen verloren. Sie blieben beiden bis zum Tod in der Schweiz.".

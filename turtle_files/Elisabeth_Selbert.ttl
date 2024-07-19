@@ -1,0 +1,86 @@
+@prefix ex: <http://www.exiled-philosophers.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:Elisabeth_Selbert a foaf:Person;
+    foaf:name "Elisabeth Selbert" ;
+    foaf:givenName "Elisabeth" ;
+    foaf:familyName "Selbert" ;
+    foaf:birthDate "1896-09-22"^^xsd:date ;
+    foaf:deathDate "1986-06-09"^^xsd:date ;
+    foaf:birthPlace dbr:Kassel ;
+    foaf:deathPlace dbr:Kassel ;
+    dbo:nationality dbr:Germany ;
+    dbo:occupation dbr:Lawyer, dbr:Politician ;
+    bio:event ex:marriageSelbert, ex:studiesMarburg, ex:phdMarburg, ex:electedParliament, ex:basicLaw, ex:womenRightsMovement ;
+    owl:sameAs dbr:Elisabeth_Selbert .
+
+# Biography
+
+ex:childhood a bio:Event ;
+    bio:place dbr:Kassel ;
+    rdfs:label "Kindheit in Kassel, Deutschland."@de ;
+    rdfs:label "Childhood in Kassel, Germany."@en .
+
+ex:studiesMarburg a bio:Event ;
+    bio:date "1925"^^xsd:gYear ;
+    bio:place dbr:University_of_Marburg ;
+    rdfs:label "Studium der Rechtswissenschaften an der Universität Marburg."@de ;
+    rdfs:label "Studied law at the University of Marburg."@en .
+
+ex:phdMarburg a bio:Event ;
+    bio:date "1930"^^xsd:gYear ;
+    bio:place dbr:University_of_Marburg ;
+    rdfs:label "Promotion in Rechtswissenschaften an der Universität Marburg."@de ;
+    rdfs:label "Received PhD in law from the University of Marburg."@en .
+
+ex:marriageSelbert a bio:Marriage ;
+    bio:partner dbr:Adam_Selbert ;
+    bio:date "1920-07-20"^^xsd:date ;
+    rdfs:label "Heirat mit Adam Selbert."@de ;
+    rdfs:label "Marriage to Adam Selbert."@en .
+
+ex:electedParliament a bio:Event ;
+    bio:date "1946"^^xsd:gYear ;
+    bio:place dbr:Berlin ;
+    rdfs:label "Wahl in den Hessischen Landtag."@de ;
+    rdfs:label "Elected to the Hessian State Parliament."@en .
+
+ex:basicLaw a bio:Event ;
+    bio:date "1949"^^xsd:gYear ;
+    bio:place dbr:Bonn ;
+    rdfs:label "Mitarbeit am Grundgesetz für die Bundesrepublik Deutschland."@de ;
+    rdfs:label "Contributed to the Basic Law for the Federal Republic of Germany."@en .
+
+ex:womenRightsMovement a bio:Event ;
+    bio:date "1950"^^xsd:gYear ;
+    rdfs:label "Engagement in der Frauenrechtsbewegung in Deutschland."@de ;
+    rdfs:label "Active in the women's rights movement in Germany."@en .
+
+# Books 
+
+ex:womenRights a bibo:Book ;
+    dcterms:title "Die Bedeutung der Gleichberechtigung der Geschlechter" ;
+    dcterms:creator ex:Elisabeth_Selbert ;
+    dcterms:language dbr:German_language ;
+    dcterms:issued "1949"^^xsd:gYear ;
+    rdfs:label "Die Bedeutung der Gleichberechtigung der Geschlechter"@de ;
+    rdfs:label "The Importance of Gender Equality"@en .
+
+ex:equalityBasicLaw a bibo:Book ;
+    dcterms:title "Die Gleichberechtigung im Grundgesetz" ;
+    dcterms:creator ex:Elisabeth_Selbert ;
+    dcterms:language dbr:German_language ;
+    dcterms:issued "1951"^^xsd:gYear ;
+    rdfs:label "Die Gleichberechtigung im Grundgesetz"@de ;
+    rdfs:label "Equality in the Basic Law"@en .
+
+   
+

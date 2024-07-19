@@ -1,0 +1,81 @@
+@prefix ex: <http://www.exiled-philosophers.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix source: <https://www.iep.utm.edu/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix britannica: <https://www.britannica.com/biography/> .
+
+
+ex:Rivka_Horwitz a foaf:Person;
+    foaf:name "Rivka Horwitz" ;
+    foaf:givenName "Rivka" ;
+    foaf:familyName "Horwitz" ;
+    foaf:nick "Rivka Horwitz" ;
+    foaf:birthDate "1926-11"^^xsd:date ;
+    foaf:deathDate "2007-01-04"^^xsd:date ;
+    foaf:birthPlace dbr:Bad_Homburg_vor_der_Höhe ;
+    foaf:deathPlace dbr:Jerusalem ;
+    dbo:nationality dbr:Israel ;
+    dbo:occupation dbr:Philosopher, dbr:Writer, dbr:Professor ;
+    bio:event ex:emigrationPalestine, ex:emigrationUSA, ex:marriageHorwitz, ex:universityStudies ;
+    owl:sameAs dbr:Rivka_Hoewitz .
+
+# Biography
+
+ex:childhood a bio:Event ;
+    bio:place dbr:Bad_Homburg_vor_der_Höhe ;
+    rdfs:label "Ihr Vater leitete in Bad Homburg ein jüdisches Sanatorium."@de ;
+    rdfs:label "Her father ran a jewish sanatorium in Bad Homburg."@en .
+
+
+ex:escapePalestine a bio:Event ;
+    bio:place dbr:Jerusalem ;
+    rdfs:label "Flucht nach Palästina aufgrund der Machtergreifung der Nationalsozialisten"@de ;
+    rdfs:label "Escape to Palestine due to the Nazis´ seizure of power"@en ;
+    dcterms:source wiki:Rivka_Horwitz .
+
+
+ex:emigrationUSA a bio:Emigration ;
+    bio:place dbr:Jerusalem, dbr:New_York ;
+    rdfs:label "Emigration in die USA um ihr Studium fortzuführen."@de ;
+    rdfs:label "Emigration to the USA to continue her studies."@en ;
+    dcterms:source wiki:Rivka_Horwitz .
+
+
+ex:universityStudies a bio:Event ;
+    bio:date "1962"^^xsd:gYear ;
+    bio:place dbr:University_of_Pensylvania ;
+    rdfs:label "Sie erwarb den PhD mit einer Arbeit über die Sprachphilosophie."@de ;
+    rdfs:label "She earned her degree PhD with a thesis on the philosophy of language."@en ;
+    dcterms:source wiki:Rivka_Horwitz .
+
+
+ex:returnIsrael a bio:Event ;
+    bio:place dbr:Jerusalem ;
+    rdfs:label "Rückkehr nach Jerusalem."@de ;
+    rdfs:label "Return to Jerusalem."@en ;
+    dcterms:source wiki:Rivka_Horwitz .
+
+
+# Books
+
+ex:Speech_and_Time_in_the_philosophy_of_Franz_Rosenzweig a bibo:Book ;
+    dcterms:title "Speech and Time in the philosophy of Franz Rosenzweig" ;
+    dcterms:creator ex:Rivka_Horwitz ;
+    dcterms:language dbr:English_language ;
+    dcterms:issued "1963"^^xsd:gYear .
+   
+
+ex:To_the_history_of_Martin_Bubers_book_I_and_Thou a bibo:Book ;
+    dcterms:title "To the history of Martin Buber´s book ,,I and Thou''" ;
+    dcterms:creator ex:Rivka_Horwitz ;
+    dcterms:language dbr:English_language ;
+    dcterms:issued "1988"^^xsd:gYear .
+  

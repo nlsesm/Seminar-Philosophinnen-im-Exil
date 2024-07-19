@@ -1,0 +1,81 @@
+@prefix ex: <http://www.exiled-philosophers.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:Margarete_Susman a foaf:Person;
+    foaf:name "Margarete Susman" ;
+    foaf:givenName "Margarete" ;
+    foaf:familyName "Susman" ;
+    foaf:birthDate "1872-10-14"^^xsd:date ;
+    foaf:deathDate "1966-01-16"^^xsd:date ;
+    foaf:birthPlace dbr:Hamburg ;
+    foaf:deathPlace dbr:Zurich ;
+    dbo:nationality dbr:Germany ;
+    dbo:occupation dbr:Philosopher, dbr:Writer ;
+    dbo:author ex:woman_and_judaism, ex:the_jewish_revolution, ex:the_book_of_jobs_daughter ;
+    bio:event ex:childhood, ex:educationBerlin, ex:migrationZurich, ex:meetBuber, ex:deathZurich ;
+    owl:sameAs dbr:Margarete_Susman .
+
+# Biography
+
+ex:childhood a bio:Event ;
+    bio:place dbr:Hamburg ;
+    rdfs:label "Kindheit in Hamburg, Deutschland."@de ;
+    rdfs:label "Childhood in Hamburg, Germany."@en .
+
+ex:educationBerlin a bio:Event ;
+    bio:date "1896"^^xsd:gYear ;
+    bio:place dbr:Berlin ;
+    rdfs:label "Studium der Philosophie in Berlin."@de ;
+    rdfs:label "Studied philosophy in Berlin."@en .
+
+ex:emigrationZurich a bio:Emigration ;
+    bio:date "1933"^^xsd:gYear ;
+    bio:place dbr:Germany, dbr:Switzerland ;
+    rdfs:label "Emigration nach Zürich aufgrund der nationalsozialistischen Verfolgung."@de ;
+    rdfs:label "Emigrated to Zurich due to Nazi persecution."@en .
+
+ex:meetBuber a bio:Event ;
+    bio:date "1910"^^xsd:gYear ;
+    bio:place dbr:Frankfurt ;
+    rdfs:label "Begegnung mit dem Philosophen Martin Buber."@de ;
+    rdfs:label "Met philosopher Martin Buber."@en .
+
+ex:deathZurich a bio:Event ;
+    bio:date "1966"^^xsd:gYear ;
+    bio:place dbr:Zurich ;
+    rdfs:label "Tod in Zürich, Schweiz."@de ;
+    rdfs:label "Death in Zurich, Switzerland."@en .
+
+# Works
+
+ex:woman_and_judaism a bibo:Book ;
+    dcterms:title "Das Buch der Frauen: Ein Beitrag zur modernen Geistesgeschichte" ;
+    dcterms:creator ex:Margarete_Susman ;
+    dcterms:language dbr:German_language ;
+    dcterms:issued "1913"^^xsd:gYear ;
+    rdfs:label "Das Buch der Frauen: Ein Beitrag zur modernen Geistesgeschichte"@de ;
+    rdfs:label "The Book of Women: A Contribution to Modern Intellectual History"@en .
+
+ex:the_jewish_revolution a bibo:Book ;
+    dcterms:title "Die geistige Gestalt der jüdischen Frau" ;
+    dcterms:creator ex:Margarete_Susman ;
+    dcterms:language dbr:German_language ;
+    dcterms:issued "1938"^^xsd:gYear ;
+    rdfs:label "Die geistige Gestalt der jüdischen Frau"@de ;
+    rdfs:label "The Spiritual Figure of the Jewish Woman"@en .
+
+ex:the_book_of_jobs_daughter a bibo:Book ;
+    dcterms:title "Das Buch Hiob und wir" ;
+    dcterms:creator ex:Margarete_Susman ;
+    dcterms:language dbr:German_language ;
+    dcterms:issued "1948"^^xsd:gYear ;
+    rdfs:label "Das Buch Hiob und wir"@de ;
+    rdfs:label "The Book of Job and Us"@en .

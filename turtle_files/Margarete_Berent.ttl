@@ -1,0 +1,94 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix bio:  <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+
+
+ex:Margarete_Berent a foaf:Person 
+    ; foaf:name "Margarete_Berent"
+    ; owl:sameAs dbr:Margarete_Berent
+    ; owl:sameAs <https://explore.gnd.network/gnd/102015279>
+    ; wdt:P735 "Margarete_Berent" # birthName
+    ; wdt:p569 "1887-07-09"^^xsd:date # birthDate
+    ; wdt:Q64 wd:P19 # birthplace
+    ;wdt:p512 wd:Q959320 # Academic degree : Doctor of Laws
+    ;wdt:p20 "NewYork"
+    ; wdt:P570 "1965-06-23"^^xsd:date  # deathDate
+    ; wdt:p1801 "GedenkTafel"
+    ; wdt:P106 wd:Q185351 # Occupation:Jurist
+    ; bio:event _:emigrationChile, _:emigrationNewYork, _:graduation, _:DozentinDerSozialenFrauenSchule, _:Schatzmeisterin
+    ; wdt:author _:DieZugewinnstgemeinschaftderEhegatten.
+   
+    
+
+_:emigrationChile a bio:Emigration # s. dazu https://www.digitales-deutsches-frauenarchiv.de/suche?term=Margarete%20Berent
+
+    ; bio:date "1939"^^xsd:gYear 
+    ; bio:place dbr:Berlin, dbr:Chile, dbr:USA
+    ; rdfs:label "Nachdem Margarete Berent am 23. Juni 1933 wegen „nicht arischer Abstammung aus der Anwaltskammer Berlin ausgeschlossen wurde,gelang es ihr erst im November 1939, nach Kriegsbeginn Deutschland zu verlassen.Sie reiste zunächst nach Chile." .
+
+_:emigrationNewYork a bio:Emigration # s. dazu Prof. Dr. Sabine Toppe (2024): Margarete Berent, in: Digitales Deutsches Frauenarchiv: URL: https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/margarete-berent
+   #Zuletzt besucht am: 02.07.2024
+ ; bio:date "1940"^^xsd:gYear 
+    ; bio:place dbr:Berlin, dbr:Chile, dbr:USA
+    ; rdfs:label "Margarete Berent erhielt dann im Sommer 1940 ein Visum für die USA ." .
+
+
+ _:graduation a bio:Graduation  # s. dazu Prof. Dr. Sabine Toppe (2024): Margarete Berent, in: Digitales Deutsches Frauenarchiv: URL: https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/margarete-berent
+   #Zuletzt besucht am: 02.07.2024
+    ; bio:date "1913"^^xsd:gYear 
+    ; bio:place wdt:UniversitätErlangen
+    ; rdfs:label "Nachdem ihr am März 1912 ihr Gesuch um Zulassung zum Ersten Juristischen Staatsexamen abgelehnt worden war, ging Margarete Berent nach Bayern an die Universität in Erlangen und schloss hier ihr Studium im 1913 mit einer Promotion zum Dr. jur. und einer Dissertation (Prädikat magna cum laude) über Die Zugewinngemeinschaft der Ehegatten ab'." .
+
+_:graduation a bio:Graduation  # s. dazu Prof. Dr. Sabine Toppe (2024): Margarete Berent, in: Digitales Deutsches Frauenarchiv: URL: https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/margarete-berent
+   #Zuletzt besucht am: 02.07.2024
+    ; bio:date "1919"^^xsd:gYear 
+    ; bio:place wdt:Berlin
+    ; rdfs:label "Im Dezember 1919 legte Margarete Berent, nachdem Preußen Frauen zur Ersten Juristischen Staatsprüfung zuließ, das Referendarexamen mit der Note ‚gut‘ ab." .
+
+_:DozentinDerSozialenFrauenSchule a bio:Even #s. dazu Prof. Dr. Sabine Toppe (2024): Margarete Berent, in: Digitales Deutsches Frauenarchiv: URL: https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/margarete-berent
+   #Zuletzt besucht am: 02.07.2024
+; bio:role "Dozentin" 
+    ; bio:place wd:P19
+    ; bio:date [
+        rdf:type bio:Interval ;
+        bio:begins "1919"^^xsd:gYear ;
+        bio:ends "1929"^^xsd:gYear ;
+    ] 
+    ;rdfs:label: "Von 1919 bis 1929 unterrichte Margarete Berent Familienrecht und Jugendfürsorge an der von Alice Salomon gegründeten Sozialen Frauenschule in Berlin-Schöneberg" .
+
+_:Schatzmeisterin a bio:Even #s. dazu  Prof. Dr. Sabine Toppe (2024): Margarete Berent, in: Digitales Deutsches Frauenarchiv: URL: https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/margarete-berent
+   #Zuletzt besucht am: 02.07.2024
+; bio:role "Schatzmeisterin" 
+    ; bio:place wd:P19
+    ; bio:date [
+        rdf:type bio:Interval ;
+        bio:begins "1917"^^xsd:gYear ;
+        bio:ends "1919"^^xsd:gYear ;
+    ] 
+    ;rdfs:label: "von 1917 bis 1919 war Margarete berent Schatzmeisterin des Deutschen Juristinnenvereins".
+
+_:DieZugewinnstgemeinschaftderEhegatten a bibo:Book  # s. dazu https://discovery.ub.uni-kiel.de/Die%20Zugewinnstgemeinschaft%20der%20Ehegatten/g=g4&fy=1000191520062025&ft=2&fb=10002025&fd=local&fp=0&fs=0&ff=0
+    ; dcterms:title "Die Zugewinnstgemeinschaft der Ehegatten" 
+    ; dcterms:creator ex:Margarete_Berent, dbr:Margarete_Berent
+    ; dcterms:issued "1915"^^xsd:gYear 
+    ; bibo:GVB "140448306"
+    ; dcterms:address "Breslau"
+    ; dcterms:publisher "Marcus"
+     ; dcterms:volume "123" 
+     ; dcterms:keyword "Eheliches Güterrecht / Familienrecht / Privatrecht / Recht / Deutsches Sprachgebiet"
+    ; dcterms:series "Untersuchungen zur deutschen Staats- und Rechts-Geschichte ; 123"
+    ; dcterms:language "de" .
+

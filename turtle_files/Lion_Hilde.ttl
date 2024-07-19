@@ -1,0 +1,48 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix schema: <http://schema.org/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Gertrud_Bing a foaf:Person 
+    ; foaf:name "Lion Hilde"
+    ; owl:sameAs <https://explore.gnd.network/gnd/128248505>
+    ; owl:sameAs wd:Q1618230
+    ; wdt:P569 "1892-06-07"^^xsd:date ;  # date of irth 
+    ; wdt:P19 wd:Q1055 ;  # Birth place (Hamburg)
+    ; wdt:P570 "1970-04-08"^^xsd:date # date of death
+    ; wdt:P106 wd:Q2306091 # occupation (sociologist)
+
+    ; bio:event _:graduation, _:emigrationLondon, _:emigrationUK 
+    ; wdt:P50 _:zurSoziologiederFrauenbewegung. # P50 = author
+
+_:graduation a bio:Graduation # s. dazu https://www.digitales-deutsches-frauenarchiv.de
+    ; bio:date "1924"^^xsd:gYear
+    ; bio:place wd:Q365
+    ; rdfs:label "In Köln wurde sie 1924 zum Dr. rer. pol. mit der Dissertation Die klassenkämpferische und die katholisch-konfessionelle deutsche Frauenbewegung promoviert" .
+
+_:emigrationLondon a bio:Emigration # s. dazu https://www.digitales-deutsches-frauenarchiv.de
+    ; bio:date "1933"^^xsd:gYear 
+    ; bio:place wd:Q23311
+    ; rdfs:label "Hilde Lion, die keine jüdische Identität hatte, emigrierte im November 1933 nach London, vorerst zu einem Studienaufenthalt auf Einladung und mit einem Stipendium des Internationalen Akademikerbundes." .
+
+_:zurSoziologiederFrauenbewegung a bibo:Book
+    ; dcterms:title "Zur Soziologie der Frauenbewegung. Die sozialistische und die katholische Frauenbewegung"
+    ; dcterms:creator ex:Lion_Hilde
+    ; dcterms:issued "1926"^^xsd:gYear
+    ; dcterms:publisher "Herbig" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "womene empowerment", "Sociology" .
+

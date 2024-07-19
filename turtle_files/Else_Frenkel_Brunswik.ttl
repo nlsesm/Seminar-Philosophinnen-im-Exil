@@ -1,0 +1,169 @@
+@prefix ex: <http://www.exiled-philosophers.org/> .  # unser eigener Namespace
+@prefix dbo: <http://dbpedia.org/ontology/> .           # dbp - attribut vom dbr
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .            # Friend of a Friend (FOAF) - beschreibt Personen und ihre Beziehungen
+@prefix dbr: <http://dbpedia.org/resource/> .           # dbpedia - ressource (site)
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .         # Ontologie-Sprache
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .         # Bio - Vokabular für biographische Daten
+@prefix bibo: <http://purl.org/ontology/bibo/> .        # Bibliographic Ontology (BIBO) - beschreibt bibliographische Daten
+@prefix dcterms: <http://purl.org/dc/terms/> .          # Dublin Core Terms - Metadaten
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . # RDF Schema - beschreibt RDF-Vokabulare
+
+
+ex:Else_Frenkel_Brunswik a foaf:Person
+    ; owl:sameAs dbr:Else_Frenkel_Brunswik
+    ; owl:sameAs <https://explore.gnd.network/gnd/119419963>
+    ; foaf:name "Else Frenkel Brunswik"
+    ; dbo:gender "female"
+    ; dbo:philosophicalSchool dbr:Vienna_Circle
+    ; dbo:birthName "Else Frenkel Brunswik"
+    ; dbo:nationality "Austrian", "American"
+    ; dbo:education dbr:University_of_Vienna
+    ; dbo:birthDate "1908-08-14"^^xsd:date
+    ; dbo:birthPlace dbr:Lemberg
+    ; dbo:deathPlace "1958-03-31"^^xsd:date
+    ; bio:todesTheorien _:schlechtereArbeiten, _:Krankheit
+    ; dbo:knownFor "The authoritarian Personality"
+    ; dbo:ontology "Entwicklingspsychologie","Lebenslaufforschung", "Psychoanalyse" ,"Philosophy"  
+    ; dbo:family [
+        a foaf:Person ;
+        foaf:name "Leon Frenkel"
+        ; dbo:relation "Vater"
+    ], [
+        a foaf:Person ;
+        foaf:name "Pauline Brunswik"
+        ; dbo:relation "Mutter"
+    ], [
+        a foaf:Person
+        ; owl:sameAs dbr:Egon_Brunswik
+        ; dbo:education dbr:University_of_Vienna
+        ; foaf:name "Egon Brunswik"
+        ; dbo:relation "spouse"
+    ]
+    ; dbo:teacher [
+        a foaf:Person
+        ; owl:sameAs dbr:Karl_Bühler
+        ; dbo:education dbr:University_of_Vienna
+        ; foaf:name "Karl Bühler"
+        ; dbo:relation "Teacher"
+    ],
+    [
+        a foaf:Person
+        ; owl:sameAs dbr:Charlotte_Bühler
+        ; dbo:education dbr:University_of_Vienna
+        ; foaf:name "Charlotte Bühler"
+        ; dbo:relation "Teacher"
+    ]
+    ; dbo:friend [  # Bekannte/Freunde
+        a foaf:Person
+        ; foaf:name "Theodor W. Adorno"
+        ; dbo:relation "Friend"
+    ] 
+    
+    ; dbo:influencedBy dbr:Sigmund_Freud, dbr:Ernst_Kris
+    ; bio:event _:heirat, _:emigrationOneVienna, _:emigrationTwoUsa # Ereignisse in ihrem Leben
+    ; dbo:author _:Disseration, _:studie, _:buch  # Autorin bestimmter Werke
+    ; bio:bildungsweg _:Volksschule, _:Gymnasium, _:erstesStudium, _:zweitesStudium, _:promotion, _:Arbeit, _:Forschungsstipendium, _:Stelle
+    ; dbo:Quellen _:ZusammenfassungÜberPhilosophen .
+
+_:Volksschule a bio:bildungsweg
+    ; bio:date "1914 - 1918"
+    ; bio:place dbr:Völsbei 
+    ; rdfs:label "Nachdem Die zunehmenden Pogrome gegenüber den Juden - vor allem im Benachbarten Russland- veranlassten die Familie noch vor dem 1. Weltkrieg nach Völsbei bei Wien umzuziehen. Dort besuchte Else Frenkel von 1914 bis 1918 die Volksschule. " . 
+
+_:Gymnasium a bio:bildungsweg
+    ; bio:date "1918-1926"
+    ; bio:place dbr:Vienna
+    ; rdfs:label "Nach dem 1. Weltkrieg zog die Familie nach Wien In Wien besuchte Else Frenkel von 1918 bis 1926 das Schwarzwaldsche Realgymnasium, wo sie im Juni 26 die Matura ablegte" . 
+
+_:erstesStudium a bio:bildungsweg
+    ; bio:date "1926"^^xsd:gYear;
+    ; bio:place dbr:University_of_Vienna
+    ; rdfs:label "Else beginngt ihr Studium in den Fächern Physik und Mathematik" .
+
+_:zweitesStudium a bio:bildungsweg
+    ; bio:date "1927"^^xsd:gYear;
+    ; bio:place dbr:University_of_Vienna
+    ; rdfs:label "Else wechselt von dem naturwissenschaftlichem der Fächer Physik & Mathematik zu dem geistesswissenschaftlichen Bereich der Fächer Philosophie & Psychologie" . 
+
+_:promotion a bio:bildungsweg
+    ; bio:date "1913"^^xsd:gYear;
+    ; bio:place dbr:University_of_Vienna
+    ; rdfs:label "1930 promovierte Else bei Karl Brühl, 1931 erschien die Dissertation mit dem Titel <Atomismus und Mechanismus in der Assoziationspsychologie>" . 
+
+_:Arbeit a bio:bildungsweg
+    ; bio:date "1939"
+    ; bio:place "Institut of Child Welfare" dbr:University_of_Berkeley .
+
+_:Forschungsstipendium a bio:bildungsweg 
+    ; bio:employer dbr:University_of_Berkeley
+    ; bio:position "Forschungsstipendiatin" 
+    ; bio:startDate "1942"^^xsd:gYear 
+    ; rdfs:label "1942 erhielt sie ein Forschungsstipendium des Social Science Research Council." .
+
+_:Stelle a bio:bildungsweg 
+    ;bio:employer dbr:University_of_Oslo ;
+    ;bio:position "Fulbright Fellow" ;
+    ;bio:startDate "1956"^^xsd:gYear ;
+    ;rdfs:label "1956 erhielt sie ein Fulbright Fellowship für einen Studienaufenthalt an der Universität in Oslo." .
+
+_:Disseration a bibo:Study 
+    ; dcterms:title "Atomismus und Mechanismus in der Assoziationspsychologie"
+    ; dcterms:creater ex:Else_Frenkel_Brunswik
+    ; dcterms:issued "1931"^^xsd:gYear;
+    ; bibo:magazine "Zeitschrift für Psychologie und Physiologie der Sinnesorgane (Leipzig), 123.Bd. (1931), S.193–258"
+    ; dcterms:language "de"
+    ; dcterms:subject "Psychology", "Sociology" .
+
+_:studie a bibo:Book ;
+    dcterms:title "The Authoritarian Personality" ;
+    dcterms:creator ex:Else_Frenkel_Brunswik, dbr:Else_Frenkel_Brunswik, dbr:Theodor_W._Adorno, dbr:Daniel_Levinson, dbr:R._Nevitt_Sanford ;
+    dcterms:issued "1950"^^xsd:gYear ;
+    bibo:isbn "3901402047" ;
+    dcterms:language "de" ;
+    dcterms:subject "Psychology, Sociology" .
+
+_:buch a bibo:Book
+    ; dcterms:title "Persönlichkeit und politisches Verhalten"
+    ; dcterms:creator ex:Else_Frenkel_Brunswik, dbr:Else_Frenkel_Brunswik
+    ; dcterms:issued "1951"^^xsd:gYear
+    ; bibo:isbn "9781258422913"
+    ; dcterms:language "en"
+    ; dcterms:subject "Psychlogie", "Political Science" .
+
+_:heirat a bio:wedding
+    ; bio:date "1938"^^xsd:gYear
+    ; bio:place dbr:Vienna, dbr:Warsaw 
+    ; rdfs:label "Nach der Emmigration nach den USA heirate sie ihren Ehemann in den USA" .
+
+_:emigrationOneVienna a bio:Emigration 
+    ; bio:date "1914"^^xsd:gYear 
+    ; bio:place dbr:Vienna, dbr:Warsaw
+    ; rdfs:label "In Folge von Pogromen und des Antisemitismus übersiedelt ihre jüdische Familie 1914 nach Wien." .
+
+_:emigrationTwoUsa a bio:Emigration
+    ; bio:date "1938"^^xsd:gYear 
+    ; bio:place dbr:Vienna, dbr:USA 
+    ; dbo:emigratedWith dbr:Egon_Brunswik
+    ; rdfs:label "Aufgrund des Aufstiegs der Nazis in Deutschland emigierten Else Brunswik und ihr zukünftiger Ehemann nach den USA." .
+
+_:todesTheorien a bio:schlechtereArbeiten
+    ; bio:date "1958"^^xsd:gYear
+    ; rdfs:label "Ihre letzte Lebensphase nach dem Suizid ihres Partners Egon Brunswik im Jahre 1955, der an Depressionen litt, ist durch Unruhe unstete und unsystematische Arbeit an verschiedenen Forschungsprojekten gekennzeichnet. Dazu gehören vor allem die „Old Age Study“ die sie am „Institute of Industrial Relations“ der Universität von Berkeley durchführte." .
+
+_:todesTheorien a bio:Krankheit
+    ; bio:date "1958"^^xsd:gYear
+    ; rdfs:label " seit den Wiener Jahren litt sie an rheumatischen Schüben und an einer Herzkrankheit." .
+
+_:todesTheorien a bio:Depressionen
+    ; bio:date "1958"^^xsd:gYear
+    ; rdfs:label "Laut angaben von Maier (1996) ist sie mit einem Bild von Egon in der Hand und mit einem Röhrchen von Schlaftabletten neben sich gefunden worden. Eine Ursache könnte die chronische Überforderunge gewesen sein, die sie in einem Verzweiflungszustand gebracht hat. " .
+    
+_:ZusammenfassungÜberPhilosophen a bibo:Quellen
+    ; dcterms:title "Bedeutende Psychologinnen"
+    ; dcterms:creator dbr:Sibylle_Volkmann_Raue, dbr:Helmut_E_Lück
+    ; dcterms:issued "2012"^^xsd:gYear
+    ; bibo:isbn "3407221363"
+    ; dcterms:language "de"
+    ; dcterms:subject dbr:Psychology , dbr:Bibliography
+    ; rdfs:label "Das Kapitel über Else beginnt ab S.250 und geht bis S.265" .

@@ -1,0 +1,121 @@
+@prefix ex: <http://www.exiled-philosophers.org/>. 
+
+@prefix bibo: <http://purl.org/ontology/bibo/>. # Vocabulary for bibo: https://dcmi.github.io/bibo/ 
+@prefix bio: <http://purl.org/vocab/bio/0.1/>. # Vocabulary for bio: https://vocab.org/bio/
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbp: <http://dbpedia.org/property/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gnd: <https://d-nb.info/gnd/>. 
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+ex:Siddy_Wronsky a foaf:Person;
+    foaf:givenName "Maria";
+    foaf:familyName "Reichenbach";
+    dbo:gender <https://d-nb.info/standards/vocab/gnd/gender#female>;
+    owl:sameAs <https://d-nb.info/gnd/116404671>;
+    dbo:birthName "Maria Moll";
+    dbo:birthDate "1909"^^xsd:gYear;
+    dbo:birthPlace dbr:Berlin;
+    dbo:deathDate "2013"^^xsd:gYear;
+    dbo:deathPlace: dbr:Los_Angeles;
+    dbo:influencedBy dbr:Hans_Reichenbach;
+    dbo:influenced dbr:Hans_Reichenbach;
+    bio:event _:graduation;
+    bio:event _:marriageLeroi;
+    bio:event _:marriageReichenbach;
+    bio:event _:workForHansReichenbach;
+    bio:event _:teachingLaCityCollege;
+    bio:event _:emigrationItaly;
+    bio:event _:emigrationIstanbul;
+    bio:event _:emigrationLA;
+    dbo:editor _:directionOfTime;
+    dcterms:references [
+        a bibo:ReferenceSource;
+        bibo:relation _:UeLExReichenbach, _:netzwerkImExil
+    ].
+
+
+_:graduation a bio:Graduation;
+    bio:date "1933"^^xsd:gYear;
+    bio:place dbr:University_of_Freiburg;
+    rdfs:label "Maria Reichenbach erlangte 1933 ihren Doktortitel in Philosophie an der Albert-Ludwigs-Universität Freiburg.".
+
+
+_:marriageLeroi a bio:Marriage;
+    bio:partner "Kurt_Leroi";
+    rdfs:label "Hochzeit mit ersten Mann, Journalist Kurt Leroi, und Geburt ihres Sohnes in der Türkei.".
+
+
+_:marriageReichenbach a bio:Marriage;
+    bio:partner dbr:Hans_Reichenbach;
+    bio:date "1946"^^xsd:gYear;
+    rdfs:label "Hochzeit mit zweiten Mann Hans Reichenbach.".
+
+
+_:emigrationItaly a bio:Emigration;
+    bio:date "1933"^^xsd:gYear;
+    bio:place dbr:Berlin, dbr:Italy;
+    rdfs:label "Nach der Machtergreifung 1933 der Nationalsozialisten neunmonatiges Exil in Italien.".
+
+
+_:emigrationIstanbul a bio:Emigration;
+    bio:date "1934"^^xsd:gYear;
+    bio:place dbr:Italy, dbr:Istanbul;
+    rdfs:label "Kennenlernen einer deutsch-jüdischen Familie und geht als ihr Kindermädchen mit nach Istanbul.".
+
+
+_:emigrationLA a bio:Emigration;
+    bio:date "1939"^^xsd:gYear;
+    bio:place dbr:Istanbul, dbr:Los_Angeles;
+    rdfs:label "Migration mit ihrem ersten Mann und dem gemeinsamen Sohn nach LA.".
+
+
+_:workForHansReichenbach a bio:Event;
+    bio:date "1939"^^xsd:gYear;
+    bio:place dbr:University_of_California_Los_Angeles;
+    rdfs:label "Besuch der Kurse Hans Reichenbachs an der UCLA, Kalifornien und später an der UCLA tätig und bereitet Doktorand*innen auf ihr Examen in deutscher Sprache vor.".
+
+_:teachingLaCityCollege a bio:Employment;
+    bio:employer "Los Angeles City College";
+    bio:interval [
+        bio:start "1949"^^xsd:gYear;
+        bio:end "1974"^^xsd:gYear;
+    ];
+    bio:place dbr:Los_Angeles;
+    rdfs:label "Professorin der Philosophie am Los Angeles City College.".
+
+_:directionOfTime a bibo:Book;  
+    dcterms:title "The Direction of Time";
+    dcterms:creator dbr:Hans_Reichenbach;
+    dcterms:issued "1956"^^xsd:gYear;
+    dcterms:publisher "Dover Publications";
+    dcterms:language "en";
+    dcterms:subject "Space and Time", "Science Philosophy", "Causality";
+    bibo:isbn "9780520074149".
+
+_:UeLExReichenbach a bibo:Webpage; # https://dcmi.github.io/bibo/ links to used bibo terms
+    dcterms:title "Maria Reichenbach, 1909-2013";
+    dcterms:creator "Ariadne Sevgi Avkiran";
+    dcterms:issued "2022-07-27"^^xsd:date;
+    dcterms:publisher "Germersheimer Übersetzerlexikon UeLEX (online)";
+    dcterms:language "de";
+    dcterms:subject "Biography";
+    bibo:uri <https://uelex.de/uebersetzer/reichenbach-maria/>;
+    rdfs:label "Acessed on 04.07.2024".
+
+
+_:netzwerkImExil a bibo:Book; # https://dcmi.github.io/bibo/ links to used bibo terms
+    dcterms:title "Das private Netzwerk im Exil";
+    dcterms:creator "Ariadne Sevgi Avkiran";
+    dcterms:issued "2023"^^xsd:gYear;
+    dcterms:publisher "Frank & Timme";
+    dcterms:language "de";
+    dcterms:subject "Biography";
+    bibo:doi <https://doi.org/10.57088/978-3-7329-8977-5_20>.

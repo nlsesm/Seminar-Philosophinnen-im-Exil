@@ -1,0 +1,51 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Käte_Hamburger a foaf:Person 
+    ; foaf:name "Käte Hamburger"
+    ; owl:sameAs dbr:Käte_Hamburger
+    ; owl:sameAs <https://explore.gnd.network/gnd/118545264>
+    ; dbo:birthName "Käte Hamburger"
+    ; dbo:birthDate "1896-09-28"^^xsd:date
+    ; dbo:birthPlace dbr:Hamburg
+    ; dbo:deathDate "1992-04-08"^^xsd:date
+    ; dbo:deathPlace dbr:Stuttgart
+    ; bio:event _:emigrationDijon, _:emigrationGöteborg, _:graduation
+    ; dbo:author _:dieLogikDerDichtung, _:wahrheitUndÄsthethischeWahrheit, _:thomasMannUndDieRomantik .
+
+_:emigrationDijon a bio:Emigration 
+    ; bio:date "1934"^^xsd:gYear 
+    ; bio:place dbr:Berlin, dbr:Dijon
+    ; rdfs:label "In Hoffnung auf eine Anstellung an einer Universität emigrierte sie nach der Vertreibung durch die Nazis zunächst nach Dijon in Frankreich." .
+
+_:emigrationGöteborg a bio:Emigration
+    ; bio:date "1934"^^xsd:gYear 
+    ; bio:place dbr:Dijon, dbr:Göteborg 
+    ; rdfs:label "Noch im selben Jahr verließ Hamburger Frankreich und emigrierte nach Göteborg in Schweden, wo sie als Sprachlehrerin und Autorin tätig war." .
+
+
+
+_:graduation a bio:Graduation 
+    ; bio:date "1922"^^xsd:gYear 
+    ; bio:place dbr:München
+    ; bio:participant dbr:Clemens_Baeumker
+    ; rdfs:label "1922 promoviert Käte Hamburger bei Clemens Baeumker in München mit der Arbeit 'Schillers Analyse des Menschen als Grundlage seiner Kultur- und Geschichtsphilosophie. Ein Beitrag zum Problem des Individualismus, dargestellt auf Grund seiner philosophischen Schriften'." .
+
+_:dieLogikDerDichtung a bibo:Book
+    ; dcterms:title "Die Logik der Dichtung" 
+    ; dcterms:creator ex:Käte_Hamburger, dbr:Käte_Hamburger 
+    ; dcterms:issued "1957"^^xsd:gYear 
+    ; bibo:isbn "3608916814" 
+    ; dcterms:publisher "Klett" 
+    ; dcterms:language "de" 
+     ; rdfs:label "Obwohl ihr im Exil verfasstes Hauptwerk 'Die Logik der Dichtung' Hamburger ebenso wie ihre anderen im Exil verfassten Schriften nicht als akademische Leistung anerkannt und ihr infolgedessen die Habilitation verweigert wurde, gilt es heutzutage als wissenschaftlich relevant." .

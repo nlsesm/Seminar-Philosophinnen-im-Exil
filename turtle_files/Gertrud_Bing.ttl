@@ -1,0 +1,94 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Gertrud_Bing a foaf:Person 
+    ; foaf:name "Gertrud Bing"
+    ; owl:sameAs dbr:Gertrud_Bing
+    ; owl:sameAs <https://d-nb.info/gnd/116183853>
+    ; owl:sameAs wd:Q66462
+    ; wdt:P1559 "Gertrud Bing" # name in native language
+    ; wdt:P569 "1892"^^xsd:gYear ;  # date of birth 
+    ; wdt:P19 wd:Q1055 ;  # birth place (Hamburg)
+    ; wdt:P570 "1964"^^xsd:gYear # date of death
+    ; wdt:P106 wd:Q1792450, wd:Q1622272, wd:Q182436, wd:Q1607826, wd:Q201788 #occupation (art historian, university teacher, librarian, editor, historian)
+    ; wdt:P69 wd:Q156725, wd:Q55044 # educated at (Uni Hamburg, Uni München)
+    ; wdt:P184 wd:Q57188 # doctoral advisor (Ernst Cassierer) 
+    ; bio:event _:emigrationLondon, _:graduation, _:assistantAbyWarburg, _:manageressWarburgInstitue
+    ; dbo:author _:fragmentsSurAbyWarburg, _:fritzSaxl
+    ; dbo:contributor _:laRinascitaDelPaganesimoAntico .
+
+_:emigrationLondon a bio:Emigration # https://de.wikipedia.org/wiki/Gertrud_Bing
+    ; bio:date "1933"^^xsd:gYear 
+    ; bio:place dbr:Hamburg, dbr:London
+    ; rdfs:label "1933 half Gertrud Bing dabei, die Warburg Bibliothek vor den Nationalsozialisten nach London zu retten" .
+
+_:graduation a bio:Graduation # https://www.wallstein-verlag.de/openaccess/9783835353459-003.pdf
+    ; bio:date "1921"^^xsd:gYear 
+    ; bio:place wd:Q1055
+    ; bio:participant wd:Q57188, wd:Q1627081
+    ; rdfs:label "Bing promoviert bei Ernst Cassirer und Robert Petsch in Hamburg mit ihrer Arbeit 'Der Begriff des Notwendigen bei Lessing'." .
+    
+_:assistantAbyWarburg a bio:Event # https://de.wikipedia.org/wiki/Gertrud_Bing
+    ; bio:date "1924"^^xsd:gYear
+    ; bio:place wd:Q1055
+    ; rdfs:label "1924 wurde Bing persönliche Assistentin Aby Warburgs" .
+
+_:manageressWarburgInstitue a bio:Event # https://de.wikipedia.org/wiki/Warburg_Institute
+    ; bio:role "Manageress" 
+    ; bio:place wd:Q84
+    ; bio:date [
+        rdf:type bio:Interval ;
+        bio:begins "1955"^^xsd:gYear ; 
+        bio:ends "1959"^^xsd:gYear ;
+    ] 
+    ;rdfs:label: "Von 1955 bis 1959 leitete Bing das Warburg Institute in London" .
+    
+_:laRinascitaDelPaganesimoAntico a bibo:Book # https://d-nb.info/954966341
+    ; dcterms:title "La rinascita del paganesimo antico" 
+    ; dcterms:creator dbr:Aby_Warburg
+    ; dcterms:contributor _:contributorLaRinascitaDelPaganesimoAntico
+    ; dcterms:issued "1966"^^xsd:gYear 
+    ; bibo:isbn "9788822117779" 
+    ; dcterms:publisher "La nuova Italia" 
+    ; dcterms:language "de" .
+
+_:fragmentsSurAbyWarburg a bibo:Book # https://www.zfl-berlin.org/publikationen-detail/items/fragments-sur-aby-warburg.html
+    ; dcterms:title "Fragments sur Aby Warburg" 
+    ; dcterms:creator ex:Gertrud_Bing, dbr:Gertrud_Bing
+    ; dcterms:issued "2020"^^xsd:gYear 
+    ; bibo:isbn "9782917902530" 
+    ; dcterms:publisher "Institut national d'histoire de l'art" 
+    ; dcterms:language "fr" .
+
+_:fritzSaxl a bibo:Book # https://d-nb.info/973389842
+    ; dcterms:title "Fritz Saxl 1890 - 1948 : a memoir" 
+    ; dcterms:creator ex:Gertrud_Bing, dbr:Gertrud_Bing
+    ; dcterms:issued "1957"^^xsd:gYear 
+    ; dcterms:publisher "Nelson" 
+    ; rdau:P60470 "Ill."@de, "Aus: Fritz Saxl, 1890 - 1948, a volume of memorial essays. Ed. by D. J. Gordon"@de; 
+    ; dcterms:language "en" .
+
+_:contributorLaRinascitaDelPaganesimoAntico a foaf:Person # https://d-nb.info/954966341
+    ; rdfs:label "Gertrud Bing"
+    ; dcterms:description "Gertrud Bing, editor of La rinascita del paganesimo antico" 
+    ; dcterms:contributor [
+        rdf:type dcterms:Role ;
+        rdfs:label "Editor" ;
+        schema:description "Responsible for editing and compiling the content of the book"
+    ] .

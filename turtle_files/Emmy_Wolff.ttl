@@ -1,0 +1,118 @@
+@prefix ex: <http://www.exiled-philosophers.org/>. 
+
+@prefix bibo: <http://purl.org/ontology/bibo/>. # Vocabulary for bibo: https://dcmi.github.io/bibo/ 
+@prefix bio: <http://purl.org/vocab/bio/0.1/>. # Vocabulary for bio: https://vocab.org/bio/
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbp: <http://dbpedia.org/property/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gnd: <https://d-nb.info/gnd/>. 
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+ex:Emmy_Wolff a foaf:Person;
+    foaf:givenName "Emmy";
+    foaf:familyName "Wolff";
+    dbo:gender <https://d-nb.info/standards/vocab/gnd/gender#female>;
+    owl:sameAs dbr:Emmy_Wolff, <http://www.wikidata.org/entity/Q51380629>, <https://d-nb.info/gnd/117449954>;
+    dbo:birthName "Emmy Wolff";
+    dbo:birthDate "1890-12-25"^^xsd:date;
+    dbo:birthPlace dbr:Bernburg;
+    dbo:deathDate "1969-11-09"^^xsd:date;
+    dbo:deathPlace: dbr:Haslemere;
+    dbo:influencedBy ex:Alice_Salomon, ex:Hilde_Lion, dbr:Gertrud_Bäumer;
+    dbo:influenced ex:Hilde_Lion;
+    bio:event _:graduation;
+    bio:event _:relationshipLion;
+    bio:event _:workForBaeumer;
+    bio:event _:workAtDeutscheAkademie;
+    bio:event _:relationshipLion;
+    bio:event _:workAtStoatleyRoughSchool;
+    dbo:editor _:frauengenerationenInBildern;
+    dbo:author _:doctoralThesis;
+    dcterms:references [
+        a bibo:ReferenceSource;
+        bibo:relation _:DdfWolff
+    ].
+
+
+_:frauengenerationenInBildern a bibo:Book;
+    dcterms:title "Frauengenerationen in Bildern";
+    dcterms:contributor ex:Gertrud_Baeumer, ex:Ricarda_Huch, ex:Else_Ulich-Beil, ex:Agnes_Miegel, ex:Mary_Wigman, ex:Ilse_Neumann, ex:Helene_Weber, ex:Ina_Seidel, ex:Emmy_Beckmann, ex:Marie_von_Bunsen, ex:Hilde_Lion, ex:Ilse_Reicke, ex:Margarete_Bernhard, ex:Hanna_Meuter, ex:Hannah_Karminski;
+    dcterms:issuded "1928"^^xsd:gYear;
+    dcterms:publisher "Herbig";
+    dcterms:editor ex:Emmy_Wolff;
+    dcterms:language "de";
+    dcterms:subject "Gender Studies", "Social History", "Family and Relationships", "Identity";
+    bibo:uri <https://nbn-resolving.org/urn:nbn:de:bsz:14-db-id5126990030>.
+
+
+_:graduation a bio:Graduation;
+    bio:date "1924"^^xsd:gYear;
+    bio:place dbr:University_of_Frankfurt_Institute_for_Social_Research;
+    rdfs:label "Emmy Wolff promoviert in Frankfurt mit einer Arbeit mit dem Titel 'Ein Mädchenklub und der Herkunftskreis seiner Mitglieder : ein Beitrag zum Problem der Erfassung schulentlassener weiblicher Jugend durch die Jugendpflege'." .
+
+
+_:workForBaeumer a bio:Employment;
+    bio:employer gnd:118651870;
+    bio:date "1925"^^xsd:gYear;
+    bio:place dbr:Berlin;
+    rdfs:label "Nach ihrer Promotion und einem Umzug nach Berlin wurde Emmy Wolff 1925 persönliche Referentin von Gertrud Bäumer, zentrale Führungspersönlichkeit im Bund Deutscher Frauenvereine (BDF) und Reichstagspolitikerin.".
+
+
+_:relationshipLion a bio:event;
+    bio:participant ex:Emmy_Wolff, ex:Hilde_Lion;
+    rdfs:label "Emmy Wolff lernte Hilde Lion in Berlin kennen und führten eine mehrjährige Beziehung, welche im Exil in England endete. Nach der privaten Trennung leiteten beide weiterhin gemeinsam die von Lion gegründete Stoatley Rough School in Haslemere.".
+
+
+_:workAtDeutscheAkademie a bio:Employment;
+    bio:employer gnd:510772-6;
+    bio:interval [
+        bio:start "1927"^^xsd:gYear;
+        bio:end "1930"^^xsd:gYear;
+    ];
+    bio:place dbr:Berlin;
+    rdfs:label "Emmy Wolff war 1927 und 1929/30 Dozentin für Sozialpädagogik an der Deutschen Akademie für soziale und pädagogische Frauenarbeit. Ihre Lebensgefährtin Hilde Lion war an der Akademie ab 1928 Studienleiterin und ab 1929 Direktorin.".
+
+
+_:workAtStoatleyRoughSchool a bio:Employment;
+    bio:employer <http://www.idref.fr/15949642X/id>;
+    bio:interval [
+        bio:start "1935"^^xsd:gYear;
+        bio:end "1956"^^xsd:gYear;
+    ];
+    bio:position "School Principal", "German teacher", "French teacher";
+    rdfs:label "Emmy Wolff unterrichtete Deutsch, Französisch und Literatur für geflüchtete Kinder und Jugendliche aus Deutschland, später auch für englische SchülerInnen aus unteren sozialen Schichten.".
+
+
+_:doctoralThesis a bibo:Thesis; # https://dcmi.github.io/bibo/ links to used bibo terms 
+    dcterms:title "Ein Mädchenklub und der Herkunftskreis seiner Mitglieder : ein Beitrag zum Problem der Erfassung schulentlassener weiblicher Jugend durch die Jugendpflege";
+    dcterms:creator ex:Emmy_Wolff;
+    dcterms:issued "1924"^^xsd:gYear;
+    dcterms:language "de";
+    dcterms:subject "Social sciences", "Sociology";
+    bibo:thesisDegree "Doctoral Degree";
+    bibo:uri <https://nbn-resolving.org/urn:nbn:de:hebis:30-31799>.
+
+
+_:emigrationHaslemere a bio:Event;
+    bio:date "1935"^^xsd:gYear;
+    bio:place dbr:Berlin;
+    bio:place dbr:Haslemere;
+    rdfs:label "Emmy Wolff emigrierte 1935 nach Haslemere, wohin 1933 bereits ihre Lebensgefährtin Hilde Lion floh.".
+
+
+_:DdfWolff a bibo:Webpage; # https://dcmi.github.io/bibo/ links to used bibo terms
+    dcterms:title "Emmy Wolf";
+    dcterms:creator "Prof. Dr. Sabine Toppe";
+    dcterms:issued "2019-07-03"^^xsd:date;
+    dcterms:publisher "Digitales Deutsches Frauenarchiv";
+    dcterms:language "de";
+    dcterms:subject "Biography";
+    bibo:uri <https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/emmy-wolff>;
+    rdfs:label "Acessed on 03.07.2024".

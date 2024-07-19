@@ -1,0 +1,85 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Dore_Jacobs a foaf:Person 
+    ; foaf:name "Dore Jacobs"
+    ; owl:sameAs dbr:Dore_Jacobs
+    ; owl:sameAs <https://explore.gnd.network/gnd/105846163>
+    ; owl:sameAs <https://www.wikidata.org/wiki/Q1243824>
+    ; dbo:birthName "Dore Jacobs"
+    ; dbo:birthDate "1894-06-27"^^xsd:date
+    ; dbo:birthPlace dbr:Essen
+    ; dbo:deathDate "1979-03-05"^^xsd:date
+    ; dbo:deathPlace dbr:Essen
+    ; dbo:influencedBy dbr:Martin_Buber, dbr:Émile_Jaques_Dalcroze
+    ; dbo:influenced dbr:Lisa_Jacob
+    ; bio:event _:emigrationBodensee, _:marriageJacobs, _:graduation, _:foundation
+    ; dbo:author _:DieMenschlicheBewegung, _:BewegungsbildungMenschenbildung .
+
+_:emigrationBodensee a bio:Emigration 
+    ; bio:date "1933"^^xsd:gYear 
+    ; bio:place dbr:Wuppertal, dbr:Bodensee
+    ; rdfs:label "Im Frühjahr 1944 floh sie mit Artur von Wuppertal, wohin das Paar umgezogen war, nach Meersburg am Bodensee. Sie fand Schutz in einer Pension unter falschen Namen." .
+
+_:marriageJacobs a bio:Marriage 
+    ; bio:partner dbr:Artur_Jacobs
+    ; rdfs:label "Dore Marcus heiratet 1914 Artur Jacobs (Mathematiker, Pädagoge und Philosoph)."
+    ; owl:sameAs dbr:Artur_Jacobs
+    ; owl:sameAs <https://explore.gnd.network/gnd/1075090105>
+    ; bio:date "1914"^^xsd:gYear 
+    ; bio:place dbr:Essen  .
+
+_:graduation a bio:Graduation 
+    ; bio:date "1913"^^xsd:gYear 
+    ; bio:place dbr:Hellerau    #Bei Dresden
+    ; bio:participant dbr:Émile_Jaques_Dalcroze
+    ; rdfs:label "Dore Jacobs machte ihr Examen an der Technischen Hochschule Dresden" 
+    ; bio:subject dbr:Rhythmik_und_Gehörbildung
+    .
+_:foundation a bio:foundation
+    ; bio:date "1924"^^xsd:gYear
+    ; bio:place dbr:Essen
+    ; bio:founder dbr:Artur_Jacobs, dbr:Dore_Jacobs
+    ; rdfs:label "1924 gründeten Dore und Artur Jacobs mit 5 anderen mitgliedern den Bund - Gemeinschaft für sozialistisches Leben. Dore und Artur bildeten den inneren Zirkel."
+    ; bio:event [
+        a bio:foundation 
+        ; bio:date "1925"^^xsd:date
+        ; bio:name dbr:Bundesschule_für_Körperbildung_und_rhythmische_Erziehung
+        ; rdfs:label "Sie gründete die Bundesschule für Körperbildung und rhythmische Erziehung (heute: Dore-Jacobs-Berufskolleg)."
+    ] .
+    
+_:DieMenschlicheBewegung a bibo:Book
+    ; dcterms:title "Die menschliche Bewegung" 
+    ; dcterms:creator ex:Dore_Jacobs, dbr:Dore_Jacobs
+    ; dcterms:issued "1983"^^xsd:gYear 
+    ; bibo:event [
+        a bibo:release
+        ; bibo:date "1962"^^xsd:date
+        ; rdfs:label "Die Erstfassung erschien viel früher,   bei der jedoch einige Angaben fehlen."
+    
+    ]
+    ; bibo:isbn "978-3-7800-6038-9" 
+    ; dcterms:publisher "Wolfenbüttel : Kallmeyer" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "	Biomechanik" , "Körperbewegung" , "Bewegung (Sport)" , "Biomechanik" , "Motorik".
+
+_:BewegungsbildungMenschenbildung a bibo:Book 
+    ; dcterms:title "Bewegungsbildung, Menschenbildung" 
+    ; dcterms:creator ex:Dore_Jacobs, dbr:Dore_Jacobs 
+    ; dcterms:issued "1978"^^xsd:gYear 
+    ; bibo:isbn "978-3-450-09900-8" 
+    ; dcterms:publisher "Kastellaun : Henn" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "	Körperbewegung" , "Leibeserziehung" , "Rhythmische Erziehung" , "Körperhaltung" , "Bewegung (Psychologie)" , "Bewegungstherapie" , "Rhythmische Erziehung" 
+    .
+

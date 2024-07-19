@@ -1,0 +1,112 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Ricarda_Huch a foaf:Person 
+    ; foaf:name "Ricarda Huch"
+    ; owl:sameAs dbr:Ricarda_Huch
+    ; owl:sameAs <https://explore.gnd.network/gnd/118554190?term=Ricarda%20Huch&rows=25&pos=1>
+    ; owl:sameAs <https://de.wikipedia.org/wiki/Ricarda_Huch#Bremen,_Wien,_Triest,_München,_Braunschweig_–_zwei_Ehen,_eine_Tochter_und_Werke_über_Romantik_und_Risorgimento>
+    ; owl:sameAs: <https://www.dhm.de/lemo/biografie/ricarda-huch.html>
+    ; dbo:birthName "Ricarda Octavia Huch"
+    ; foaf:nick "Richard Hugo" 
+    ; dbo:birthDate "1864-07-18"^^xsd:date
+    ; dbo:birthPlace dbr:Braunschweig
+    ; dbo:deathDate "1947-11-17"^^xsd:date
+    ; dcterms:language "de"
+    ; schema:Occupation _:Ehrenpräsidentin, _:Ehrensenatorin
+    ; bio:event _:emigrationZürich, _:emigrationBremen, _:marriageCeoconi, _:Tochter, _:marriageRichard
+    ; dbo:author _:NaturundGeist, _:heiligeSchrift, _:Entpersönlichung, _:Urphänomene .
+
+
+_:emigrationZürich a bio:Emigration ;
+    ; bio:date "1886"^^xsd:gYear ;
+    ; bio:place dbr:Braunschweig, dbr:Zürich ;
+    ; rdfs:label "Wegen eines stadtweiten Skandals verlässt Huch Braunschweig und geht nach Zürich, um hier ihr Abitur zu machen und später zu studieren." .
+
+_:emigrationBremen a bio:Emigration
+    ; bio:date "11896"^^xsd:gYear 
+    ; bio:place dbr:Zürich, dbr:Bremen 
+    ; rdfs:label "Nach ihrem Studium und den ersten, zunächst literarischen, Veröffentlichungen in Zürich nahm Ricarda Huch 1896 eine Stelle als Lehrerin für Deutsch und Geschichte in Bremen an" .
+
+_:marriageCeoconi a bio:Marriage 
+    ; bio:partner "Ermanno Ceconi"
+    ; rdfs:label "Huch heiratet den 7 Jahre jüngeren Zahnarzt Ermanno Ceconi "
+    ; bio:date "1898"^^xsd:gYear 
+    ; bio:place dbr:Nowawes
+    ; bio:event [
+        a bio:Divorce 
+        ; bio:date "1906"^^xsd:date
+    ] .
+
+_:Tochter a foaf:Person:
+    ; foaf:name "Marietta"
+    ; bio:gender "female" .
+
+_:marriageRichard a bio:Marriage 
+    ; bio:partner "Richard Huch"
+    ; rdfs:label "Nachdem Ceconi sie 1905 mit der Tochter ihrer Schwester betrog heiratet Ricarda den baldigen Exmann Richard Huch, nachdem sich dieser hat von ihrer Schwester scheiden lassen."
+    ; bio:date "1907"^^xsd:gYear 
+    ; bio:place dbr:Nowawes
+    ; bio:event [
+        a bio:Divorce 
+        ; bio:date "1911"^^xsd:date
+    ] .
+
+_:Ehrensenatorin a schema:Occupation
+    ; schema:name "Ehrensenatorin"
+    ; schema:startDate "1924"^^xsd:date
+    ; schema:location wd:Q55044 .
+
+_:Ehrenpräsidentin a schema:Occupation
+    ; schema:name "Ehrenpräsidentin"
+    ; schema:startDate "1947"^^xsd:date
+    ; schema:location wd:Q56037 .
+
+_:NaturundGeist a bibo:Book
+    ; dcterms:title "Natur und Geist als die Wurzeln des Lebens und der Kunst" 
+    ; bibo:edition ex:NeuausgabeNatur
+    ; dcterms:creator wd:Q60785
+    ; dcterms:issued "1922"^^xsd:gYear 
+    ; bibo:dnb "580973476" 
+    ; dcterms:publisher "Kampmann & Schnabel" 
+    ; dcterms:language "de" .
+
+_:NeuausgabeNatur a bibo:Document 
+    ; dcterms:title "Vom Wesen des Menschen. Natur und Geist."
+    ; bibo:editionOf _:NaturundGeist .
+
+_:heiligeSchrift a bibo:Book 
+    ; dcterms:title "Der Sinn der heiligen Schrift" 
+    ; dcterms:creator wd:Q60785
+    ; dcterms:issued "1919"^^xsd:gYear 
+    ; bibo:dnb "574041931" 
+    ; dcterms:publisher "Insel-Verlag" 
+    ; dcterms:language "de" .
+
+_:Entpersönlichung a bibo:Book 
+    ; dcterms:title "Entpersönlichung" 
+    ; dcterms:creator wd:Q60785
+    ; dcterms:issued "1919"^^xsd:gYear 
+    ; bibo:dnb "575498005" 
+    ; dcterms:publisher "Insel-Verlag" 
+    ; dcterms:language "de" .
+
+_:Urphänomene a bibo:Book 
+    ; dcterms:title "Urphänomene" 
+    ; dcterms:creator wd:Q60785
+    ; dcterms:issued "1966"^^xsd:gYear 
+    ; bibo:dnb "457035765" 
+    ; dcterms:publisher "Atlantis-Verlag" 
+    ; dcterms:language "de" .

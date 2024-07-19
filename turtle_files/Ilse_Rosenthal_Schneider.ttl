@@ -1,0 +1,76 @@
+# Author Miclas Greve
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix unib: <https://discovery.ub.uni-kiel.de/id:> . 
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix event: <http://example.org/event/ilse_rosenthal_schneider/> . # Event with no known plublic URI
+@prefix person: <http://example.org/people/> . # Person with no known public URI
+
+
+# Ilse Rolsenthal-Schneider
+wikidata:Q18166618 a schema:Person ;
+    schema:name "Ilse Rosenthal-Schneider" ;
+    schema:birthDate "1891-04-25"^^xsd:date ;
+    schema:birthPlace dbr:Finsterwalde ;
+    schema:deathDate "1990-02-06"^^xsd:date ;
+    schema:deathPlace dbr:Sydney ;
+    schema:jobTitle dbr:Physicist, dbr:Philosopher ;
+    schema:alumniOf dbr:Humboldt_University_of_Berlin ;
+    schema:publication unib:7D244028532, unib:7D026676249 ;
+    schema:spouse person:Hans_S_A_Rosenthal ;
+    schema:children person:Stephanie_van_de_Meyer ;
+    schema:subjectOf dbr:Philosophy_of_Physics, dbr:History_of_Science ;
+    schema:worksFor dbr:University_of_Sydney ;
+    schema:workLocation dbr:Germany, dbr:United_Kingdom, dbr:Australia ;
+    schema:image <https://www.uni-siegen.de/fb6/phima/pigs/ilseschneider.png> ;
+    schema:event event:Nazi_Germany, event:London, event:Australia .
+
+
+# Famiie
+
+person:Hans_S_A_Rosenthal a schema:Person ;
+    schema:name "Hans S. A. Rosenthal" ;
+    schema:spouse wikidata:Q18166618  .
+
+person:Stephanie_van_de_Meyer a schema:Person ;
+    schema:name "Stephanie van de Meyer" ;
+    schema:parent wikidata:Q18166618 .
+
+# Publikationen
+
+unib:7D244028532 a schema:Book ;
+    dc:title "Das Raum-Zeit-Problem bei Kant und Einstein" ;
+    dc:creator wikidata:Q18166618 ;
+    dc:publisher dbr:Springer_Science\+Business_Media ;
+    dc:date "1921"^^xsd:date .
+
+unib:7D026676249 a schema:Book ;
+    dc:title "Reality and Scientific Truth: Discussions with Einstein, Von Laue, and Planck" ;
+    dc:creator wikidata:Q18166618 ;
+    dc:publisher dbr:Wayne_State_University_Press ;
+    dc:date "1980"^^xsd:date .
+
+# Flucht
+
+event:Nazi_Germany a schema:Event ;
+    schema:name "Flucht aus Nazi-Deutschland" ;
+    schema:location dbr:Germany ;
+    schema:startDate "1938"^^xsd:date ;
+    schema:description "Flucht aufgrund des nationalsozialistischen Regimes" ;
+    schema:subEvent event:London .
+
+event:London a schema:Event ;
+    schema:name "Zwischenstopp in London" ;
+    schema:location dbr:London ;
+    schema:startDate "1938"^^xsd:date ;
+    schema:description "Zwischenstopp auf dem Weg nach Australien" ;
+    schema:subEvent event:Australia .
+
+event:Australia a schema:Event ;
+    schema:name "Ankunft in Australien" ;
+    schema:location dbr:Australia ;
+    schema:startDate "1938"^^xsd:date ;
+    schema:description "Flucht nach Australien, um dem nationalsozialistischen Regime zu entkommen" .

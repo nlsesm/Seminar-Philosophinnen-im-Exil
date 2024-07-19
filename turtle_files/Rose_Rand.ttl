@@ -1,0 +1,142 @@
+@prefix ex: <http://www.exiled-philosophers.org/> .  # unser eigener Namespace
+@prefix dbo: <http://dbpedia.org/ontology/> .        # dbp - attribut vom dbr
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .         # Friend of a Friend (FOAF) - beschreibt Personen und ihre Beziehungen
+@prefix dbr: <http://dbpedia.org/resource/> .        # dbpedia - ressource (site)
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .      # Ontologie-Sprache
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .      # Bio - Vokabular für biographische Daten
+@prefix bibo: <http://purl.org/ontology/bibo/> .     # Bibliographic Ontology (BIBO) - beschreibt bibliographische Daten
+@prefix dcterms: <http://purl.org/dc/terms/> .       # Dublin Core Terms - Metadaten
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . # RDF Schema - beschreibt RDF-Vokabulare
+
+ex:Rose_Rand a foaf:Person
+    ; owl:sameAs dbr:Rose_Rand
+    ; owl:sameAs <https://explore.gnd.network/gnd/128932120>
+    ; foaf:name "Rose Rand"
+    ; dbo:gender "female"
+    ; dbo:philosophicalSchool dbr:Wiener_Kreis
+    ; dbo:birthName "Rozalia Rand"
+    ; dbo:nationality "Austrian", "American"
+    ; dbo:education dbr:University_of_Vienna
+    ; dbo:birthDate "1903-06-14"^^xsd:date
+    ; dbo:birthPlace dbr:Lemberg
+    ; dbo:deathDate "1980-07-28"^^xsd:date
+    ; dbo:deathPlace dbr:Princeton
+    ; dbo:mainInterest dbr:Epistemology, dbr:Logic, dbr:Philosophy_of_Science
+    ; dbo:ontology "Logischer Empirismus", "Analytische Philosophie"  
+    ; dbo:teacher [  # Lehrer:innen
+        a foaf:Person
+        ; foaf:name "Robert Reininger"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118599461>
+        ; dbo:relation "Doktorvater"
+    ]
+    ; dbo:acquaintance [  # Bekannte/Freunde
+        a foaf:Person
+        ; foaf:name "Ludwig Wittgenstein"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118634313>
+        ; dbo:relation "Dozent"                  
+    ] 
+    ; dbo:acquaintance [  # Bekannte/Freunde
+        a foaf:Person
+        ; foaf:name "Moritz Schlick"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118608193>
+        ; dbo:relation "Ursprünglicher Doktorvater"                  
+    ] 
+       ; dbo:acquaintance [  # Bekannte/Freunde
+        a foaf:Person
+        ; foaf:name "Karl Bühler"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118516957>
+        ; dbo:relation "Kollege im Wiener Kreis"                  
+    ] 
+       ; dbo:acquaintance [  # Bekannte/Freunde
+        a foaf:Person
+        ; foaf:name "Heinrich Gomperz"
+        ; owl:sameAs <https://explore.gnd.network/gnd/11927146X>
+        ; dbo:relation "Kollege im Wiener Kreis"                  
+    ] 
+       ; dbo:acquaintance [  # Bekannte/Freunde
+        a foaf:Person
+        ; foaf:name "Rudolf Carnap"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118519158>
+        ; dbo:relation "Kollege im Wiener Kreis"                  
+    ]
+       ; dbo:acquaintance [  # Bekannte/Freunde
+        a foaf:Person
+        ; foaf:name "Otto Neurath"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118587420>
+        ; dbo:relation "Fachlicher Briefpartner"                  
+    ] 
+    
+    ; dbo:influencedBy dbr:Robert_Reininger, dbr:Rudolf_Carnap, dbr:Moritz_Schlick, dbr:Ludwig_Wittgenstein, dbr:Karl_Popper, dbr:Tadeusz_Kotarbiński 
+
+
+    ; bio:event _:umzugWien, _:Promotion, _:ProtokollWienerKreis, _:emigrationLondon, _:emigrationUSA, _:Tod # Ereignisse in ihrem Leben
+    ; dbo:author _:Dissertation, _:LogikArtenSätzen, _:LogikderForderungssätze, _:PrefaceTranslation, _:QuestioningMentalDisorders . # Autorin bestimmter Werke
+
+_:Dissertation a bibo:Dissertation
+    ; dcterms:title "T. Kotarbińskis Philosophie auf Grund seines Hauptwerkes: ›Elemente der Erkenntnistheorie, der Logik und der Methodologie der Wissenschaften‹"
+    ; dcterms:creator  "Rose Rand"
+    ; dcterms:issued "1938"^^xsd:gYear
+    ; dcterms:language "de"
+    ; dcterms:subject "Philosophie", "Logik ", "Wissenschaftstheorie".
+
+_:LogikArtenSätzen a bibo:Article
+    ; dcterms:title "Die Logik der verschiedenen Arten von Sätzen"
+    ; dcterms:creator "Rose Rand"
+    ; dcterms:issued "1936"^^xsd:gYear
+    ; dcterms:language "de"
+    ; dcterms:subject "Mathematik", "Logik", "Philosophie" .
+
+_:LogikderForderungssätze a bibo:Article
+    ; dcterms:title "Logik der Forderungssätze"
+    ; dcterms:creator  "Rose Rand"
+    ; dcterms:issued "1939"^^xsd:gYear
+    ; dcterms:language "de"
+    ; dcterms:subject "Philosophie", "Logik", "Rechtstheorie" .
+
+_:PrefaceTranslation a bibo:Article
+    ; dcterms:title "Preface and Translation of Prolegomena to Three-Valued Logic by Tadeusz Kotarbiński"
+    ; dcterms:creator  "Rose Rand"
+    ; dcterms:issued "1968"^^xsd:gYear
+    ; dcterms:language "eng"
+    ; dcterms:subject "Philosophie", "Logik", "Wissenschaftstheorie" .
+
+_:PrefaceTranslation a bibo:Article
+    ; dcterms:title "About the Notions of ›real‹ and ›unreal‹ on the Basis of Questioning Mental Disorders"
+    ; dcterms:creator  "Rose Rand"
+    ; dcterms:language "eng"
+    ; dcterms:subject "Philosophie", "Psychologie" .
+
+
+
+
+_:umzugWien a bio:IndividualEvent
+    ; bio:date "1914"^^xsd:gYear
+    ; bio:place dbr:Vienna
+    ; rdfs:label "Die Familie von Rose Rand zieht nach Wien, sie besucht dort das polnische Gymnasium, maturierte und schrieb sich in die Philosophie an der Universität Wien ein." .
+
+
+_:Promotion a bio:Graduation
+    ; bio:date "1937"^^xsd:gYear 
+    ; bio:place dbr:Vienna
+    ; rdfs:label "Rose Rand promoviert mit einer Dissertation über den Logiker Tadeusz Kotarbiński in der Philosophie." .
+
+_:ProtokollWienerKreis a bio:IndividualEvents
+    ; bio:date "1930"^^xsd:gYear 
+    ; bio:place dbr:Vienna
+    ; rdfs:label "Als Doktorandin nimmt Rose Rand an den Treffen des Wiener Kreises unter Moritz Schlick teil, und übernimmt dabei die Protokollführung." .
+
+_:emigrationLondon a bio:IndividualEvent
+    ; bio:date "1939"^^xsd:gYear
+    ;bio:place dbr:London
+    ; rdfs:label "Als jüdische Staatenlose emigriert Rose Rand nach London, arbeitet dort als Krankenschwester und wird in Cambridge als Hörerin zugelassen." .
+
+_:emigrationUSA a bio:IndividualEvent
+    ; bio:date "1954"^^xsd:gYear
+    ; bio:organisation dbr:USA
+    ; rdfs:label "Rose Rand zieht zunächst nach Chigago, dann nach Cambridge und schließlich nach Princeton. Sie ist wissenschaftliche Mitarbeiterin und Dozentin an diversen Universitäten." .
+
+_:Tod a bio:Death
+    ; bio:date "1980-07-28"^^xsd:date
+    ; bio:place dbr:Princeton
+    ; rdfs:label "Rose Rand verstirbt mit 77 Jahren in Princeton, New Jersey. Ihr Nachlass wird von der University of Pittsburgh erworben." .

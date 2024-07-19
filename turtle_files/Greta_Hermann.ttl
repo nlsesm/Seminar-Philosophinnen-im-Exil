@@ -1,0 +1,85 @@
+# Author Miclas Greve
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix unib: <https://discovery.ub.uni-kiel.de/id:> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix event: <http://example.org/event/grete_hermann/> .
+@prefix person: <http://example.org/people/> .
+@prefix hirzel: <https://www.hirzel.de/service/verlag/> .
+
+# Grete Hermann
+wikidata:Q68550 a schema:Person ;
+    schema:name "Grete Hermann" ;
+    schema:alternateName "Clara Margarete Hermann", "Grete Henry", "Grete Henry-Hermann" ;
+    schema:birthDate "1901-03-02"^^xsd:date ;
+    schema:birthPlace dbr:Bremen ;
+    schema:deathDate "1984-04-15"^^xsd:date ;
+    schema:deathPlace dbr:Bremen ;
+    schema:jobTitle dbr:Mathematician, dbr:Physicist, dbr:Philosopher, dbr:Educator ;
+    schema:alumniOf dbr:University_of_Gottingen, dbr:University_of_Freiburg ;
+    schema:publication <https://link.springer.com/chapter/10.1007/978-3-658-16241-2_16>, unib:14262781X ;
+    schema:spouse person:Edward_Henry ;
+    schema:subjectOf dbr:Quantum_Mechanics, dbr:Philosophy_of_Physics, dbr:History_of_Science ;
+    schema:worksFor dbr:University_of_Bremen ;
+    schema:workLocation dbr:Germany, dbr:Denmark, dbr:United_Kingdom ;
+    schema:image <https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-94-024-0970-3_1/MediaObjects/310844_1_En_1_Figa_HTML.gif> ;
+    schema:event event:Nazi_Germany, event:Denmark, event:England, event:Return_to_Germany .
+
+# Familie
+
+person:Edward_Henry a schema:Person ;
+    schema:name "Edward Henry" ;
+    schema:spouse wikidata:Q68550  .
+
+# Publikationen
+
+unib:244663424 a schema:Book ;
+    dc:title "Die naturphilosophischen Grundlagen der Quantenmechanik" ;
+    dc:creator wikidata:Q68550 ;
+    dc:publisher hirzel: ;
+    dc:date "1935"^^xsd:date .
+
+<https://link.springer.com/chapter/10.1007/978-3-658-16241-2_16> a schema:Book ;
+    dc:title "Über die Grundlagen physikalischer Aussagen in den älteren und modernen Theorien" ;
+    dc:creator wikidata:Q68550 ;
+    dc:publisher hirzel: ;
+    dc:date "1937"^^xsd:date .
+
+unib:14262781X a schema:Book ;
+    dc:title "Die Bedeutung der modernen Physik für die Theorie der Erkenntnis" ;
+    dc:creator wikidata:Q68550, person:E_May, person:Th_Vogel ;
+    dc:publisher hirzel: ;
+    dc:date "1937"^^xsd:date .
+
+
+# Flucht
+
+event:Nazi_Germany a schema:Event ;
+    schema:name "Flucht aus Nazi-Deutschland" ;
+    schema:location dbr:Germany ;
+    schema:startDate "1934"^^xsd:date ;
+    schema:description "Flucht aufgrund der nationalsozialistischen Verfolgung des Internationalen Sozialistischen Kampfbundes" ;
+    schema:subEvent event:Denmark .
+
+event:Denmark a schema:Event ;
+    schema:name "Emigration nach Dänemark" ;
+    schema:location dbr:Denmark ;
+    schema:startDate "1934"^^xsd:date ;
+    schema:description "Emigration nach Dänemark aufgrund der  Verfolgung" ;
+    schema:subEvent event:England .
+
+event:United_Kingdom a schema:Event ;
+    schema:name "Emigration nach England" ;
+    schema:location dbr:United_Kingdom ;
+    schema:startDate "1937"^^xsd:date ;
+    schema:description "Emigration nach England, wo sie Edward Henry heiratete und die britische Staatsangehörigkeit erwarb" ;
+    schema:subEvent event:Return_to_Germany .
+
+event:Return_to_Germany a schema:Event ;
+    schema:name "Rückkehr nach Deutschland" ;
+    schema:location dbr:Germany ;
+    schema:startDate "1946"^^xsd:date ;
+    schema:description "Rückkehr nach Deutschland und Fortsetzung ihrer akademischen und politischen Arbeit in Bremen" .

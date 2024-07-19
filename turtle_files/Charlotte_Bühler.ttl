@@ -1,0 +1,66 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Charlotte_Bühler a foaf:Person 
+    ; foaf:name "Charlotte Bühler"
+    ; owl:sameAs dbr:Charlotte_Bühler
+    ; owl:sameAs <https://www.wikidata.org/wiki/Wikidata:Main_Page>
+    ; wdt:P1559 "Charlotte Bühler" # name in native language
+    ; wdt:P569 "1893-12-20"^^xsd:date # date of birth
+    ; wdt:P19 wd:Q64 # Birth Place (Berlin)
+    ; wdt:P570 "1974-02-03"^^xsd:date # date of death
+    ; wdt:P69 wd:Q153987 # educated at (University of Freiburg)
+    ; wd:P512 wd:Q849697 # academic degree (doctorate)
+    ;wd:P106 wd:Q212980, wd:Q1622272 # occupation (psychologist & University teacher)
+    ; bio:event _:graduation, _:marriageBühler, _:emigrationOslo, _:emigrationUSA 
+    ; wdt:P50 _:kindheitundjugend, _:Studiuenüber. # P50 = author
+
+_:graduation a bio:Graduation # s. dazu https://www.geschichtewiki.wien.gv.at/Wien_Geschichte_Wiki
+    ; bio:date "1918"^^xsd:gYear 
+    ; bio:place wd:Q1726 # Münchin
+    ; rdfs:label "1918 promovierte sie in München bei Erich Becher zum Dr. phil." .
+
+_:marriageBühler a bio:Marriage # s. dazu https://www.geschichtewiki.wien.gv.at/Wien_Geschichte_Wiki
+    ; bio:date "1916"^^xsd:gYear 
+    ; bio:place wd:Q1726 # Münchin
+    ; rdfs:label "Im April 1916, ging Charlotte Malachowski die Ehe mit dem wesentlich älteren Karl Bühler ein." .
+
+_:emigrationOslo a bio:Emigration # s. dazu https://www.geschichtewiki.wien.gv.at/Wien_Geschichte_Wiki
+    ; bio:date "1938"^^xsd:gYear 
+    ; bio:place wd:Q585 # Oslo
+    ; rdfs:label "Nachdem Karl Bühler durch Fürsprache einflussreicher Freunde wieder freikam, blieb das Ehepaar vorerst in Norwegen.".
+
+_:emigrationUSA a bio:Emigration # s. dazu https://www.geschichtewiki.wien.gv.at/Wien_Geschichte_Wiki
+    ; bio:date "1940"^^xsd:gYear
+    ; bio:place wd:Q30 # USA
+    ; rdfs:label "Schließlich emigrierte Karl Bühler in die USA und Charlotte Bühler folgte ihm im März 1940.".
+
+_:kindheitundjugend a bibo:Book # s. dazu https://www.geschichtewiki.wien.gv.at/Wien_Geschichte_Wiki
+    ; dcterms:title "Kindheit und jugend. Genese des Bewusstseins" 
+    ; dcterms:creator ex:Charlotte_Bühler
+    ; dcterms:issued "1928"^^xsd:gYear  
+    ; dcterms:publisher "Hirzel" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Childhood", "Youth", "Psychology" .
+
+_:Studienüber a bibo:Book 
+    ; dcterms:title "Soziologische und psychologische Studiuen über das erste Lebensjahr." 
+    ; dcterms:creator ex:Charlotte_Bühler
+    ; dcterms:creator ex:Hildegard_Hetzer
+    ; dcterms:creator ex:Beatrice_Tudor_Hart
+    ; dcterms:issued "1927"^^xsd:gYear 
+    ; dcterms:publisher "G. Fischer" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Studies", "childhood", "psychological", "Sociological".

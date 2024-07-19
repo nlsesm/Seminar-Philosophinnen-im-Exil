@@ -1,0 +1,195 @@
+@prefix ex: <http://www.exiled-philosophers.org/> .  # unser eigener Namespace
+@prefix dbo: <http://dbpedia.org/ontology/> .        # dbp - attribut vom dbr
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .         # Friend of a Friend (FOAF) - beschreibt Personen und ihre Beziehungen
+@prefix dbr: <http://dbpedia.org/resource/> .        # dbpedia - ressource (site)
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .      # Ontologie-Sprache
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .      # Bio - Vokabular für biographische Daten
+@prefix bibo: <http://purl.org/ontology/bibo/> .     # Bibliographic Ontology (BIBO) - beschreibt bibliographische Daten
+@prefix dcterms: <http://purl.org/dc/terms/> .       # Dublin Core Terms - Metadaten
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . # RDF Schema - beschreibt RDF-Vokabulare
+
+
+ex:Seweryna_Łuszczewska_Romahnowa a foaf:Person
+    ; foaf:name "Seweryna Łuszczewska-Romahnowa"
+    ; dbo:gender "female"
+    ; dbo:philosophicalSchool dbr:Lwów_Warsaw_school
+    ; dbo:birthName "Seweryna Łuszczewska-Romahnowa"
+    ; dbo:nationality "Poland"
+    ; dbo:education dbr:University_of_Lviv
+    ; dbo:birthDate "1904-08-10"^^xsd:date
+    ; dbo:birthPlace dbr:Mszana
+    ; dbo:deathDate "1978-06-27"^^xsd:date
+    ; dbo:deathPlace dbr:Poznań
+    ; dbo:knownFor "Wieloznacznosé a jezyk nauki [Polysemy and the language of science]."
+    ; dbo:ontology "Philosophy", "Mathematics"
+    ; dbo:family 
+    [
+        a foaf:Person ;
+        foaf:name "Konrad Łuszczewski"
+        ; dbo:relation "father"
+    ], [
+        a foaf:Person ;
+        foaf:name "Maria Antonina"
+        ; dbo:relation "mother"
+    ], [
+        a foaf:Person
+        ; foaf:name "Edmund Romahn"
+        ; dbo:relation "spouse"
+    ]
+    
+    ; dbo:teacher [  # Lehrer:innen
+        a foaf:Person
+        ; foaf:name "Kazimierz Twardowski"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118624830>
+
+        ; foaf:name "Kazimierz Ajdukiewicz"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118501283>
+
+        ; foaf:name "Roman Witold Ingarden"
+        ; owl:sameAs <https://explore.gnd.network/gnd/118555588>
+    ]
+    ; dbo:influencedBy dbr:Kazimierz_Ajdukiewicz
+
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Lvov_Warsaw_School
+        ; bibo:pageStart "245"
+        ; bibo:pageEnd "245"]
+
+    ; bio:event _:expulsion, _:wedding, _:imprisonment, _:imrpisonment_route # Ereignisse in ihrem Leben
+    ; dbo:author _:Dissertation, _:notable_works . # Autorin bestimmter Werke
+
+_:Dissertation a bibo:Dissertation
+    ; dcterms:title "O wyrazach okazjonalnych"
+    ; dcterms:creator ex:Seweryna_Łuszczewska_Romahnowa, dbr:Seweryna_Łuszczewska_Romahnowa
+    ; dcterms:issued "1928"^^xsd:gYear
+    ; dcterms:language "pl"
+    ; dcterms:subject "Philosophie" 
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Polish_Philosophers
+        ; bibo:pageStart "113"
+        ; bibo:pageEnd "113"
+    ].
+
+_:Polish_Philosophers a bibo:Book
+    ; dcterms:title "Polish Philosophers of Science and Nature in the 20th Century: Polish Analytical Philosophy" 
+    ; dcterms:editor dbr:Wladyslaw_Krajewski 
+    ; dcterms:issued "2001"^^xsd:gYear 
+    ; bibo:isbn "9042014970" 
+    ; dcterms:publisher "Rodopi" 
+    ; dcterms:language "eng" 
+    ; dcterms:subject "Biography", "Philosophy" .
+
+
+_:work1 a bibo:notable_works
+    ; dcterms:title "Wieloznacznosé a jezyk nauki [Polysemy and the language of science]"
+    ; dcterms:creator ex:Seweryna_Łuszczewska_Romahnowa, dbr:Seweryna_Łuszczewska_Romahnowa
+    ; dcterms:issued "1948"^^xsd:gYear
+    ; dcterms:language "pl"
+    ; dcterms:subject "Philosophie" 
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Lvov_Warsaw_School
+        ; bibo:pageStart "246"
+        ; bibo:pageEnd "246"].
+
+ _:work2 a bibo:notable_works
+    ; dcterms:title "Czy filozofia obumiera? [Is philosophy withering?]"
+    ; dcterms:creator ex:Seweryna_Łuszczewska_Romahnowa, dbr:Seweryna_Łuszczewska_Romahnowa
+    ; dcterms:issued "1962"^^xsd:gYear
+    ; dcterms:language "pl"
+    ; dcterms:subject "Philosophie" 
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Lvov_Warsaw_School
+        ; bibo:pageStart "246"
+        ; bibo:pageEnd "246"].  
+
+ _:work3 a bibo:notable_works
+    ; dcterms:title "A generalized theory of classifications I. & II."
+    ; dcterms:creator ex:Seweryna_Łuszczewska_Romahnowa, dbr:Seweryna_Łuszczewska_Romahnowa
+    ; dcterms:issued "1965"^^xsd:gYear
+    ; dcterms:language "pl"
+    ; dcterms:subject "Philosophie" 
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Lvov_Warsaw_School
+        ; bibo:pageStart "246"
+        ; bibo:pageEnd "246"].
+
+_:work4 a bibo:notable_works
+    ; dcterms:title "Program filozofii naukowej Kazimierza Twardowskiego [Kazimierz Twardowski’s program of scientific philosophy]"
+    ; dcterms:creator ex:Seweryna_Łuszczewska_Romahnowa, dbr:Seweryna_Łuszczewska_Romahnowa
+    ; dcterms:issued "1967"^^xsd:gYear
+    ; dcterms:language "pl"
+    ; dcterms:subject "Philosophie" 
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Lvov_Warsaw_School
+        ; bibo:pageStart "246"
+        ; bibo:pageEnd "246"
+    ].
+
+
+_:wedding a bio:wedding
+    ; bio:date "1934"^^xsd:gYear
+    ; bio:place dbr:Lviv
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Lvov_Warsaw_School
+        ; bibo:pageStart "241"
+        ; bibo:pageEnd "241"
+    ]
+
+    ; rdfs:label "Im Jahr 1934 heiratete sie Dr. Edmund Romahn, einen Gymnasiallehrer in Lviv (Lemberg) und ebenfalls Philosoph." .
+
+_:Lvov_Warsaw_School a bibo:Book
+    ; dcterms:title "The Lvov-Warsaw School. Past and Present" 
+    ; dcterms:editor dbr:Ángel_Garrido, dbr:Urszula_Wybraniec_Skardowska
+    ; dcterms:issued "2010"^^xsd:gYear 
+    ; bibo:isbn "978-3-319-65430-0" 
+    ; dcterms:publisher "Birkháuser" 
+    ; dcterms:language "eng" 
+    ; dcterms:subject "Biography", "Philosophy" .
+
+_:expulsion a bio:expulsion
+    ; bio:date "1934"^^xsd:gYear
+    ; dcterms:references [
+            a bibo:ReferenceSource
+            ; bibo:relation _:Lvov_Warsaw_School
+            ; bibo:pageStart "242"
+            ; bibo:pageEnd "242"
+        ]
+    ; rdfs:label "Zu Beginn des Zweiten Weltkrieges wurde von den Behörden der Sowjetukraine von der Universität Lviv verwiesen." .
+
+
+_:imprisonment a bio:imprisonment
+    ; bio:date "1943"^^xsd:gYear 
+    ; bio:place dbr:Lviv
+    ; dcterms:references [
+            a bibo:ReferenceSource
+            ; bibo:relation _:Lvov_Warsaw_School
+            ; bibo:pageStart "242"
+            ; bibo:pageEnd "242"
+        ]
+    ; rdfs:label "Im Mai 1943 wurde sie zusammen mit ihrem Mann von der Gestapo verhaftet und in Lviv inhaftiert." .
+
+_:imrpisonment_route a bio:imrpisonment_route
+    ; bio:date "1943"^^xsd:gYear 
+    ; bio:place dbr:Lviv
+    ; bio:place dbr:Majdanek
+    ; bio:place dbr:Ravensbrück
+    ; bio:place dbr:Leipzig
+
+    ; dcterms:references [
+        a bibo:ReferenceSource
+        ; bibo:relation _:Lvov_Warsaw_School
+        ; bibo:pageStart "242"
+        ; bibo:pageEnd "242"
+    ]
+    ; rdfs:label "Während ihrer Gefangenschaft wurde sie von Majdanek (wo ihr Mann im September 1943 getötet wurde) nach Ravensbrück und schließlich in KZ-Außenlager HASAG (Außenlager des KZ Buchenwald) in Leipzig verlegt." .
+
+
+

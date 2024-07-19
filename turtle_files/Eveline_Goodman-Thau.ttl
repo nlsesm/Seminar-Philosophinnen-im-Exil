@@ -1,0 +1,72 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+@prefix dnb: <https://d-nb.info/> .
+
+ex:Eveline_Goodman-Thau a foaf:Person 
+    ; foaf:name "Eveline Goodman-Thau"
+    ; owl:sameAs dbr:Eveline_Goodman-Thau
+    ; dbo:birthName "Eveline Goodman"
+    ; dbo:birthDate "1934-06-20"^^xsd:date
+    ; dbo:birthPlace dbr:Vienna
+    ; dbo:religion dbr:Judaism
+    ; bio:event _:emigration, _:versteck, _:studium, _:direktorin, _:dozentinBeraterin, _:lehrtätigkeit, _:promotion, _:gründung, _:habilitation
+    ; dbo:author dnb:901468231, dnb:931419484, dnb:931396573, dnb:940116596, dnb:940586118, dnb:941714713, dnb:940869683, dnb:942734319, dnb:945375964, dnb:945579179, dnb:948382651, dnb:957434502, dnb:963275062, dnb:964494531, dnb:964595338, dnb:965882136, dnb:970192517, dnb:975002880, dnb:973386614, dnb:980577160, dnb:973264667, dnb:98934021X, dnb:1010740660, dnb:1037089375, dnb:1058022679, dnb:1104707772, dnb:1127061313, dnb:1167340418, dnb:1192582365, dnb:1294593021 .
+
+# Biografische Ereignisse von https://de.wikipedia.org/wiki/Eveline_Goodman-Thau 
+
+_:emigration a bio:Emigration 
+    ; bio:date "1938"^^xsd:gYear 
+    ; bio:place dbr:Holland
+    ; rdfs:label "1938 emigrierte Eveline Goodman-Thau nach Holland." .
+
+_:versteck a bio:Event
+    ; bio:date "1938"^^xsd:gYear
+    ; bio:place dbr:Holland
+    ; rdfs:label "Von 1938 bis 1945 lebte Eveline Goodman-Thau im Versteck mit ihren Eltern." .
+
+_:studium a bio:Enrolment
+    ; bio:date "1955"^^xsd:gYear
+    ; bio:place dbr:University_of_Amsterdam
+    ; rdfs:label "1955 studierte Eveline Goodman-Thau Englische Literatur und Jüdische Studien" .
+
+_:direktorin a bio:Employment
+    ; bio:date "1966"^^xsd:gYear
+    ; bio:place dbr:Jerusalem
+    ; bio:Employer dbr:Hebrew_University_of_Jerusalem
+    ; rdfs:label "Von 1966 bis 1976 war Eveline Goodman-Thau Diraktorin am Institute for Research on Dutch Jewry." .
+
+_:dozentinBeraterin a bio:Employment
+    ; bio:date "1983"^^xsd:gYear
+    ; rdfs:label "Von 1983 bis 1987 war Eveline Goodman-Tahu Dozentin für Contemporary Jewish Thought und akademische Beraterin des WZO Youth and Hechalutz Department, des Martin Buber Institute of the Hebrew University und des Brookdale Institute for Human Development" .
+
+_:lehrtätigkeit a bio:Employment
+    ; bio:date "1987"^^xsd:gYear
+    ; bio:place dbr:Berlin, dbr:Tübingen, dbr:Heidelberg, dbr:Kassel, dbr:Oldenburg
+    ; bio:Employer dbr:University_of_Tübingen, dbr:Heidelberg_University, dbr:University_of_Kassel, dbr:University_of_Oldenburg, dbr:Martin_Luther_University_of_Halle-Wittenberg
+    ; rdfs:label "Ab 1987 unterrichtete Eveline Goodman-Thau an mehreren deutschen Universitäten in Berlin, Tübingen, Heidelberg, Kassel, Oldenburg und Halle (Saale)" .
+
+_:promotion a bio:Event
+    ; bio:date "1993"^^xsd:gYear
+    ; bio:place dbr:University_of_Kassel
+    ; rdfs:label " 1993 promovierte Eveline Goodman-Thau an der Universität Kassel zu dem Thema: Zeitumbruch – Zur messianischen Grunderfahrung in der jüdischen Tradition" .
+
+_:gründung a bio:Event
+    ; bio:date "1998"^^xsd:gYear
+    ; bio:place dbr:Buchen
+    ; rdfs:label "1998 gründete Eveline Goodman-Thau die Hermann-Cohen-Akademie für Religion, Wissenschaft und Kunst" .
+
+_:habilitation a bio:Event
+    ; bio:date "2000"^^xsd:gYear
+    ; bio:place dbr:University_of_Kassel
+    ; rdfs:label "2000 absolvierte Eveline Goodman-Thau ihre Habilitation in jüdischer Philosophie an der Universität Kassel" .

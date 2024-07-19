@@ -1,0 +1,71 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Hannah_Arendt a foaf:Person 
+    ; foaf:name "Anita_Augspurg"
+    ; owl:sameAs dbr:Anita_Augspurg
+    ; owl:sameAs <https://explore.gnd.network/gnd/11850391X>
+    ; dbo:birthName "Anita Ausgpurg"
+    ; dbo:birthDate "1857-09-22"^^xsd:date
+    ; dbo:birthPlace dbr:Verden
+    ; dbo:deathDate "1943-12-20"^^xsd:date
+    ; dbo:influencedBy dbr:Johanna_Frieb-Blumauer, dbr:Sophia_Goudstikker, dbr:Hedwig_Kettler, dbr:Minna_Cauer, dbr:Lida_Gustava_Heymann
+    ; bio:event _:emigrationMunich, _:emigrationZurich, _:notmarriageHeymann, _:Abschluss
+    ; dbo:author _:EheReform, _:EuropaFrauen, _:Frauenstimmrecht .
+
+_:emigrationMunich a bio:Emigration 
+    ; bio:date "1887"^^xsd:gYear 
+    ; bio:place dbr:Verden, dbr:Verden
+    ; rdfs:label "Die beiden unkonventionellen Frauen zogen 1907 nach Bayern, lebten erst in München, dann auf dem Land in gemeinsamen Domizilen und betrieben teilweise einen nur mit weiblichem Personal bewirtschafteten Gutshof." .
+
+_:emigrationZurich a bio:Emigration
+    ; bio:date "1933"^^xsd:gYear 
+    ; bio:place dbr:Munich, dbr:Zurich 
+    ; rdfs:label "1933, nach der Machtergreifung der Nationalsozialisten, kehrten Augspurg und Heymann, die seit 1923 auf der Liquidationsliste der Nazis standen, in kluger Voraussicht des Kommenden von einer Auslandsreise nicht mehr nach Deutschland zurück. Sie lebten bis zu ihrem Tod im Züricher Exil und arbeiteten dort weiter für die IFFF." .
+
+_:notmarriageHeymann a bio:Eheboykott
+    ; bio:partner dbr:Lida_Gustava_Heymann
+    ; rdfs:label "Sie verfasste spektakuläre Aufrufe, z.B. zum Eheboykott im Kampf gegen das Eherecht, und inszenierte Aktionen zivilen Ungehorsams, die einmal sogar zu einer von ihr beabsichtigten Verhaftung durch die Sittenpolizei führten."
+    ; bio:date "1905"^^xsd:gYear 
+    ; bio:place dbr:Berlin .
+
+_:Abschluss a bio:Graduation 
+    ; bio:date "1897"^^xsd:gYear 
+    ; bio:place dbr:Zürich
+    ; rdfs:label "Ihr Studium schloss sie 1897[6] mit einer Arbeit Über die Entstehung und Praxis der Volksvertretung in England ab. Sie war damit die erste promovierte Juristin des deutschen Kaiserreiches." .
+
+_:EheReform a bibo:Article
+    ; dcterms:title "Ehe?: Zur Reform der sexuellen Moral" 
+    ; dcterms:creator ex:Anita_Augspurg, dbr:Anita_Augspurg 
+    ; dcterms:issued "1911"^^xsd:gYear 
+    ; dcterms:publisher "Internationale Verlagsanst. für Kunst und Literatur" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "emancipation", "sexuality" .
+
+_:EuropaFrauen a bibo:Article 
+    ; dcterms:title "Pan-Europa und die Frauen." 
+    ; dcterms:creator ex:Anita_Augspurg, dbr:Anita_Augspurg 
+    ; dcterms:issued "1926"^^xsd:gYear 
+    ; dcterms:publisher "Hist. Frauenbewegungszeitschrift" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Feminism", "Political theory" .
+
+_:Frauenstimmrecht a bibo:Article
+    ; dcterms:title "Frauenstimmrecht?! Ich bin dagegen! - Frauenstimmrechtsulk im Karneval" 
+    ; dcterms:creator ex:Anita_Augspurg, dbr:Anita_Augspurg
+    ; dcterms:issued "1912"^^xsd:gYear 
+    ; dcterms:publisher "Selbstverlag" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Feminism", "Education", "RadFem" .

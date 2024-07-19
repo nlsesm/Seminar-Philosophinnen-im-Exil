@@ -1,0 +1,94 @@
+@prefix ex: <http://www.exiled-philosophers.org/> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix schema: <http://schema.org/> .
+
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+ex:Marie_Jahoda a foaf:Person 
+    ; foaf:name "Marie Jahoda"
+    ; owl:sameAs dbr:Marie_Jahoda
+    ; owl:sameAs wd:Q88878
+    ; owl:sameAs <https://explore.gnd.network/gnd/118866451>
+    ; dbo:birthName "Marie Jahoda"
+    ; wdt:P569 "1907-01-26"^^xsd:date ; # date of birth 
+    ; wdt:P19 wd:Q1741 ;                # Birth place (Wien)
+    ; wdt:P570 "2001-04-28"^^xsd:date   # date of death
+    ; wdt:P106 wd:Q2306091              # occupation (sociologist)
+    ; wdt:P69 wd:Q165980                # educated at (University of Vienna)
+    ; dbo:collaboration dbr:Max_Horkheimer, dbr:Paul_Lazarsfeld, dbr:Hans_Zeisel, wd:Q1419150#(Lotte Schenk-Danzinger) # https://www.geschichtewiki.wien.gv.at/Marie_Jahoda
+
+    ; bio:event _:graduation, _:marriageLazarsfeld, _:marriageAlbu, _:emigrationLondon, _:emigrationNewYork, _:emigrationUK
+    ; wdt:P50 _:arbeitsloseMarienthal, _:arbeitsloseMarienthalErstveröffentlichung . # P50 = author
+
+_:graduation a bio:Graduation # s. dazu https://www.geschichtewiki.wien.gv.at/Marie_Jahoda
+    ; bio:date "1932"^^xsd:gYear 
+    ; bio:place wd:Q165980
+    ; rdfs:label "Mit ihrer Dissertation 'Anamnesen im Versorgungshaus' promovierte Marie Jahoda zum Doktor der Philosophie." .
+
+
+_:marriageLazarsfeld a bio:Marriage # s. dazu https://www.geschichtewiki.wien.gv.at/Marie_Jahoda
+    ; bio:partner dbr:Paul_Lazarsfeld
+    ; rdfs:label "Die Ehe mit Paul Felix Lazarsfeld dauerte 7 Jahre an."
+    ; bio:date "1927"^^xsd:gYear
+    ; bio:event [
+        a bio:Divorce 
+        ; bio:date "1934"^^xsd:date
+    ] .
+
+_:marriageAlbu a bio:Marriage # s. dazu https://www.geschichtewiki.wien.gv.at/Marie_Jahoda
+    ; bio:partner wd:Q4822853 #Austen Albu
+    ; rdfs:label "Die zweite Ehe Jahodas endete mit dem Tod ihres Gatten. Sie lernte Austen Albu bereits Jahre vor der Hochzeit in London kennen."
+    ; bio:date "1958"^^xsd:gYear
+    ; bio:event [
+        a bio:Death 
+        ; bio:principal wd:Q4822853
+        ; bio:date "1994"^^xsd:date
+    ] .
+
+_:arbeitsloseMarienthalErstveröffentlichung a bibo:Book
+    ; dcterms:title "Die Arbeitslosen von Marienthal"
+    ; dcterms:creator ex:Marie_Jahoda
+    ; dcterms:creator dbr:Paul_Lazarsfeld
+    ; dcterms:creator dbr:Hans_Zeisel
+    ; dcterms:issued "1933"^^xsd:gYear
+    ; dcterms:publisher "S.Hirzel" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Unemployment", "Sociology" .
+
+_:arbeitsloseMarienthal a bibo:Book
+    ; dcterms:title "Die Arbeitslosen von Marienthal"
+    ; dcterms:creator ex:Marie_Jahoda
+    ; dcterms:creator dbr:Paul_Lazarsfeld
+    ; dcterms:creator dbr:Hans_Zeisel
+    ; dcterms:issued "1975"^^xsd:gYear
+    ; bibo:isbn "3518107690"
+    ; dcterms:publisher "Suhrenkamp" 
+    ; dcterms:language "de" 
+    ; dcterms:subject "Unemployment", "Sociology" .
+
+_:emigrationLondon a bio:Emigration # s. dazu https://www.zeit.de/campus/2010/06/ehemalige-jahoda
+    ; bio:date "1937"^^xsd:gYear 
+    ; bio:place wd:Q1741, wd:Q84 #Wien, London
+    ; rdfs:label "Wegen ihrer Untergrundtätigkeiten für die Revolutionären Sozialisten wurde Jahoda 1936 verhaftet. Nach einer neunmonatigen Haft musste sie dann das Land verlassen." .
+
+_:emigrationNewYork a bio:Emigration # s. dazu https://www.zeit.de/campus/2010/06/ehemalige-jahoda
+    ; bio:date "1945"^^xsd:gYear 
+    ; bio:place wd:Q84, wd:Q60 #London, New York
+    ; rdfs:label "Nach Kriegsende ging Jahoda nach New York und war dort wieder mit ihrer Tochter vereint, die sie seit acht Jahren nicht mehr gesehen hatte." .
+
+_:emigrationUK a bio:Emigration # s. dazu https://www.fembio.org/biographie.php/frau/biographie/marie-jahoda
+    ; bio:date "1958"^^xsd:gYear 
+    ; bio:place wd:Q60, wd:Q145 #New York, UK
+    ; rdfs:label "Zunächst ging Marie Jahoda wieder nach London, dann nach Keymer, Sussex. Später wurde sie Professorin für Sozialpsychologie an der University of Sussex in Falmer." .

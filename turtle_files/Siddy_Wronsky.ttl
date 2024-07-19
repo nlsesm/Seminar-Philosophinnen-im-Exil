@@ -1,0 +1,106 @@
+@prefix ex: <http://www.exiled-philosophers.org/>. 
+
+@prefix bibo: <http://purl.org/ontology/bibo/>. # Vocabulary for bibo: https://dcmi.github.io/bibo/ 
+@prefix bio: <http://purl.org/vocab/bio/0.1/>. # Vocabulary for bio: https://vocab.org/bio/
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbp: <http://dbpedia.org/property/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix gnd: <https://d-nb.info/gnd/>. 
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+ex:Siddy_Wronsky a foaf:Person;
+    foaf:givenName "Siddy";
+    foaf:familyName "Wronsky";
+    dbo:gender <https://d-nb.info/standards/vocab/gnd/gender#female>;
+    owl:sameAs <https://d-nb.info/gnd/129110736>;
+    dbo:birthName "Sara Sidonie Neufeld";
+    dbo:birthDate "1883-07-20"^^xsd:date;
+    dbo:birthPlace dbr:Berlin;
+    dbo:deathDate "1947-12-08"^^xsd:date;
+    dbo:deathPlace: dbr:Jerusalem;
+    dbo:influencedBy ex:Alice_Salomon, dbr:Gertrud_Bäumer;
+    dbo:influenced ex:Hilde_Lion;
+    bio:event _:graduation;
+    bio:event _:marriageWronsky;
+    bio:event _:workAtArchivFuerWohlfahrtspflege;
+    bio:event _:workAtDeutscheAkademie;
+    bio:event _:emigrationPalestine;
+    dbo:author _:leitfadenDerWohlfahrtspflege;
+    dbo:author _:socailWorkAndJewishCommunity;
+    dcterms:references [
+        a bibo:ReferenceSource;
+        bibo:relation _:DdfWronsky
+    ].
+
+
+_:graduation a bio:Graduation;
+    bio:date "1903"^^xsd:gYear, "1905"^^xsd:gYear;
+    bio:place dbr:Berlin;
+    rdfs:label "Nachdem Wronsky 1903 die wissenschaftliche Lehrerinnenprüfung bestanden hat, absolvierte sie im Anschluss für zwei  Jahre ein Aufbaustudium der Heil- und Sonderpädagogik.".
+
+
+_:marriageWronsky a bio:Marriage;
+    bio:partner "Eugen Wronsky";
+    rdfs:label "Wronsky heiratete den Geschäftsmann Eugen Wronsky. Genaue Daten sind nicht bekannt.".
+
+
+_:workAtArchivFuerWohlfahrtspflege a bio:Employment;
+    bio:employer gnd:5058811-4;
+    bio:interval [
+        bio:start "1908"^^xsd:gYear;
+        bio:end "1933"^^xsd:gYear;
+    ];
+    bio:position "Head of department", "Director";
+    rdfs:label "Übernahme der Leitung des Archivs für Wohlfahrtspflege 1908 und Direktorin des Archivs ab 1922.".
+
+
+_:workAtDeutscheAkademie a bio:Employment;
+    bio:employer gnd:510772-6;
+    bio:interval [
+        bio:start "1925"^^xsd:gYear;
+        bio:end "1933"^^xsd:gYear;
+    ];
+    bio:place dbr:Berlin;
+    rdfs:label "Siddy Wronsky unterstützte zusammen mit Marie Baum, Gertrud Bäumer, Hildegard von Gierke, Helene Weber, Hilde Lion und anderen Alice Salomon bei der Gründung der Deutschen Akademie für soziale und pädagogische Frauenarbeit. Sie war besonders involviert in die Forschung zu Bestand und Erschütterung der Familie in der Gegenwart.".
+
+_:emigrationPalestine a bio:Event;
+    bio:date "1933"^^xsd:gYear, "1934"^^xsd:gYear;
+    bio:place dbr:Berlin;
+    bio:place dbr:Palestine;
+    rdfs:label "Emigration nach Palästina, Aufbau eines Systems der Sozialen Arbeit in Palästina".
+
+
+_:leitfadenDerWohlfahrtspflege a bibo:book;
+    dcterms:title "Leitfaden der Wohlfahrtspflege";
+    dcterms:creator ex:Alice_Salomon, ex:Siddy_Wronsky;
+    dcterms:issued "1921"^^xsd:gYear;
+    bibo:isbn "978-3-663-15314-6";
+    bibo:doi <https://doi.org/10.1007/978-3-663-15882-0>;
+    dcterms:publisher "Springer Fachmedien";
+    dcterms:language "de";
+    dcterms:subject "Social Work", "Social Policy".
+
+_:socailWorkAndJewishCommunity a bibo:book;
+    dcterms:title "Social work and the Jewish community idea in Palestine";
+    dcterms:creator ex:Siddy_Wronsky;
+    dcterms:issued "1936"^^xsd:gYear;
+    dcterms:publisher "Brakell";
+    dcterms:language "en";
+    bibo:uri <https://nbn-resolving.org/urn:nbn:de:101:1-2013100124296>;.
+
+_:DdfWronsky a bibo:Webpage; # https://dcmi.github.io/bibo/ links to used bibo terms
+    dcterms:title "Emmy Wolf";
+    dcterms:creator "Prof. Dr. Sabine Toppe";
+    dcterms:issued "2018-09-03"^^xsd:date;
+    dcterms:publisher "Digitales Deutsches Frauenarchiv";
+    dcterms:language "de";
+    dcterms:subject "Biography";
+    bibo:uri <https://www.digitales-deutsches-frauenarchiv.de/akteurinnen/siddy-sidonie-wronsky>;
+    rdfs:label "Acessed on 04.07.2024".
